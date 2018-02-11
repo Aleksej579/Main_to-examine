@@ -14,6 +14,8 @@ main#tabs
         button.tab page 2
         button.tab page 3
         button.tab page 4
+        button.tab HTML
+        button.tab CSS
     section.tabContent
         |
         h1 План разработки (реальный)
@@ -114,7 +116,7 @@ main#tabs
         hr
 
     section.tabContent 
-        h1 Технологииё
+        h1 Технологии
         table
             tr
                 td wireframes
@@ -207,7 +209,7 @@ main#tabs
                 td Git
             tr
                 td Среда разработки
-                td Visual Studio Code
+                td Visual Studio xmp
             tr
                 td Среда разработки
                 td DBeaver
@@ -545,6 +547,341 @@ main#tabs
             |    +-- usability тестирование                 "оценка удобства продукта в использовании"
             |    +-- тестирование безопасности
             |    +-- тестирование производительности сайта  "определение быстродействия сайта"
+
+    section.tabContent 
+        h1 HTML
+        p
+            xmp <!DOCTYPE html>
+            xmp <html lang="en">
+            xmp <head>
+            xmp <meta charset="utf-8">
+            xmp <title>Name_Site</title>
+            xmp <meta name="viewport" content="width=device-width, initial-scale=1">
+            xmp <meta name="keywords" content="ключевое слово 1, ключевое слово 2">
+            xmp <meta name="description" content="Описание контента.">
+            xmp <link rel="icon" type="image/png" href="images/favicon-16x16.png">
+            xmp <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.css">
+            xmp <link href="css/main.css" type="text/css" rel="stylesheet">
+            xmp <script src="js/main.js"></script>
+            xmp </head>
+            xmp <body>
+            xmp <!--content-->
+            xmp </body>
+            xmp </html>
+            xmp ------------------------------------------------------------------------------------
+            xmp <header></header>      <!-- заглавие шапка-->
+            xmp <nav></nav>            <!-- навигация -->
+            xmp <section></section>    <!-- секция -->
+            xmp <article></article>    <!-- новости статьи -->
+            xmp <main></main>          <!-- главный блок -->
+            xmp <aside></aside>        <!-- сайдбар боковая панель-->
+            xmp <footer></footer>      <!-- подвал -->
+            xmp <figure></figure>      <!-- групировка изображения и подписи к ним -->
+            xmp <hgroup></hgroup>      <!-- группирования заголовков веб-страницы -->
+            xmp <span class="name">Техт</span>     <!-- с отдельным текстом "span"-->
+            xmp <abbr title="пояснение">АБР</abbr> <!-- выделение абривиатуры  -->
+            xmp <address>text</address>            <!-- адресс контактн. данные -->
+            xmp <cite>Текст</cite>                 <!-- цитата курсивом-->
+            xmp <blockquote>Текст</blockquote>     <!-- длиная цитата с верху и с низу рамка-->
+            xmp <ins>Текст</ins>                   <!-- выделения текста -->
+            xmp <b>Текст</b>                       <!-- текст жирным -->
+            xmp <strong>Text</strong>              <!-- семантическое выделение -->
+            xmp <u>                                <!-- подчеркнутый -->
+            xmp <s>                                <!-- зачеркнутый -->
+            xmp <em>                               <!-- курсив (<i>) -->
+            xmp <small>                            <!-- маленький шрифт -->
+            xmp <big>                              <!-- большой шрифт -->
+            xmp <mark>                             <!-- выделение маркером -->
+            xmp <dialog open></dialog>             <!--диалоговое окно-->
+            xmp ------------------------------------------------------------------------------------
+            xmp <p id="anchorName1"></p>           <!--ЯКОРЬ 1-->
+            xmp <section class="page1">            <!--СЕКЦИЯ 1-->
+            xmp ------------------------------------------------------------------------------------
+            xmp <div id="name"></div>              <!--блок для одиночных классов-->
+            xmp <div class="name"></div>           <!--блок для нескольких классов-->
+            xmp ------------------------------------------------------------------------------------
+            xmp <p></p>                            <!-- контейнер для текста -->
+            xmp <a href="www.site.com">text</a>                      <!-- ссылка -->
+            xmp <a href="image/xxx.jpg" download>Скачать файл</a>    <!-- скачать файл -->
+            xmp <a href="image/xxx.jpg">Открыть файл в браузере</a>  <!-- открыть в браузере -->
+            xmp ------------------------------------------------------------------------------------
+            xmp <br>            <!--перевод строки-->
+            xmp <hr>            <!--горизонтальная линия-->
+            xmp <h1>Текст</h1>  <!--заголовок-->
+            xmp <h2>Текст</h2>  <!--заголовок-->
+            xmp <h3>Текст</h3>  <!--заголовок-->
+            xmp <h4>Текст</h4>  <!--заголовок-->
+            xmp <h5>Текст</h5>  <!--заголовок-->
+            xmp <h6>Текст</h6>  <!--заголовок-->
+            xmp <i></i>         <!--курсивное начертание шрифта -->
+            xmp ------------------------------------------------------------------------------------
+            xmp <textarea name="comment" cols="40" rows="3"></textarea>  <!--текстовое поле -->
+            xmp <input type="text" size="40">                            <!--ввод текста -->
+            xmp <input type="radio" name="text" value="ie">Text<Br>      <!--переключатель -->
+            xmp <input type="submit" value="Отправить">                  <!--кнопка отправить -->
+            xmp <input type="reset" value="Очистить">                    <!--кнопка очистить -->
+            xmp <input type="range" id="rtl" min="0" max="100" value="0" oninput="ch_rad()"> <!--ползунок -->
+            xmp <input type="text" id="ttl" value="0">
+            xmp ------------------------------------------------------------------------------------                                                         
+            xmp <!--таблица-->
+            xmp <table border="1" width="300" bgcolor="#a9a9a9">
+            xmp <tr>
+            xmp <td>1</td>
+            xmp <td>2</td>
+            xmp <td>3</td>
+            xmp </tr>
+            xmp </table>
+            xmp ------------------------------------------------------------------------------------
+            xmp <!--выпадающие списки -->
+            xmp <form action="/php/_page_test.php" method="get">
+            xmp <select id="region"  name="region">
+            xmp <option>Select Region</option>
+            xmp <option value="Africa">Africa</option>
+            xmp <option value="Americas">Americas</option>
+            xmp <option value="Antarctica">Antarctica</option>
+            xmp <option value="Asia">Asia</option>
+            xmp </select>
+            xmp <br><br>
+            xmp <p><input class="input_img_btn" type="submit" value=""></p>
+            xmp </form>
+            xmp ------------------------------------------------------------------------------------
+            xmp <!--список описания-->
+            xmp <dl> 
+            xmp <dt>Термин 1</dt>
+            xmp <dd>Описание термина 1</dd>
+            xmp <dt>Термин 2</dt>
+            xmp <dd>Описание термина 2</dd>
+            xmp </dl>
+            xmp ------------------------------------------------------------------------------------
+            xmp <details open>Текст</details>  <!--раскрывающийся список-->
+            xmp ------------------------------------------------------------------------------------
+            xmp <img src="http://place-hold.it/200x100" alt="">  <!-- тестовая картинка  -->
+
+    section.tabContent 
+        h1 CSS
+        br
+        p #name1, #name2, #name3 { /*для id */ }
+        p .name1, .name2, .name3 { /*для class*/ }
+
+        p #button1:hover, #button2:hover { /*при наведении курсора*/ }
+        p #button1:active, #button2:active { /*при нажатии курсора*/ }
+
+        p /*---VARIABLE--------------------------------------------------------*/
+        p @color-red: #f44336;                /*красный*/
+        p @color-pink: #ff007e;               /*красный*/
+        p @color-purple: #812991;             /*фиолетовый*/
+        p @color-turquoise: #00AFFF;          /*бирюзовый*/
+        p @color-turquoise_1: #30D5C8;        /*бирюзовый*/
+        p @color-green: #48A65B;              /*зеленый*/
+        p @bg-light: #3a3a3a;                 /*фон*/
+        p @bg-dark:  #2b2b2b;                 /*фон*/
+        p @border-color: #222222;             /*фон*/
+        p @border: 1px solid #3a3a3a;         /*рамка*/
+
+        p /*---FONT-------------------------------------------------------------*/  
+        p @font-face {
+        p font-family: 'OpenSans-Regular';
+        p src: url('../fonts/Open_Sans/OpenSans-Regular.ttf');
+        p }
+
+        p /*---РАЗМЕР------------------------------------------------------*/
+        p height: 0px; /*высота в пикселях*/
+        p height: 0vh; /*высота по области просмотра*/
+        p height: 0%;  /*высота в процентах*/
+        p width: 0px;  /*ширина в пикселях*/
+        p width: 0vw;  /*ширина по облости просмотра*/
+        p width: 0%;   /*ширина в процентах*/
+
+        p resize: none; /*отмена изменения размера textarea*/
+
+        p /*---ПОЛОЖЕНИЕ ЭЛЕМЕНТОВ-------------------------------------------------*/
+        p position: absolute;       /*абсолютное позиционирование*/
+        p position: relative;       /*относительное позиционирование*/
+        p position: fixed;          /*фиксированное положение элемента при прокрутке стр.*/
+        p position: static;
+        p position: inherit;        /*наследует своиства род.*/
+        p top: calc(0% - 0px);      /*выравнивание по высоте (200-половина блока)*/
+        p top: 0px;                 /*расположение элемента от верха в пикселях*/
+        p top: 0%;                  /*расположение элемента от верха в процентах*/
+        p left: calc(50% - 0px);    /*выравнивание по ширине (200-половина блока)*/
+        p left: 0px;                /*расположение элемента слева в пикселях*/
+        p left: 0%;                 /*расположение элемента слева в процентах*/
+        p bottom: 0px;              /*растояние снизу в пикселях*/
+        p bottom: 0%;               /*растояние снизу в процентах*/
+        p z-index: 0;               /*отметка элемента по высоте плана*/
+
+        p /*---ОБТЕКАНИЕ ЭЛЕМЕНТА---------------------------------------------*/
+        p float: right; /*обтекание по правому краю */
+        p float: left;  /*обтекание по левому краю */
+        p clear: both;  /*отмена обтекание блока по указаному краю */
+
+        p /*---ОТСТУПЫ ЭЛЕМЕНТА------------------------------------------*/
+        p margin: 0 auto;       /*выровнять по центру горизонтально*/
+        p margin: 0px;          /*отступ вокруг элемента в пикселях*/
+        p margin: 20%;          /*отступы вокруг элемента в процентах*/
+        p margin-left: 0px;     /*отступ слева*/
+        p margin-right: 0px;    /*отступ справа*/
+        p margin-top: 0px;      /*отступ сверху*/
+        p margin-bottom: 0px;   /*отступ снизу*/
+
+        p /*---ПОЛЯ ВОКРУГ ТЕКСТА------------------------------------*/
+        p padding: 0px;          /*поля вокруг текста*/
+        p padding-left: 0px;     /*поле слева*/
+        p padding-right: 0px;    /*поле справа*/
+
+        p padding:  30px 15px;   /*верх-низ и право-лево*/
+
+        p /*---ПОКАЗАТЬ/СПРЯТАТЬ БЛОК--------------------------------------------------*/
+        p display: table;         /*для выравнивания по центру*/
+        p display: none;          /*прячем от показа*/
+        p display: block;         /*показать блок*/
+        p display: inline;        /*выровнять вдоль гориз. линии*/
+
+        p /*---ФОН----------------------------------------------------------*/
+        p background-color: #282828;      /*цвет фона*/
+        p background: rgba(0, 0, 0, 0.5); /*фон полупрозрачный*/
+        p background: none;               /*без фона*/
+
+        p background: url(../images/2.jpg) no-repeat fixed;  /*repeat-x фиксир.*/
+        p background-size: cover;       /*фон занимает всю доступную площадь*/
+
+        p background: -webkit-linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0));
+        p background: -o-linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0));
+        p background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0));
+
+        p background-position: 50% 50%;
+
+        p /*---РАМКА--------------------------------------------------------*/
+        p border: 1px solid #C0C0C0;      /*рамка, толщина, линия, цвет*/
+        p border: 1px solid red;          /*рамка, толщина, линия, цвет*/
+        p border: 1px solid transparent;  /*с прозрачной рамкой*/
+        p border-top: 0px solid white;    /*рамка сверху белая*/
+        p border-bottom: 0px solid white; /*рамка снизу белая*/
+        p border-left: 0px solid white;   /*рамка слева белая*/
+        p border-right: 0px solid white;  /*рамка справа белая*/
+        p border: none;                   /*без рамки*/
+        p border-radius: 0px;  /*скругления углов рамки, радиус рамки*/
+
+        p border: none;     /*Линия не отображается и значение ее толщины обнуляется*/
+        p border: dotted;   /*Линия состоящая из набора точек.*/
+        p border: dashed;   /*Пунктирная линия, состоящая из серии коротких отрезков.*/
+        p border: solid;    /*Сплошная линия.*/
+        p border: double;   /*Двойная линия.*/
+        p border: groove;   /*Создает эффект вдавленной линии.*/
+        p border: ridge;    /*Создает эффект рельефной линии.*/
+        p border: inset;    /*Псевдотрехмерная линия.*/
+        p border: outset;   /*Псевдотрехмерная линия.*/
+        p border: inherit;  /*Наследует значение родителя.*/
+
+        p outline: none;    /*для textarea*/
+
+        p -webkit-clip-path: polygon(0 20px, 20px 0, 100px 0, 120px 20px, 600px 20px, 600px 300px, 0 300px);
+
+        p /*---ТЕНЬ------------------------------------------------------------*/
+        p box-shadow: none;                               /*убрать тень*/
+        p box-shadow: 0 0 30px rgba(0,0,0,0.8);           /*тень блока*/
+        p box-shadow: 0 0 60px rgba(0, 0, 0, .8) inset;   /*внутренняя тень блока*/
+        p text-shadow: 1px 1px 1px rgba(0, 0, 0, .3);     /*тень текста*/
+        p text-shadow: -1px -1px #000,   0 1px 0 #444;
+        p opacity: 0.5;    /* Полупрозрачность элемента от 0 до 1*/
+
+        p /*---ТЕКСТ----------------------------------------------------------*/
+        p color: #00BFFF;                    /*цвет текста*/
+
+        p font-family: 'OpenSans-Light', sans-serif;    /*шрифт*/
+        p font-family:  'SourcexmpPro-Regular';
+        p font-size: 0%;                     /*размер шрифта в процентах*/
+        p font-size: 11pt;                   /*размер шрифта в пунктах*/  
+        p font-size: 16px;                   /*размер шрифта в пикселях*/
+        p font-style: italic;                /*стиль текста (курсив)*/
+        p font-style: bold;                  /*стиль текста (жирный)*/
+        p font-weight: 600;
+        p font-weight: bold;
+
+        p text-align: center;                /*выравнивание текста по центру*/
+        p text-align: left;                  /*выравнивание текста слева*/
+        p text-align: right;                 /*выравнивание текста справа*/
+        p text-decoration: none;             /*убирать подчёркивание у ссылок */
+        p text-decoration: underline;        /*подчеркивание текста*/
+        p text-decoration-color: blue;       /*цвет подчеркивания синим цветом*/
+        p text-decoration-style: dashed;     /*тип линии подчеркивания*/
+        p text-transform: uppercase;         /*текст большими буквами*/
+
+        p column-count: 3;                   /*текст в три колонки*/
+        p column-rule: 1px dashed grey;      /*вертикальные линии между колонками*/
+
+        p line-height: 0px;                  /*межстрочный интервал по центру = выс блока*/
+        p letter-spacing: 9px;               /*межбуквенный интервал*/
+        p user-select: none;                 /*убирать выделение текста */
+
+        p list-style-type: circle;           /*круг*/
+        p list-style-type: disc;             /*точка*/
+        p list-style-type: square;           /*квадрат*/
+        p list-style-type: decimal;          /*арабскими числами*/
+        p list-style-type: upper-alpha;      /*заглавные латинские*/
+        p list-style-type: upper-roman;      /*римскими числами*/
+        p list-style-type: none;             /*отмена маркера*/
+
+        p #---КУРСОР--------------------------------------------------------
+        p cursor: pointer;                   /*курсор указатель*/
+        p cursor: move;                      /*курсор перемещение*/
+        p cursor: col-resize;                /*курсор горизонтальное смещение размера границы*/
+        p cursor: row-resize;                /*курсор вертикальное смещение размера границы*/
+
+        p #---ПОЛОСА ПРОКРУТКИ--------------------------------------------------------
+        p overflow: hidden;    /*сокрытие полосы прокрутки*/
+        p overflow-x: hidden;  /*cокрытие горизонтальной полосы*/
+        p overflow-y: hidden;  /*cокрытие вертикальной полосы*/
+        p overflow: scroll;    /*добавляем полосы прокрутки*/
+
+        p /*---3D--------------------------------------------*/
+        p perspective: 800px;        /*установка перспективы*/
+
+        p transform-style: preserve-3d;
+        p transform: rotate3D(1, 1, 1, 0deg);
+        p transform: rotateX(0deg);             /*вращение относительно коор. Х*/
+        p transform: rotateY(0deg);             /*вращение относительно коор. Y*/
+        p transform: rotateZ(0deg);             /*вращение относительно коор. Z*/
+        p transform: translateX(0px);           /*перемещение по оси Х*/
+        p transform: translateY(0px);           /*перемещение по оси Y*/
+        p transform: translateZ(0px);           /*перемещение по оси Z*/
+        p transform: scale3d(4, 4, 1);          /*масштабирование*/
+        p transform: scale(1.2, 1.2);
+        p transform: rotateX(70deg) scale3d(4, 4, 1) translateZ(-750px) translateY(-500px) translateX(-50px);
+
+        p transform-origin: x y z;
+        p transform-origin: 100px 100px 100px;
+        p transform-origin: 100% 100% 100%;
+        p transform-origin: 100% 0 -50px;
+
+        p /*---ТАЙМИНГ----------------------------------------------------------------*/
+        p transition: 1.5s linear;      /*нормально нормально нормально*/
+        p transition: 1.5s ease-in-out; /*медленно нормально медленно*/
+        p transition: 1.5s ease;        /*медленно быстро медленно*/
+        p transition: all 1s;
+
+        p /*---АНИМАЦИЯ---------------------------------------------*/
+        p .anim {
+        p   animation-timing-function: linear;     /*тип анимации = ровная*/
+        p   animation-iteration-count: infinite;
+        p   animation-duration: 5s;                /*время цикла анимации*/
+        p   animation-name: anim;                  /*наименование анимации*/
+        p }
+
+        p @-webkit-keyframes anim {
+        p   0% {-webkit-transform: rotateZ(0deg);}        /*анимировать с ...*/
+        p   100% {-webkit-transform: rotateZ(-360deg);}   /*анимировать по ...*/
+        p }
+
+        p /*---*/
+        p flex: 0 0 auto;
+
+
+
+
+
+
+
 footer 
     p.p_footer pug -w index.pug & stylus -w main.styl
 
