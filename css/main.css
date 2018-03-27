@@ -124,3 +124,35 @@ span {
   box-shadow: 0 0 5px rgba(0,0,0,0.8) inset;
   text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
 }
+@font-face {
+  font-family: 'SourceCodePro-Regular';
+  src: url("../fonts/SourceCodePro-Regular.ttf");
+}
+@font-face {
+  font-family: 'HelveticaNeueCyr-Black';
+  src: url("../fonts/HelveticaNeueCyr-Black.ttf");
+}
+.tabContent_html > p {
+  font-family: 'SourceCodePro-Regular';
+  color: #48a65b;
+  font-size: 15px;
+}
+.tabContent > h1 {
+  font-family: 'HelveticaNeueCyr-Black';
+}
+.tabContent_html_table {
+  font-family: 'SourceCodePro-Regular';
+  color: #48a65b;
+  font-size: 15px;
+}
+.b {
+  font-weight: bold;
+  font-size: 15px;
+/*color #f48e70*/
+  color: #ff6347;
+}
+.i {
+  font-style: italic;
+/*color #3dc0f1*/
+  color: #800080;
+}

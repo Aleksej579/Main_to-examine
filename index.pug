@@ -10,10 +10,10 @@ body
 header Front-end developer
 main#tabs
     nav
-        button.tab page 1
-        button.tab page 2
-        button.tab page 3
-        button.tab page 4
+        button.tab Plan
+        button.tab Tools
+        button.tab Type site
+        button.tab Info
         button.tab HTML
         button.tab CSS
     section.tabContent
@@ -549,71 +549,156 @@ main#tabs
             |    +-- тестирование производительности сайта  "определение быстродействия сайта"
 
     section.tabContent 
-        h1 HTML
-        p
-            xmp <!DOCTYPE html>
-            xmp <html lang="en">
-            xmp <head>
-            xmp <meta charset="utf-8">
-            xmp <title>Name_Site</title>
-            xmp <meta name="viewport" content="width=device-width, initial-scale=1">
-            xmp <meta name="keywords" content="ключевое слово 1, ключевое слово 2">
-            xmp <meta name="description" content="Описание контента.">
-            xmp <link rel="icon" type="image/png" href="images/favicon-16x16.png">
-            xmp <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.css">
-            xmp <link href="css/main.css" type="text/css" rel="stylesheet">
-            xmp <script src="js/main.js"></script>
-            xmp </head>
-            xmp <body>
-            xmp <!--content-->
-            xmp </body>
-            xmp </html>
-            xmp ------------------------------------------------------------------------------------
-            xmp <header></header>      <!-- заглавие шапка-->
-            xmp <nav></nav>            <!-- навигация -->
-            xmp <section></section>    <!-- секция -->
-            xmp <article></article>    <!-- новости статьи -->
-            xmp <main></main>          <!-- главный блок -->
-            xmp <aside></aside>        <!-- сайдбар боковая панель-->
-            xmp <footer></footer>      <!-- подвал -->
-            xmp <figure></figure>      <!-- групировка изображения и подписи к ним -->
-            xmp <hgroup></hgroup>      <!-- группирования заголовков веб-страницы -->
-            xmp <span class="name">Техт</span>     <!-- с отдельным текстом "span"-->
-            xmp <abbr title="пояснение">АБР</abbr> <!-- выделение абривиатуры  -->
-            xmp <address>text</address>            <!-- адресс контактн. данные -->
-            xmp <cite>Текст</cite>                 <!-- цитата курсивом-->
-            xmp <blockquote>Текст</blockquote>     <!-- длиная цитата с верху и с низу рамка-->
-            xmp <ins>Текст</ins>                   <!-- выделения текста -->
-            xmp <b>Текст</b>                       <!-- текст жирным -->
-            xmp <strong>Text</strong>              <!-- семантическое выделение -->
-            xmp <u>                                <!-- подчеркнутый -->
-            xmp <s>                                <!-- зачеркнутый -->
-            xmp <em>                               <!-- курсив (<i>) -->
-            xmp <small>                            <!-- маленький шрифт -->
-            xmp <big>                              <!-- большой шрифт -->
-            xmp <mark>                             <!-- выделение маркером -->
-            xmp <dialog open></dialog>             <!--диалоговое окно-->
-            xmp ------------------------------------------------------------------------------------
-            xmp <p id="anchorName1"></p>           <!--ЯКОРЬ 1-->
-            xmp <section class="page1">            <!--СЕКЦИЯ 1-->
-            xmp ------------------------------------------------------------------------------------
-            xmp <div id="name"></div>              <!--блок для одиночных классов-->
-            xmp <div class="name"></div>           <!--блок для нескольких классов-->
-            xmp ------------------------------------------------------------------------------------
-            xmp <p></p>                            <!-- контейнер для текста -->
-            xmp <a href="www.site.com">text</a>                      <!-- ссылка -->
-            xmp <a href="image/xxx.jpg" download>Скачать файл</a>    <!-- скачать файл -->
-            xmp <a href="image/xxx.jpg">Открыть файл в браузере</a>  <!-- открыть в браузере -->
-            xmp ------------------------------------------------------------------------------------
-            xmp <br>            <!--перевод строки-->
-            xmp <hr>            <!--горизонтальная линия-->
-            xmp <h1>Текст</h1>  <!--заголовок-->
-            xmp <h2>Текст</h2>  <!--заголовок-->
-            xmp <h3>Текст</h3>  <!--заголовок-->
-            xmp <h4>Текст</h4>  <!--заголовок-->
-            xmp <h5>Текст</h5>  <!--заголовок-->
-            xmp <h6>Текст</h6>  <!--заголовок-->
-            xmp <i></i>         <!--курсивное начертание шрифта -->
+        h1 HTML / PUG
+        div.tabContent_html
+            p !DOCTYPE html
+            p html lang="en"
+            p --- head
+            p --- meta charset="utf-8"
+            p --- title Name_Site
+            p --- meta(name="viewport" content="width=device-width, initial-scale=1"
+            p --- meta(name="keywords" content="ключевое слово 1, ключевое слово 2"
+            p --- meta(name="description" content="Описание контента.")
+            p --- link(rel="icon" type="image/png" href="images/favicon-16x16.png")
+            p --- link(rel="stylesheet" href="fonts/font-awesome/css/font-awesome.css")
+            p --- link(href="css/main.css" type="text/css" rel="stylesheet")
+            p --- script(type="text/javascript" src="js/main.js")
+            p --- body
+            hr
+            table.tabContent_html_table
+                tr
+                    td.b header
+                    td.i - заглавие шапка
+                tr
+                    td.b nav
+                    td.i - навигация
+                tr
+                    td.b section
+                    td.i - секция
+                tr
+                    td.b article
+                    td.i - новости статьи
+                tr
+                    td.b main
+                    td.i - главный блок
+                tr
+                    td.b aside
+                    td.i - сайдбар боковая панель
+                tr
+                    td.b footer
+                    td.i - подвал
+                tr
+                    td.b figure
+                    td.i - групировка изображения и подписи к ним
+                tr
+                    td.b hgroup
+                    td.i - группирования заголовков веб-страницы
+                tr
+                    td.b span.name Техт
+                    td.i - с отдельным текстом "span"
+                tr
+                    td.b abbr(title="пояснение") АБР
+                    td.i - выделение абривиатуры
+                tr
+                    td.b address text
+                    td.i - адресс контактн. данные
+                tr
+                    td.b cite Текст
+                    td.i - цитата курсивом
+                tr
+                    td.b blockquote Текст
+                    td.i - длиная цитата с верху и с низу рамка
+                tr
+                    td.b ins Текст
+                    td.i - выделения текста
+                tr
+                    td.b b Текст
+                    td.i - текст жирным
+                tr
+                    td.b strong Text
+                    td.i - семантическое выделение
+                tr
+                    td.b u
+                    td.i - подчеркнутый
+                tr
+                    td.b s
+                    td.i - зачеркнутый
+                tr
+                    td.b em
+                    td.i - курсив (<i>)
+                tr
+                    td.b small
+                    td.i - маленький шрифт
+                tr
+                    td.b big
+                    td.i - большой шрифт
+                tr
+                    td.b mark
+                    td.i - выделение маркером
+                tr
+                    td.b dialog open
+                    td.i - диалоговое окно
+                tr
+                    td.b p.anchorName1
+                    td.i - ЯКОРЬ 1
+                tr
+                    td.b <section class="page1">
+                    td.i - СЕКЦИЯ 1
+                tr
+                    td.b <div id="name"></div>
+                    td.i - блок для одиночных классов
+                tr
+                    td.b <div class="name"></div>
+                    td.i - блок для нескольких классов
+                tr
+                    td.b p
+                    td.i - контейнер для текста
+                tr
+                    td.b <a href="www.site.com">text</a>
+                    td.i - ссылка
+                tr
+                    td.b <a href="image/xxx.jpg" download>Скачать файл</a>
+                    td.i - скачать файл
+                tr
+                    td.b <a href="image/xxx.jpg">Открыть файл в браузере</a>
+                    td.i - открыть в браузере
+                tr
+                    td.b <br>
+                    td.i - перевод строки
+                tr
+                    td.b <hr>
+                    td.i - горизонтальная линия
+                tr
+                    td.b 
+                        h1 h1 Текст
+                    td.i - заголовок
+                tr
+                    td.b 
+                        h2 h2 Текст
+                    td.i - заголовок
+                tr
+                    td.b 
+                        h3 h3 Текст
+                    td.i - заголовок
+                tr
+                    td.b 
+                        h4 h4 Текст
+                    td.i - заголовок
+                tr
+                    td.b 
+                        h5 h5 Текст
+                    td.i - заголовок
+                tr
+                    td.b 
+                        h6 h6 Текст
+                    td.i - заголовок
+                tr
+                    td.b 
+                        i i text
+                    td.i - курсивное начертание шрифта
+
+
+
             xmp ------------------------------------------------------------------------------------
             xmp <textarea name="comment" cols="40" rows="3"></textarea>  <!--текстовое поле -->
             xmp <input type="text" size="40">                            <!--ввод текста -->
@@ -806,6 +891,7 @@ main#tabs
         p text-decoration-color: blue;       /*цвет подчеркивания синим цветом*/
         p text-decoration-style: dashed;     /*тип линии подчеркивания*/
         p text-transform: uppercase;         /*текст большими буквами*/
+        p text-indent: 20px;                 /*Отступ первой строки в пикселах*/
 
         p column-count: 3;                   /*текст в три колонки*/
         p column-rule: 1px dashed grey;      /*вертикальные линии между колонками*/
