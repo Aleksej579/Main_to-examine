@@ -113,7 +113,7 @@ main#tabs
             a(href="https://karma-runner.github.io/1.0/index.html" target="_blank") Karma
             | .
         p Раскрутка <span>SPA</span> с помощью SEO.
-        hr
+
 
     section.tabContent 
         h1 Технологии
@@ -594,47 +594,70 @@ main#tabs
                     td.b hgroup
                     td.i - группирования заголовков веб-страницы
                 tr
-                    td.b span.name Техт
+                    td.b span.name text
                     td.i - с отдельным текстом "span"
                 tr
                     td.b abbr(title="пояснение") АБР
-                    td.i - выделение абривиатуры
+                    td.i 
+                        abbr(
+                            title="пояснение"
+                        ) АБР
                 tr
                     td.b address text
-                    td.i - адресс контактн. данные
+                    td.i 
+                        address text
                 tr
-                    td.b cite Текст
-                    td.i - цитата курсивом
+                    td.b cite text
+                    td.i 
+                        cite text
                 tr
-                    td.b blockquote Текст
-                    td.i - длиная цитата с верху и с низу рамка
+                    td.b blockquote text
+                    td.i 
+                        blockquote text
                 tr
-                    td.b ins Текст
-                    td.i - выделения текста
+                    td.b ins text
+                    td.i
+                        ins text
                 tr
-                    td.b b Текст
-                    td.i - текст жирным
+                    td.b p text
+                    td.i 
+                        p text
                 tr
-                    td.b strong Text
-                    td.i - семантическое выделение
+                    td.b b text
+                    td.i 
+                        b text
                 tr
-                    td.b u
-                    td.i - подчеркнутый
+                    td.b strong text
+                    td.i 
+                        strong text
                 tr
-                    td.b s
-                    td.i - зачеркнутый
+                    td.b i text
+                    td.i 
+                        i text
                 tr
-                    td.b em
-                    td.i - курсив (<i>)
+                    td.b u text
+                    td.i 
+                        u text
                 tr
-                    td.b small
-                    td.i - маленький шрифт
+                    td.b s text
+                    td.i
+                        s text
                 tr
-                    td.b big
-                    td.i - большой шрифт
+                    td.b em text
+                    td.i 
+                        em text
                 tr
-                    td.b mark
-                    td.i - выделение маркером
+                    td.b small text
+                    td.i 
+                        small text
+                tr
+                    td.b big text
+                    td.i 
+                        big text
+                tr
+                    td.b mark text
+                    td.i 
+                        mark text
                 tr
                     td.b dialog open
                     td.i - диалоговое окно
@@ -642,105 +665,192 @@ main#tabs
                     td.b p.anchorName1
                     td.i - ЯКОРЬ 1
                 tr
-                    td.b <section class="page1">
+                    td.b section.page1
                     td.i - СЕКЦИЯ 1
                 tr
-                    td.b <div id="name"></div>
+                    td.b div#name
                     td.i - блок для одиночных классов
                 tr
-                    td.b <div class="name"></div>
+                    td.b div.name
                     td.i - блок для нескольких классов
                 tr
-                    td.b p
-                    td.i - контейнер для текста
+                    td.b a (href="www.site.com) link
+                    td.i 
+                        a(
+                            href="www.site.com"
+                        ) link
                 tr
-                    td.b <a href="www.site.com">text</a>
-                    td.i - ссылка
+                    td.b a (href="image/xxx.jpg" download)>Скачать файл
+                    td.i 
+                        a(
+                            href="image/xxx.jpg"
+                            download
+                        ) Скачать файл
                 tr
-                    td.b <a href="image/xxx.jpg" download>Скачать файл</a>
-                    td.i - скачать файл
+                    td.b a (href="image/xxx.jpg") Открыть файл в браузере
+                    td.i 
+                        a(
+                            href="image/xxx.jpg"
+                        ) Открыть файл в браузере
                 tr
-                    td.b <a href="image/xxx.jpg">Открыть файл в браузере</a>
-                    td.i - открыть в браузере
-                tr
-                    td.b <br>
+                    td.b br
                     td.i - перевод строки
                 tr
-                    td.b <hr>
-                    td.i - горизонтальная линия
+                    td.b hr
+                    td.i 
+                        hr
                 tr
-                    td.b 
-                        h1 h1 Текст
-                    td.i - заголовок
+                    td.b h1 text
+                    td.i 
+                        h1 text
                 tr
-                    td.b 
-                        h2 h2 Текст
-                    td.i - заголовок
+                    td.b h2 text
+                    td.i 
+                        h2 text
                 tr
-                    td.b 
-                        h3 h3 Текст
-                    td.i - заголовок
+                    td.b h3 text
+                    td.i 
+                        h3 text
                 tr
-                    td.b 
-                        h4 h4 Текст
-                    td.i - заголовок
+                    td.b h4 text
+                    td.i 
+                        h4 text
                 tr
-                    td.b 
-                        h5 h5 Текст
-                    td.i - заголовок
+                    td.b h5 text
+                    td.i 
+                        h5 text
                 tr
-                    td.b 
-                        h6 h6 Текст
-                    td.i - заголовок
+                    td.b h6 text
+                    td.i 
+                        h6 text
                 tr
-                    td.b 
-                        i i text
-                    td.i - курсивное начертание шрифта
+                    td.b textarea (name="comment" cols="40" rows="3")
+                    td.i 
+                        textarea(
+                            name="comment"
+                            cols="40"
+                            rows="3"
+                        )
+                tr
+                    td.b input (type="text" size="40")
+                    td.i 
+                        input(
+                            type="text"
+                            size="40"
+                        )
+                tr
+                    td.b input (type="radio" name="text" value="ie")
+                    td.i 
+                        input(
+                            type="radio"
+                            name="text"
+                            value="ie"
+                        )
+                tr
+                    td.b input (type="submit" value="Отправить")
+                    td.i 
+                        input(
+                            type="submit"
+                            value="Отправить"
+                        )
+                tr
+                    td.b input (type="reset" value="Очистить")
+                    td.i 
+                        input(
+                            type="reset"
+                            value="Очистить"
+                        )
+                tr
+                    td.b input (type="range" id="rtl" min="0" max="100" value="0" oninput="ch_rad()")
+                    td.i 
+                        input(
+                            type="range"
+                            id="rtl"
+                            min="0"
+                            max="100"
+                            value="0"
+                            oninput="ch_rad()"
+                        )
+                tr
+                    td.b input (type="text" id="ttl" value="0")
+                    td.i 
+                        input(
+                            type="text"
+                            id="ttl"
+                            value="0"
+                        )
 
+                tr
+                    td.b 
+                        textarea(name="comment" cols="60" rows="3")
+                            |
+                            |table(border="1" width="300" bgcolor="#a9a9a9") 
+                            |   tr
+                            |       td 1
+                            |       td 2
+                            |       td 3
+                    td.i 
+                        table(
+                            border="1"
+                            width="300"
+                            bgcolor="#a9a9a9"
+                        )
+                            tr
+                                td 1
+                                td 2
+                                td 3
 
+                tr
+                    td.b 
+                        textarea(name="comment" cols="60" rows="3")
+                            |
+                            |form(action="/php/_page_test.php" method="get")
+                            |   select(id="region"  name="region")
+                            |       optionSelect Region
+                            |       option(value="Africa") Africa
+                            |       option(value="Americas") Americas
+                            |       option(value="Antarctica") Antarctica
+                            |       option(value="Asia") Asia
+                    td.i 
+                        form(action="/php/_page_test.php" method="get")
+                            select(id="region"  name="region")
+                                optionSelect Region
+                                option(value="Africa") Africa
+                                option(value="Americas") Americas
+                                option(value="Antarctica") Antarctica
+                                option(value="Asia") Asia
+                tr
+                    td.b 
+                        textarea(name="comment" cols="60" rows="3")
+                            |dl
+                            |   dt Термин 1
+                            |       dd Описание термина 1
+                            |   dt Термин 2
+                            |       dd Описание термина 2
 
-            xmp ------------------------------------------------------------------------------------
-            xmp <textarea name="comment" cols="40" rows="3"></textarea>  <!--текстовое поле -->
-            xmp <input type="text" size="40">                            <!--ввод текста -->
-            xmp <input type="radio" name="text" value="ie">Text<Br>      <!--переключатель -->
-            xmp <input type="submit" value="Отправить">                  <!--кнопка отправить -->
-            xmp <input type="reset" value="Очистить">                    <!--кнопка очистить -->
-            xmp <input type="range" id="rtl" min="0" max="100" value="0" oninput="ch_rad()"> <!--ползунок -->
-            xmp <input type="text" id="ttl" value="0">
-            xmp ------------------------------------------------------------------------------------                                                         
-            xmp <!--таблица-->
-            xmp <table border="1" width="300" bgcolor="#a9a9a9">
-            xmp <tr>
-            xmp <td>1</td>
-            xmp <td>2</td>
-            xmp <td>3</td>
-            xmp </tr>
-            xmp </table>
-            xmp ------------------------------------------------------------------------------------
-            xmp <!--выпадающие списки -->
-            xmp <form action="/php/_page_test.php" method="get">
-            xmp <select id="region"  name="region">
-            xmp <option>Select Region</option>
-            xmp <option value="Africa">Africa</option>
-            xmp <option value="Americas">Americas</option>
-            xmp <option value="Antarctica">Antarctica</option>
-            xmp <option value="Asia">Asia</option>
-            xmp </select>
-            xmp <br><br>
-            xmp <p><input class="input_img_btn" type="submit" value=""></p>
-            xmp </form>
-            xmp ------------------------------------------------------------------------------------
-            xmp <!--список описания-->
-            xmp <dl> 
-            xmp <dt>Термин 1</dt>
-            xmp <dd>Описание термина 1</dd>
-            xmp <dt>Термин 2</dt>
-            xmp <dd>Описание термина 2</dd>
-            xmp </dl>
-            xmp ------------------------------------------------------------------------------------
-            xmp <details open>Текст</details>  <!--раскрывающийся список-->
-            xmp ------------------------------------------------------------------------------------
-            xmp <img src="http://place-hold.it/200x100" alt="">  <!-- тестовая картинка  -->
+                    td.i  
+                        dl
+                            dt Термин 1
+                                dd Описание термина 1
+                            dt Термин 2
+                                dd Описание термина 2
+                tr
+                    td.b details openТекст
+                    td.i 
+                        details openТекст
+                tr
+                    td.b
+                        textarea(name="comment" cols="60" rows="3")
+                            |
+                            |img(
+                            |    src="http://place-hold.it/200x100"
+                            |    alt=""
+                            |)
+                    td.i 
+                        img(
+                            src="http://place-hold.it/200x100"
+                            alt=""
+                        )
 
     section.tabContent 
         h1 CSS

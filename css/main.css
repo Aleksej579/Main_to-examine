@@ -148,11 +148,9 @@ span {
 .b {
   font-weight: bold;
   font-size: 15px;
-/*color #f48e70*/
-  color: #ff6347;
+  color: #f48e70;
 }
 .i {
-  font-style: italic;
-/*color #3dc0f1*/
-  color: #800080;
+/*font-style italic*/
+  color: #90a4ae;
 }
