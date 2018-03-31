@@ -16,6 +16,7 @@ main#tabs
         button.tab Info
         button.tab HTML
         button.tab CSS
+        button.tab JavaScript
     section.tabContent
         |
         h1 План разработки (реальный)
@@ -853,224 +854,690 @@ main#tabs
                         )
 
     section.tabContent 
-        h1 CSS
+        h1 CSS / stylus
         br
-        p #name1, #name2, #name3 { /*для id */ }
-        p .name1, .name2, .name3 { /*для class*/ }
+        table.tabContent_css_table
+                tr
+                    td.b #name1, #name2, #name3 { code }
+                    td.i id
+                tr
+                    td.b .name1, .name2, .name3 { code }
+                    td.i class
+                tr
+                    td.b #button1:hover, #button2:hover {  }
+                    td.i при наведении курсора
+                tr
+                    td.b #button1:active, #button2:active {  }
+                    td.i при нажатии курсора
+                tr
+                    td.b @color-red: #f44336;
+                    td.i красный
+                tr
+                    td.b @color-pink: #ff007e;
+                    td.i красный
+                tr
+                    td.b @color-purple: #812991;
+                    td.i фиолетовый
+                tr
+                    td.b @color-turquoise: #00AFFF;
+                    td.i бирюзовый
+                tr
+                    td.b @color-turquoise_1: #30D5C8;
+                    td.i бирюзовый
+                tr
+                    td.b @color-green: #48A65B;
+                    td.i зеленый
+                tr
+                    td.b @bg-light: #3a3a3a;
+                    td.i фон
+                tr
+                    td.b @bg-dark:  #2b2b2b; 
+                    td.i фон
+                tr
+                    td.b @border-color: #222222;
+                    td.i фон
+                tr
+                    td.b @border: 1px solid #3a3a3a;
+                    td.i рамка
+                tr
+                    td.b 
+                        dl
+                            dt @font-face {
+                                dd font-family: 'OpenSans-Regular';
+                                dd src: url('../fonts/Open_Sans/OpenSans-Regular.ttf');
+                                dd }
+                    td.i @font-face
+                tr
+                    td.b height: 0px;
+                    td.i высота в пикселях
+                tr
+                    td.b height: 0vh;
+                    td.i высота по области просмотра
+                tr
+                    td.b height: 0%;
+                    td.i высота в процентах
+                tr
+                    td.b width: 0px;
+                    td.i ширина в пикселях
+                tr
+                    td.b width: 0vw;
+                    td.i ширина по облости просмотра
+                tr
+                    td.b width: 0%;
+                    td.i ширина в процентах
+                tr
+                    td.b resize: none;
+                    td.i отмена изменения размера textarea
+                tr
+                    td.b position: absolute;
+                    td.i абсолютное позиционирование
+                tr
+                    td.b position: relative;
+                    td.i относительное позиционирование
+                tr
+                    td.b position: fixed;
+                    td.i фиксированное положение элемента при прокрутке стр.
+                tr
+                    td.b position: static;
+                    td.i наследует своиства род.
+                tr
+                    td.b position: inherit;
+                    td.i 
+                tr
+                    td.b top: calc(0% - 0px);
+                    td.i выравнивание по высоте (200-половина блока)
+                tr
+                    td.b top: 0px;
+                    td.i расположение элемента от верха в пикселях
+                tr
+                    td.b top: 0%;
+                    td.i расположение элемента от верха в процентах
+                tr
+                    td.b left: calc(50% - 0px);
+                    td.i выравнивание по ширине (200-половина блока)
+                tr
+                    td.b left: 0px;
+                    td.i расположение элемента слева в пикселях
+                tr
+                    td.b left: 0%;
+                    td.i расположение элемента слева в процентах
+                tr
+                    td.b bottom: 0px;
+                    td.i растояние снизу в пикселях
+                tr
+                    td.b bottom: 0%;
+                    td.i растояние снизу в процентах
+                tr
+                    td.b z-index: 0;
+                    td.i отметка элемента по высоте плана
+                tr
+                    td.b float: right;
+                    td.i обтекание по правому краю
+                tr
+                    td.b float: left;
+                    td.i обтекание по левому краю
+                tr
+                    td.b clear: both;
+                    td.i отмена обтекание блока по указаному краю
+                tr
+                    td.b margin: 0 auto;
+                    td.i выровнять по центру горизонтально
+                tr
+                    td.b margin: 0px;
+                    td.i отступ вокруг элемента в пикселях
+                tr
+                    td.b margin: 20%;
+                    td.i отступы вокруг элемента в процентах
+                tr
+                    td.b margin-left: 0px;
+                    td.i отступ слева
+                tr
+                    td.b margin-right: 0px;
+                    td.i отступ справа
+                tr
+                    td.b margin-top: 0px;
+                    td.i отступ сверху
+                tr
+                    td.b margin-bottom: 0px;
+                    td.i отступ снизу
+                tr
+                    td.b padding: 0px;
+                    td.i поля вокруг текста
+                tr
+                    td.b padding-left: 0px;
+                    td.i поле слева
+                tr
+                    td.b padding-right: 0px;
+                    td.i поле справа
+                tr
+                    td.b padding:  30px 15px;
+                    td.i верх-низ и право-лево
+                tr
+                    td.b display: table;
+                    td.i для выравнивания по центру
+                tr
+                    td.b display: none;
+                    td.i прячем от показа
+                tr
+                    td.b display: block;
+                    td.i показать блок
+                tr
+                    td.b display: inline;
+                    td.i выровнять вдоль гориз. линии
+                tr
+                    td.b background-color: #282828;
+                    td.i цвет фона
+                tr
+                    td.b background: rgba(0, 0, 0, 0.5);
+                    td.i фон полупрозрачный
+                tr
+                    td.b background: none;
+                    td.i без фона
+                tr
+                    td.b background: url(../images/2.jpg) no-repeat fixed;
+                    td.i repeat-x фиксир.
+                tr
+                    td.b background-size: cover;
+                    td.i фон занимает всю доступную площадь
+                tr
+                    td.b background: -webkit-linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0));
+                    td.i 
+                tr
+                    td.b background: -o-linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0));
+                    td.i 
+                tr
+                    td.b background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0));
+                    td.i 
+                tr
+                    td.b background-position: 50% 50%;
+                    td.i 
+                tr
+                    td.b border: 1px solid #C0C0C0;
+                    td.i рамка, толщина, линия, цвет
+                tr
+                    td.b border: 1px solid red;
+                    td.i рамка, толщина, линия, цвет
+                tr
+                    td.b border: 1px solid transparent;
+                    td.i с прозрачной рамкой
+                tr
+                    td.b border-top: 0px solid white;
+                    td.i рамка сверху белая
+                tr
+                    td.b border-bottom: 0px solid white;
+                    td.i рамка снизу белая
+                tr
+                    td.b border-left: 0px solid white;
+                    td.i рамка слева белая
+                tr
+                    td.b border-right: 0px solid white;
+                    td.i рамка справа белая
+                tr
+                    td.b border: none;
+                    td.i без рамки
+                tr
+                    td.b border-radius: 0px;
+                    td.i скругления углов рамки, радиус рамки
+                tr
+                    td.b border: none;
+                    td.i Линия не отображается и значение ее толщины обнуляется
+                tr
+                    td.b border: dotted;
+                    td.i Линия состоящая из набора точек.
+                tr
+                    td.b border: dashed;
+                    td.i Пунктирная линия, состоящая из серии коротких отрезков.
+                tr
+                    td.b border: solid;
+                    td.i Сплошная линия.
+                tr
+                    td.b border: double;
+                    td.i Двойная линия.
+                tr
+                    td.b border: groove;
+                    td.i Создает эффект вдавленной линии.
+                tr
+                    td.b border: ridge;
+                    td.i Создает эффект рельефной линии.
+                tr
+                    td.b border: inset;
+                    td.i Псевдотрехмерная линия.
+                tr
+                    td.b border: outset;
+                    td.i Псевдотрехмерная линия.
+                tr
+                    td.b border: inherit;
+                    td.i Наследует значение родителя.
+                tr
+                    td.b outline: none;
+                    td.i для textarea
+                tr
+                    td.b 
+                        dl
+                            dt -webkit-clip-path: polygon(0 20px,
+                                dd  20px 0, 
+                                dd 100px 0,
+                                dd 120px 20px,
+                                dd 600px 20px,
+                                dd 600px 300px,
+                                dd 0 300px);
 
-        p #button1:hover, #button2:hover { /*при наведении курсора*/ }
-        p #button1:active, #button2:active { /*при нажатии курсора*/ }
+                    td.i 
+                tr
+                    td.b box-shadow: none;
+                    td.i убрать тень
+                tr
+                    td.b box-shadow: 0 0 30px rgba(0,0,0,0.8);
+                    td.i тень блока
+                tr
+                    td.b box-shadow: 0 0 60px rgba(0, 0, 0, .8) inset;
+                    td.i внутренняя тень блока
+                tr
+                    td.b text-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+                    td.i тень текста
+                tr
+                    td.b text-shadow: -1px -1px #000,   0 1px 0 #444;
+                    td.i 
+                tr
+                    td.b opacity: 0.5;
+                    td.i Полупрозрачность элемента от 0 до 1
+                tr
+                    td.b color: #00BFFF;
+                    td.i цвет текста
+                tr
+                    td.b font-family: 'OpenSans-Light', sans-serif;
+                    td.i шрифт
+                tr
+                    td.b font-family:  'SourcexmpPro-Regular';
+                    td.i шрифт
+                tr
+                    td.b font-size: 0%;
+                    td.i размер шрифта в процентах
+                tr
+                    td.b font-size: 11pt;
+                    td.i размер шрифта в пунктах
+                tr
+                    td.b font-size: 16px;
+                    td.i размер шрифта в пикселях
+                tr
+                    td.b font-style: italic;
+                    td.i стиль текста (курсив)
+                tr
+                    td.b font-style: bold;
+                    td.i стиль текста (жирный)
+                tr
+                    td.b font-weight: 600;
+                    td.i 
+                tr
+                    td.b font-weight: bold;
+                    td.i 
+                tr
+                    td.b text-align: center;
+                    td.i выравнивание текста по центру
+                tr
+                    td.b text-align: left;
+                    td.i выравнивание текста слева
+                tr
+                    td.b text-align: right;
+                    td.i выравнивание текста справа
+                tr
+                    td.b text-decoration: none;
+                    td.i убирать подчёркивание у ссылок
+                tr
+                    td.b text-decoration: underline;
+                    td.i подчеркивание текста
+                tr
+                    td.b text-decoration-color: blue;
+                    td.i цвет подчеркивания синим цветом
+                tr
+                    td.b text-decoration-style: dashed;
+                    td.i тип линии подчеркивания
+                tr
+                    td.b text-transform: uppercase;
+                    td.i текст большими буквами
+                tr
+                    td.b text-indent: 20px;
+                    td.i Отступ первой строки в пикселах
+                tr
+                    td.b column-count: 3;
+                    td.i текст в три колонки
+                tr
+                    td.b column-rule: 1px dashed grey;
+                    td.i вертикальные линии между колонками
+                tr
+                    td.b line-height: 0px;
+                    td.i межстрочный интервал по центру = выс блока
+                tr
+                    td.b letter-spacing: 9px;
+                    td.i межбуквенный интервал
+                tr
+                    td.b user-select: none;
+                    td.i убирать выделение текста
+                tr
+                    td.b list-style-type: circle;
+                    td.i круг
+                tr
+                    td.b list-style-type: disc;
+                    td.i точка
+                tr
+                    td.b list-style-type: square;
+                    td.i квадрат
+                tr
+                    td.b list-style-type: decimal;
+                    td.i арабскими числами
+                tr
+                    td.b list-style-type: upper-alpha;
+                    td.i заглавные латинские
+                tr
+                    td.b list-style-type: upper-roman;
+                    td.i римскими числами
+                tr
+                    td.b list-style-type: none;
+                    td.i отмена маркера
+                tr
+                    td.b cursor: pointer;
+                    td.i курсор указатель
+                tr
+                    td.b cursor: move;
+                    td.i курсор перемещение
+                tr
+                    td.b cursor: col-resize;
+                    td.i курсор горизонтальное смещение размера границы
+                tr
+                    td.b cursor: row-resize;
+                    td.i курсор вертикальное смещение размера границы
+                tr
+                    td.b overflow: hidden;
+                    td.i сокрытие полосы прокрутки
+                tr
+                    td.b overflow-x: hidden;
+                    td.i cокрытие горизонтальной полосы
+                tr
+                    td.b overflow-y: hidden;
+                    td.i cокрытие вертикальной полосы
+                tr
+                    td.b overflow: scroll;
+                    td.i добавляем полосы прокрутки
+                tr
+                    td.b perspective: 800px;
+                    td.i установка перспективы
+                tr
+                    td.b transform-style: preserve-3d;
+                    td.i 
+                tr
+                    td.b transform: rotate3D(1, 1, 1, 0deg);
+                    td.i 
+                tr
+                    td.b transform: rotateX(0deg);
+                    td.i вращение относительно коор. Х
+                tr
+                    td.b transform: rotateY(0deg);
+                    td.i вращение относительно коор. Y
+                tr
+                    td.b transform: rotateZ(0deg);
+                    td.i вращение относительно коор. Z
+                tr
+                    td.b transform: translateX(0px);
+                    td.i перемещение по оси Х
+                tr
+                    td.b transform: translateY(0px);
+                    td.i перемещение по оси Y
+                tr
+                    td.b transform: translateZ(0px);
+                    td.i перемещение по оси Z
+                tr
+                    td.b transform: scale3d(4, 4, 1);
+                    td.i масштабирование
+                tr
+                    td.b transform: scale(1.2, 1.2);
+                    td.i 
+                tr
+                    td.b transform: rotateX(70deg) scale3d(4, 4, 1) translateZ(-750px) translateY(-500px) translateX(-50px);
+                    td.i 
+                tr
+                    td.b transform-origin: x y z;
+                    td.i 
+                tr
+                    td.b transform-origin: 100px 100px 100px;
+                    td.i 
+                tr
+                    td.b transform-origin: 100% 100% 100%;
+                    td.i 
+                tr
+                    td.b transform-origin: 100% 0 -50px;
+                    td.i 
+                tr
+                    td.b transition: 1.5s linear;
+                    td.i нормально нормально нормально
+                tr
+                    td.b transition: 1.5s ease-in-out;
+                    td.i медленно нормально медленно
+                tr
+                    td.b transition: 1.5s ease;
+                    td.i медленно быстро медленно
+                tr
+                    td.b transition: all 1s;
+                    td.i 
+                tr
+                    td.b 
+                        dl
+                            dt .anim {
+                                dd animation-timing-function: linear;
+                                dd animation-iteration-count: infinite; 
+                                dd animation-duration: 5s; 
+                                dd animation-name: anim; 
+                                dd }
+                    td.i 
+                        ul 
+                            li ровная анимация
+                            li количество повторов анимации
+                            li время цикла анимации
+                            li наименование анимации
+                tr
+                    td.b 
+                        dl
+                            dt @-webkit-keyframes anim {
+                                dd 0% {-webkit-transform: rotateZ(0deg);}
+                                dd 100% {-webkit-transform: rotateZ(-360deg);}
+                                dd }
+                    td.i 
+                        ul 
+                            li анимировать с ...
+                            li анимировать по ...
+                tr
+                    td.b flex: 0 0 auto;
+                    td.i выравнивание по центру
 
-        p /*---VARIABLE--------------------------------------------------------*/
-        p @color-red: #f44336;                /*красный*/
-        p @color-pink: #ff007e;               /*красный*/
-        p @color-purple: #812991;             /*фиолетовый*/
-        p @color-turquoise: #00AFFF;          /*бирюзовый*/
-        p @color-turquoise_1: #30D5C8;        /*бирюзовый*/
-        p @color-green: #48A65B;              /*зеленый*/
-        p @bg-light: #3a3a3a;                 /*фон*/
-        p @bg-dark:  #2b2b2b;                 /*фон*/
-        p @border-color: #222222;             /*фон*/
-        p @border: 1px solid #3a3a3a;         /*рамка*/
+    section.tabContent 
+        h1 JavaScript
+        br
+        table.tabContent_js_table
+                tr
+                    td.b 
+                        dl
+                            dt ПРОСТОЙ ТИП
+                                dd Число
+                                dd Строка
+                                dd Логический
+                                dd Ничего
+                                dd Неопределено
+                    td.i 
+                        ul
+                            li integer
+                            li string
+                            li boolean
+                            li null
+                            li undefined
+                tr
+                    td.b 
+                        dl
+                            dt ОБЪЕКТЫ
+                                dd Объект
+                                dd Массив
+                                dd Регулярное выражение
+                                dd Функция
+                                    dl
+                                        dt
+                                            dd стандартная
+                                            dd анонимная
+                                            dd самовызывающаяся
+                                            dd конструктор
+                                                dl
+                                                    dt
+                                                        dd обвёртки
+                                                        dd Number("555");
+                                                        dd String(555);
+                                                        dd Boolean(1);
+                    td.i 
+                        ul 
+                            li var car = {model: "Dodg", speed: 250, color: 'green'};
+                            li var arr = [1, 2, 3];
+                            li var regexp = /w+/g;
+                            li --/--
+                            li function nameFun(){};
+                            li var i = function(){};
+                            li ;(function(){}());
+                            li для создания новых обьектов
+                            li var N = new Number(4000);  //из числа делаем объект
+                            li конструктор для перевода в числа
+                            li конструктор для перевода в строку
+                            li конструктор для перевода в буленовский тип данных
 
-        p /*---FONT-------------------------------------------------------------*/  
-        p @font-face {
-        p font-family: 'OpenSans-Regular';
-        p src: url('../fonts/Open_Sans/OpenSans-Regular.ttf');
-        p }
 
-        p /*---РАЗМЕР------------------------------------------------------*/
-        p height: 0px; /*высота в пикселях*/
-        p height: 0vh; /*высота по области просмотра*/
-        p height: 0%;  /*высота в процентах*/
-        p width: 0px;  /*ширина в пикселях*/
-        p width: 0vw;  /*ширина по облости просмотра*/
-        p width: 0%;   /*ширина в процентах*/
+        textarea(
+            name="comment"
+            cols="40"
+            rows="3"
+        ) //всё в джаваскрипт являеться объектами
+            |
 
-        p resize: none; /*отмена изменения размера textarea*/
+            |+-- ОБЪЕКТЫ
+            |   +-- Объект                  // var car = {model: "Dodg", speed: 250, color: 'green'};
+            |   +-- Массив                  // var arr = [1, 2, 3];
+            |   +-- Регулярное выражение    // var regexp = /w+/g;
+            |   +-- Функция
+            |       +-- стандартная         // function nameFun(){};
+            |       +-- анонимная           // var i = function(){};
+            |       +-- самовызывающаяся    // ;(function(){}());
+            |       +-- конструктор         // для создания новых обьектов
+            |           +-- обвёртки        // var N = new Number(4000);  //из числа делаем объект
+            |           +-- Number("555");  // конструктор для перевода в числа
+            |           +-- String(555);    // конструктор для перевода в строку
+            |           +-- Boolean(1);     // конструктор для перевода в буленовский тип данных
+            |+-- МЕТОД (оператор)
+            |   +-- арифметический          // + - / * %
+            |   |   +-- унарный             // -1
+            |   |   |   +-- инкремент и декремент
+            |   |   |       +-- префексный и постфиксный // i++ & i--; ++i & i--;
+            |   |   +-- бинарный                         // 1 + 1;
+            |   |   +-- присваивание с операцией         // i += 1;
+            |   |   +-- отношения                        // < > <= >= ===
+            |   +-- логический 
+            |   |   +-- &&                   // first===true & second===true ? =true : =false
+            |   |   |   +-- true && true     // true
+            |   |   |   +-- false && false   // false
+            |   |   +-- ||                   // first===true ? =first : =second
+            |   |   |   +-- true || false    // =true
+            |   |   |   +-- false || true    // =true
+            |   |   |   +--                  // var example = ifTrue || "string";
+            |   |   +-- !                    // true->false & false->true
+            |   |       +-- !true            // false
+            |   |       +-- !false           // true
+            |   +-- Тернарный ? :            // var text = 5>10 ? "x больше" : "x меньше";
+            |   +-- Ветвления if else        // if(){}else{};
+            |   +-- Перечисления switch case // switch(выражение){case выражение: инструкция case выражение: инструкция default: инструкция};
+            |+-- ЦИКЛ
+            |	+-- for                      // for(var i=0; i<10; i++){console.log(i);};
+            |
+            |//---ПРИМЕР------------------------------------------------------------------------------------------
+            |var name_var = document.querySelector('#name_node');  // выбрать элемент DOM и присвоить text
+            |name_var.onclick = function(){                        // на элемент навешиваем обработчик и функцмю
+            |	// работа с текстом
+            |	name_var.innerHTML = "<b>qwert</b>";              // вставить текст (c тегами html) в элемент
+            |	// работа со стилями
+            |	name_var.style.color = "green";                   // изменить цвет текста
+            |	name_var.style.display='none';                    // name_var присвоить "скрыть"
+            |	// работа с классами стилей
+            |	name_var.classList.toggle("add_class");          // присвоение класса с определенными своиствами
+            |};
+            |//---функции------------------------------------------------------------------------------------------
+            |function test(name) {                                 // создание функции с параметром name
+            |	return "Hello " + name;
+            |};
+            |console.log(test("Aleksej"));
+            |
+            |//---стрелочная функция--------------------------------------------------------------------------------
+            |var fun = (x, y) => x + y;
+            |console.log(fun(25));  // 50
+            |
+            |//---оператор выбора-----------------------------------------------------------------------------------
+            |
+            |var name_var_chbox = document.querySelector('input');
+            |if (name_var_chbox.checked) {        //если чекс бокс выбран;
+            |    name_var.style.display='none';   //то name_var присвоить "скрыть";
+            | }
+            | else {                              //иначе;
+            |    name_var.style.display='block';  //name_var присвоить "показать";
+            | };
+            |
+            |//---ПРОСТЫЕ ТИПЫ -------------------------------------------------------------------------------------
+            |var num   = 10;         // число
+            |var str   = "string";   // строка   
+            |var bool  = true;       // логический
+            |var nan   = null;       // ничего
+            |var undef = undefined;  // неопределено
+            |var NaN                 // глобальные переменные
+            |var Infinity            // глобальные переменные  
+            |//---ОБЪЕКТ ------------------------------------------------------------------------------------------
+            |var car = {             // console.log(car.model);
+            |	model: "Dodg",
+            |	speed: 250,
+            |	color: 'green'
+            |};
+            |//---НАСЛЕДОВАНИЕ ОБЬЕКТА---------------------------------------------------------------------------
+            |var protoMan = {name: "pronoMan", color: "red"};
+            |var man = {name: "Man"};
+            |	man.__proto__ = protoMan;
+            |console.log(man.color);
+            |//---МЕТОДЫ--------------------------------------------------------------------------------
+            |typeof            //показать что за тип   (typeof 10;)
+            |parseInt()        //преобразование строки в число, второй параметр система счисления 10-я   (parseInt("45",10);)
+            |parseFloat()      //тоже самое для флоат   (parseFloat("45.5");)
+            |toString()        //преобразование в строку   (55 .toString();)
+            |toFixed()         //количество знаков после запятой
+            |length            //длина строки   (str.length )
+            |charAt()          //символ с порядковым номером 0   (str.charAt(0))
+            |str[]             //строка как массив = символ под номером 5   (str[5])
+            |substring()       //подстрока с 5 по 10 символ   (str.substring(5,10))
+            |substr()          //выделяет с пятого символа и на 3 сим вперед   (str.substr(5, 3))
+            |indexOf()         //порядковый номер первой буквы подстроки в строке   (str.indexOf("text"))
+            |lastIndexOf()     //порядковый номер подстроки в строке с конца   (str.lastIndexOf("text"))
+            |replace()         //замещение тескта   (str.replace("oldText","newText"))
+            |slice()           //убирает первые 10 символов в строке   (str.slice(10))
+            |split()           //разделитель пробел = массив   (str.split(" "))
+            |toUpperCase()     //привеедние к верхнему регистру   (str.toUpperCase())
+            |toLowerCase()     //приведение к нижнему регистру   (str.toLowerCase())
+            |Math.sqrt()       //корень числа
+            |Math.pow()        //возведение в степень (3,5) = 243
+            |Math.PI           //число пи
+            |Math.E            //экспонента
+            |toPrecision()     //вывод с определнной точностью
+            |console.log()     //вывод в консоль (.log .warn .err)
+            |document.write()  //вывести на страницу
+            |window.open()     //открыть новое окно в браузере
+            |
+            |-----------------------------------------
+            |if (условие1 && условие2) {
+            |  // code
+            |}
+            |------------------
+            |
+            |var a = 6;
+            |if (a > 0 && a < 10 && a % 2 == 0) {
+            |  console.log('Значение а чётное, больше нуля и меньше десяти'); // сработает
+            |}
+        
 
-        p /*---ПОЛОЖЕНИЕ ЭЛЕМЕНТОВ-------------------------------------------------*/
-        p position: absolute;       /*абсолютное позиционирование*/
-        p position: relative;       /*относительное позиционирование*/
-        p position: fixed;          /*фиксированное положение элемента при прокрутке стр.*/
-        p position: static;
-        p position: inherit;        /*наследует своиства род.*/
-        p top: calc(0% - 0px);      /*выравнивание по высоте (200-половина блока)*/
-        p top: 0px;                 /*расположение элемента от верха в пикселях*/
-        p top: 0%;                  /*расположение элемента от верха в процентах*/
-        p left: calc(50% - 0px);    /*выравнивание по ширине (200-половина блока)*/
-        p left: 0px;                /*расположение элемента слева в пикселях*/
-        p left: 0%;                 /*расположение элемента слева в процентах*/
-        p bottom: 0px;              /*растояние снизу в пикселях*/
-        p bottom: 0%;               /*растояние снизу в процентах*/
-        p z-index: 0;               /*отметка элемента по высоте плана*/
-
-        p /*---ОБТЕКАНИЕ ЭЛЕМЕНТА---------------------------------------------*/
-        p float: right; /*обтекание по правому краю */
-        p float: left;  /*обтекание по левому краю */
-        p clear: both;  /*отмена обтекание блока по указаному краю */
-
-        p /*---ОТСТУПЫ ЭЛЕМЕНТА------------------------------------------*/
-        p margin: 0 auto;       /*выровнять по центру горизонтально*/
-        p margin: 0px;          /*отступ вокруг элемента в пикселях*/
-        p margin: 20%;          /*отступы вокруг элемента в процентах*/
-        p margin-left: 0px;     /*отступ слева*/
-        p margin-right: 0px;    /*отступ справа*/
-        p margin-top: 0px;      /*отступ сверху*/
-        p margin-bottom: 0px;   /*отступ снизу*/
-
-        p /*---ПОЛЯ ВОКРУГ ТЕКСТА------------------------------------*/
-        p padding: 0px;          /*поля вокруг текста*/
-        p padding-left: 0px;     /*поле слева*/
-        p padding-right: 0px;    /*поле справа*/
-
-        p padding:  30px 15px;   /*верх-низ и право-лево*/
-
-        p /*---ПОКАЗАТЬ/СПРЯТАТЬ БЛОК--------------------------------------------------*/
-        p display: table;         /*для выравнивания по центру*/
-        p display: none;          /*прячем от показа*/
-        p display: block;         /*показать блок*/
-        p display: inline;        /*выровнять вдоль гориз. линии*/
-
-        p /*---ФОН----------------------------------------------------------*/
-        p background-color: #282828;      /*цвет фона*/
-        p background: rgba(0, 0, 0, 0.5); /*фон полупрозрачный*/
-        p background: none;               /*без фона*/
-
-        p background: url(../images/2.jpg) no-repeat fixed;  /*repeat-x фиксир.*/
-        p background-size: cover;       /*фон занимает всю доступную площадь*/
-
-        p background: -webkit-linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0));
-        p background: -o-linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0));
-        p background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0));
-
-        p background-position: 50% 50%;
-
-        p /*---РАМКА--------------------------------------------------------*/
-        p border: 1px solid #C0C0C0;      /*рамка, толщина, линия, цвет*/
-        p border: 1px solid red;          /*рамка, толщина, линия, цвет*/
-        p border: 1px solid transparent;  /*с прозрачной рамкой*/
-        p border-top: 0px solid white;    /*рамка сверху белая*/
-        p border-bottom: 0px solid white; /*рамка снизу белая*/
-        p border-left: 0px solid white;   /*рамка слева белая*/
-        p border-right: 0px solid white;  /*рамка справа белая*/
-        p border: none;                   /*без рамки*/
-        p border-radius: 0px;  /*скругления углов рамки, радиус рамки*/
-
-        p border: none;     /*Линия не отображается и значение ее толщины обнуляется*/
-        p border: dotted;   /*Линия состоящая из набора точек.*/
-        p border: dashed;   /*Пунктирная линия, состоящая из серии коротких отрезков.*/
-        p border: solid;    /*Сплошная линия.*/
-        p border: double;   /*Двойная линия.*/
-        p border: groove;   /*Создает эффект вдавленной линии.*/
-        p border: ridge;    /*Создает эффект рельефной линии.*/
-        p border: inset;    /*Псевдотрехмерная линия.*/
-        p border: outset;   /*Псевдотрехмерная линия.*/
-        p border: inherit;  /*Наследует значение родителя.*/
-
-        p outline: none;    /*для textarea*/
-
-        p -webkit-clip-path: polygon(0 20px, 20px 0, 100px 0, 120px 20px, 600px 20px, 600px 300px, 0 300px);
-
-        p /*---ТЕНЬ------------------------------------------------------------*/
-        p box-shadow: none;                               /*убрать тень*/
-        p box-shadow: 0 0 30px rgba(0,0,0,0.8);           /*тень блока*/
-        p box-shadow: 0 0 60px rgba(0, 0, 0, .8) inset;   /*внутренняя тень блока*/
-        p text-shadow: 1px 1px 1px rgba(0, 0, 0, .3);     /*тень текста*/
-        p text-shadow: -1px -1px #000,   0 1px 0 #444;
-        p opacity: 0.5;    /* Полупрозрачность элемента от 0 до 1*/
-
-        p /*---ТЕКСТ----------------------------------------------------------*/
-        p color: #00BFFF;                    /*цвет текста*/
-
-        p font-family: 'OpenSans-Light', sans-serif;    /*шрифт*/
-        p font-family:  'SourcexmpPro-Regular';
-        p font-size: 0%;                     /*размер шрифта в процентах*/
-        p font-size: 11pt;                   /*размер шрифта в пунктах*/  
-        p font-size: 16px;                   /*размер шрифта в пикселях*/
-        p font-style: italic;                /*стиль текста (курсив)*/
-        p font-style: bold;                  /*стиль текста (жирный)*/
-        p font-weight: 600;
-        p font-weight: bold;
-
-        p text-align: center;                /*выравнивание текста по центру*/
-        p text-align: left;                  /*выравнивание текста слева*/
-        p text-align: right;                 /*выравнивание текста справа*/
-        p text-decoration: none;             /*убирать подчёркивание у ссылок */
-        p text-decoration: underline;        /*подчеркивание текста*/
-        p text-decoration-color: blue;       /*цвет подчеркивания синим цветом*/
-        p text-decoration-style: dashed;     /*тип линии подчеркивания*/
-        p text-transform: uppercase;         /*текст большими буквами*/
-        p text-indent: 20px;                 /*Отступ первой строки в пикселах*/
-
-        p column-count: 3;                   /*текст в три колонки*/
-        p column-rule: 1px dashed grey;      /*вертикальные линии между колонками*/
-
-        p line-height: 0px;                  /*межстрочный интервал по центру = выс блока*/
-        p letter-spacing: 9px;               /*межбуквенный интервал*/
-        p user-select: none;                 /*убирать выделение текста */
-
-        p list-style-type: circle;           /*круг*/
-        p list-style-type: disc;             /*точка*/
-        p list-style-type: square;           /*квадрат*/
-        p list-style-type: decimal;          /*арабскими числами*/
-        p list-style-type: upper-alpha;      /*заглавные латинские*/
-        p list-style-type: upper-roman;      /*римскими числами*/
-        p list-style-type: none;             /*отмена маркера*/
-
-        p #---КУРСОР--------------------------------------------------------
-        p cursor: pointer;                   /*курсор указатель*/
-        p cursor: move;                      /*курсор перемещение*/
-        p cursor: col-resize;                /*курсор горизонтальное смещение размера границы*/
-        p cursor: row-resize;                /*курсор вертикальное смещение размера границы*/
-
-        p #---ПОЛОСА ПРОКРУТКИ--------------------------------------------------------
-        p overflow: hidden;    /*сокрытие полосы прокрутки*/
-        p overflow-x: hidden;  /*cокрытие горизонтальной полосы*/
-        p overflow-y: hidden;  /*cокрытие вертикальной полосы*/
-        p overflow: scroll;    /*добавляем полосы прокрутки*/
-
-        p /*---3D--------------------------------------------*/
-        p perspective: 800px;        /*установка перспективы*/
-
-        p transform-style: preserve-3d;
-        p transform: rotate3D(1, 1, 1, 0deg);
-        p transform: rotateX(0deg);             /*вращение относительно коор. Х*/
-        p transform: rotateY(0deg);             /*вращение относительно коор. Y*/
-        p transform: rotateZ(0deg);             /*вращение относительно коор. Z*/
-        p transform: translateX(0px);           /*перемещение по оси Х*/
-        p transform: translateY(0px);           /*перемещение по оси Y*/
-        p transform: translateZ(0px);           /*перемещение по оси Z*/
-        p transform: scale3d(4, 4, 1);          /*масштабирование*/
-        p transform: scale(1.2, 1.2);
-        p transform: rotateX(70deg) scale3d(4, 4, 1) translateZ(-750px) translateY(-500px) translateX(-50px);
-
-        p transform-origin: x y z;
-        p transform-origin: 100px 100px 100px;
-        p transform-origin: 100% 100% 100%;
-        p transform-origin: 100% 0 -50px;
-
-        p /*---ТАЙМИНГ----------------------------------------------------------------*/
-        p transition: 1.5s linear;      /*нормально нормально нормально*/
-        p transition: 1.5s ease-in-out; /*медленно нормально медленно*/
-        p transition: 1.5s ease;        /*медленно быстро медленно*/
-        p transition: all 1s;
-
-        p /*---АНИМАЦИЯ---------------------------------------------*/
-        p .anim {
-        p   animation-timing-function: linear;     /*тип анимации = ровная*/
-        p   animation-iteration-count: infinite;
-        p   animation-duration: 5s;                /*время цикла анимации*/
-        p   animation-name: anim;                  /*наименование анимации*/
-        p }
-
-        p @-webkit-keyframes anim {
-        p   0% {-webkit-transform: rotateZ(0deg);}        /*анимировать с ...*/
-        p   100% {-webkit-transform: rotateZ(-360deg);}   /*анимировать по ...*/
-        p }
-
-        p /*---*/
-        p flex: 0 0 auto;
 
 
 
