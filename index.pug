@@ -17,6 +17,7 @@ main#tabs
         button.tab HTML
         button.tab CSS
         button.tab JavaScript
+        button.tab Glitch
     section.tabContent
         |
         h1 План разработки (реальный)
@@ -1349,7 +1350,8 @@ main#tabs
                     td.i выравнивание по центру
 
     section.tabContent 
-        h1 JavaScript
+        h1 JavaScript 
+            small //всё в джаваскрипт являеться объектами
         br
         table.tabContent_js_table
                 tr
@@ -1402,150 +1404,320 @@ main#tabs
                             li конструктор для перевода в числа
                             li конструктор для перевода в строку
                             li конструктор для перевода в буленовский тип данных
+                tr
+                    td.b 
+                        dl
+                            dt МЕТОД (оператор)
+                                dd арифметический
+                                    dl
+                                        dt 
+                                            dd унарный
+                                                dl 
+                                                    dt
+                                                        dd инкремент и декремент
+                                                            dl
+                                                                dt
+                                                                    dd префексный и постфиксный
+                                            dd бинарный 
+                                            dd присваивание с операцией
+                                            dd отношения
+                                dd логический 
+                                    dl
+                                        dt
+                                            dd && 
+                                                dl
+                                                    dt 
+                                                        dd true && true
+                                                        dd false && false
+                                            dd ||
+                                                dl 
+                                                    dt
+                                                        dd true || false
+                                                        dd false || true
+                                                        dd example
+                                            dd !
+                                                dl 
+                                                    dt 
+                                                        dd !true
+                                                        dd !false
+                                dd Тернарный ? :
+                                dd Ветвления if else
+                                dd Перечисления switch case
+
+                    td.i 
+                        ul 
+                            li 
+                            li + - / * %
+                            li -1
+                            li 
+                            li i++ & i--; ++i & i--;
+                            li 1 + 1;
+                            li i += 1;
+                            li < > <= >= ===
+                            li
+                            li first===true & second===true ? =true : =false;
+                            li true
+                            li false
+                            li first===true ? =first : =second
+                            li =true
+                            li =true
+                            li var example = ifTrue || "string";
+                            li true->false & false->true
+                            li false
+                            li true
+                            li var text = 5>10 ? "x больше" : "x меньше";
+                            li if(){}else{};
+                            li switch(выражение){case выражение: инструкция case выражение: инструкция default: инструкция};
+                            
+                tr
+                    td.b 
+                        dl
+                            dt ЦИКЛ
+                                dd for
+                    td.i 
+                        ul 
+                            li for(var i=0; i<10; i++){console.log(i);};
+                tr
+                    td.b 
+                        dl
+                            dt ПРИМЕР
+                                dd var name_var = document.querySelector('#name_node');
+                                    dl 
+                                        dt name_var.onclick = function(){
+                                            dd name_var.innerHTML = "<b>qwert</b>";
+                                            dd name_var.style.color = "green";
+                                            dd name_var.style.display='none';
+                                            dd name_var.classList.toggle("add_class");
+                                            dd };
+                    td.i
+                        ul
+                            li 
+                            li 
+                            li выбрать элемент DOM и присвоить text
+                            li на элемент навешиваем обработчик и функцмю
+                            li вставить текст (c тегами html) в элемент
+                            li изменить цвет текста
+                            li name_var присвоить "скрыть"
+                            li присвоение класса с определенными своиствами
+                            li 
+                tr
+                    td.b 
+                        dl
+                            dt ФУНКЦИЯ
+                                dd function test(name) {
+                                    dl 
+                                        dt 
+                                            dd return "Hello " + name;
+                                            dd };
+                                dd console.log(test("Aleksej"));
+
+                    td.i
+                        ul
+                            li 
+                            li создание функции с параметром name
+                            li 
+                            li 
+                            li 
+                tr
+                    td.b 
+                        dl
+                            dt стрелочная функция
+                                dd var fun = (x, y) => x + y;
+                                dd console.log(fun(25));
+
+                    td.i
+                        ul
+                            li 
+                            li 
+                            li 50
+                tr
+                    td.b 
+                        dl
+                            dt оператор выбора
+                                dd var name_var_chbox = document.querySelector('input');
+                                dd if (name_var_chbox.checked) {
+                                    dl
+                                        dt 
+                                            dd name_var.style.display='none';
+                                dd }
+                                dd else {
+                                    dl 
+                                        dt 
+                                            dd name_var.style.display='block';
+                                dd };
+
+                    td.i
+                        ul
+                            li 
+                            li 
+                            li 
+                            li если чекс бокс выбран;
+                            li то name_var присвоить "скрыть";
+                            li 
+                            li иначе;
+                            li name_var присвоить "показать";
+                            li 
+                tr
+                    td.b 
+                        dl
+                            dt ПРОСТЫЕ ТИПЫ
+                                dd var num   = 10;
+                                dd var str   = "string";
+                                dd var bool  = true;
+                                dd var nan   = null;
+                                dd var undef = undefined;
+                                dd var NaN
+                                dd var Infinity
+                    td.i
+                        ul
+                            li 
+                            li число
+                            li строка
+                            li логический
+                            li ничего
+                            li неопределено
+                            li глобальные переменные
+                            li глобальные переменные
+                tr
+                    td.b 
+                        dl
+                            dt ОБЪЕКТ
+                                dd var car = {
+                                    dl
+                                        dt 
+                                            dd model: "Dodg",
+                                            dd speed: 250,
+                                            dd color: 'green'
+                                dd };
+                    td.i
+                        ul
+                            li 
+                            li console.log(car.model);
+                            li 
+                            li 
+                            li 
+                            li 
+                tr
+                    td.b 
+                        dl
+                            dt НАСЛЕДОВАНИЕ ОБЬЕКТА
+                                dd var protoMan = {name: "pronoMan", color: "red"};
+                                dd var man = {name: "Man"};
+                                    dl
+                                        dt 
+                                            dd man.__proto__ = protoMan;
+                                dd console.log(man.color);
+                    td.i
+                        ul
+                            li 
+                            li 
+                            li 
+                            li 
+                            li 
+                tr
+                    td.b 
+                        dl
+                            dt МЕТОДЫ
+                                dd typeof
+                                dd parseInt()
+                                dd parseFloat()
+                                dd toString()
+                                dd toFixed()
+                                dd length
+                                dd charAt()
+                                dd str[]
+                                dd substring()
+                                dd substr()
+                                dd indexOf()
+                                dd lastIndexOf()
+                                dd replace()
+                                dd slice()
+                                dd split()
+                                dd toUpperCase()
+                                dd toLowerCase()
+                                dd Math.sqrt()
+                                dd Math.pow()
+                                dd Math.PI
+                                dd Math.E
+                                dd toPrecision()
+                                dd console.log()
+                                dd document.write()
+                                dd window.open()
+
+                    td.i
+                        ul
+                            li 
+                            li показать что за тип   (typeof 10;)
+                            li преобразование строки в число, второй параметр система счисления 10-я   (parseInt("45",10);)
+                            li тоже самое для флоат   (parseFloat("45.5");)
+                            li преобразование в строку   (55 .toString();)
+                            li количество знаков после запятой
+                            li длина строки   (str.length )
+                            li символ с порядковым номером 0   (str.charAt(0))
+                            li строка как массив = символ под номером 5   (str[5])
+                            li подстрока с 5 по 10 символ   (str.substring(5,10))
+                            li выделяет с пятого символа и на 3 сим вперед   (str.substr(5, 3))
+                            li порядковый номер первой буквы подстроки в строке   (str.indexOf("text"))
+                            li порядковый номер подстроки в строке с конца   (str.lastIndexOf("text"))
+                            li замещение тескта   (str.replace("oldText","newText"))
+                            li убирает первые 10 символов в строке   (str.slice(10))
+                            li разделитель пробел = массив   (str.split(" "))
+                            li привеедние к верхнему регистру   (str.toUpperCase())
+                            li приведение к нижнему регистру   (str.toLowerCase())
+                            li корень числа
+                            li возведение в степень (3,5) = 243
+                            li число пи
+                            li экспонента
+                            li вывод с определнной точностью
+                            li вывод в консоль (.log .warn .err)
+                            li вывести на страницу
+                            li открыть новое окно в браузере
+                tr
+                    td.b 
+                        dl
+                            dt ПРИМЕР
+                                dd if (условие1 && условие2) {
+                                    dl
+                                        dt 
+                                            dd // code
+                                dd }
+                    td.i
+                        ul
+                            li 
+                            li 
+                            li 
+                            li 
+                tr
+                    td.b 
+                        dl
+                            dt ПРИМЕР 1
+                                dd var a = 6;
+                                dd if (a > 0 && a < 10 && a % 2 == 0) {
+                                    dl
+                                        dt 
+                                            dd console.log('Значение а чётное, больше нуля и меньше десяти');
+                                dd }
+                    td.i
+                        ul
+                            li 
+                            li 
+                            li 
+                            li сработает
+                            li 
 
 
-        textarea(
-            name="comment"
-            cols="40"
-            rows="3"
-        ) //всё в джаваскрипт являеться объектами
-            |
-
-            |+-- ОБЪЕКТЫ
-            |   +-- Объект                  // var car = {model: "Dodg", speed: 250, color: 'green'};
-            |   +-- Массив                  // var arr = [1, 2, 3];
-            |   +-- Регулярное выражение    // var regexp = /w+/g;
-            |   +-- Функция
-            |       +-- стандартная         // function nameFun(){};
-            |       +-- анонимная           // var i = function(){};
-            |       +-- самовызывающаяся    // ;(function(){}());
-            |       +-- конструктор         // для создания новых обьектов
-            |           +-- обвёртки        // var N = new Number(4000);  //из числа делаем объект
-            |           +-- Number("555");  // конструктор для перевода в числа
-            |           +-- String(555);    // конструктор для перевода в строку
-            |           +-- Boolean(1);     // конструктор для перевода в буленовский тип данных
-            |+-- МЕТОД (оператор)
-            |   +-- арифметический          // + - / * %
-            |   |   +-- унарный             // -1
-            |   |   |   +-- инкремент и декремент
-            |   |   |       +-- префексный и постфиксный // i++ & i--; ++i & i--;
-            |   |   +-- бинарный                         // 1 + 1;
-            |   |   +-- присваивание с операцией         // i += 1;
-            |   |   +-- отношения                        // < > <= >= ===
-            |   +-- логический 
-            |   |   +-- &&                   // first===true & second===true ? =true : =false
-            |   |   |   +-- true && true     // true
-            |   |   |   +-- false && false   // false
-            |   |   +-- ||                   // first===true ? =first : =second
-            |   |   |   +-- true || false    // =true
-            |   |   |   +-- false || true    // =true
-            |   |   |   +--                  // var example = ifTrue || "string";
-            |   |   +-- !                    // true->false & false->true
-            |   |       +-- !true            // false
-            |   |       +-- !false           // true
-            |   +-- Тернарный ? :            // var text = 5>10 ? "x больше" : "x меньше";
-            |   +-- Ветвления if else        // if(){}else{};
-            |   +-- Перечисления switch case // switch(выражение){case выражение: инструкция case выражение: инструкция default: инструкция};
-            |+-- ЦИКЛ
-            |	+-- for                      // for(var i=0; i<10; i++){console.log(i);};
-            |
-            |//---ПРИМЕР------------------------------------------------------------------------------------------
-            |var name_var = document.querySelector('#name_node');  // выбрать элемент DOM и присвоить text
-            |name_var.onclick = function(){                        // на элемент навешиваем обработчик и функцмю
-            |	// работа с текстом
-            |	name_var.innerHTML = "<b>qwert</b>";              // вставить текст (c тегами html) в элемент
-            |	// работа со стилями
-            |	name_var.style.color = "green";                   // изменить цвет текста
-            |	name_var.style.display='none';                    // name_var присвоить "скрыть"
-            |	// работа с классами стилей
-            |	name_var.classList.toggle("add_class");          // присвоение класса с определенными своиствами
-            |};
-            |//---функции------------------------------------------------------------------------------------------
-            |function test(name) {                                 // создание функции с параметром name
-            |	return "Hello " + name;
-            |};
-            |console.log(test("Aleksej"));
-            |
-            |//---стрелочная функция--------------------------------------------------------------------------------
-            |var fun = (x, y) => x + y;
-            |console.log(fun(25));  // 50
-            |
-            |//---оператор выбора-----------------------------------------------------------------------------------
-            |
-            |var name_var_chbox = document.querySelector('input');
-            |if (name_var_chbox.checked) {        //если чекс бокс выбран;
-            |    name_var.style.display='none';   //то name_var присвоить "скрыть";
-            | }
-            | else {                              //иначе;
-            |    name_var.style.display='block';  //name_var присвоить "показать";
-            | };
-            |
-            |//---ПРОСТЫЕ ТИПЫ -------------------------------------------------------------------------------------
-            |var num   = 10;         // число
-            |var str   = "string";   // строка   
-            |var bool  = true;       // логический
-            |var nan   = null;       // ничего
-            |var undef = undefined;  // неопределено
-            |var NaN                 // глобальные переменные
-            |var Infinity            // глобальные переменные  
-            |//---ОБЪЕКТ ------------------------------------------------------------------------------------------
-            |var car = {             // console.log(car.model);
-            |	model: "Dodg",
-            |	speed: 250,
-            |	color: 'green'
-            |};
-            |//---НАСЛЕДОВАНИЕ ОБЬЕКТА---------------------------------------------------------------------------
-            |var protoMan = {name: "pronoMan", color: "red"};
-            |var man = {name: "Man"};
-            |	man.__proto__ = protoMan;
-            |console.log(man.color);
-            |//---МЕТОДЫ--------------------------------------------------------------------------------
-            |typeof            //показать что за тип   (typeof 10;)
-            |parseInt()        //преобразование строки в число, второй параметр система счисления 10-я   (parseInt("45",10);)
-            |parseFloat()      //тоже самое для флоат   (parseFloat("45.5");)
-            |toString()        //преобразование в строку   (55 .toString();)
-            |toFixed()         //количество знаков после запятой
-            |length            //длина строки   (str.length )
-            |charAt()          //символ с порядковым номером 0   (str.charAt(0))
-            |str[]             //строка как массив = символ под номером 5   (str[5])
-            |substring()       //подстрока с 5 по 10 символ   (str.substring(5,10))
-            |substr()          //выделяет с пятого символа и на 3 сим вперед   (str.substr(5, 3))
-            |indexOf()         //порядковый номер первой буквы подстроки в строке   (str.indexOf("text"))
-            |lastIndexOf()     //порядковый номер подстроки в строке с конца   (str.lastIndexOf("text"))
-            |replace()         //замещение тескта   (str.replace("oldText","newText"))
-            |slice()           //убирает первые 10 символов в строке   (str.slice(10))
-            |split()           //разделитель пробел = массив   (str.split(" "))
-            |toUpperCase()     //привеедние к верхнему регистру   (str.toUpperCase())
-            |toLowerCase()     //приведение к нижнему регистру   (str.toLowerCase())
-            |Math.sqrt()       //корень числа
-            |Math.pow()        //возведение в степень (3,5) = 243
-            |Math.PI           //число пи
-            |Math.E            //экспонента
-            |toPrecision()     //вывод с определнной точностью
-            |console.log()     //вывод в консоль (.log .warn .err)
-            |document.write()  //вывести на страницу
-            |window.open()     //открыть новое окно в браузере
-            |
-            |-----------------------------------------
-            |if (условие1 && условие2) {
-            |  // code
-            |}
-            |------------------
-            |
-            |var a = 6;
-            |if (a > 0 && a < 10 && a % 2 == 0) {
-            |  console.log('Значение а чётное, больше нуля и меньше десяти'); // сработает
-            |}
-        
+    section.tabContent 
+        h1 GLITCH
+        div.glitch(data-text="GLITCH") GLITCH
 
 
 
 
 
 
-
+    a(href="#" title="Вернуться к началу" class="topbutton") Наверх
 
 footer 
     p.p_footer pug -w index.pug & stylus -w main.styl
 
-<script src="javascript/main.js"></script>
+    script(src="javascript/main.js")
