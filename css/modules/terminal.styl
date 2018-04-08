@@ -1,0 +1,75 @@
+#button_terminal {
+	height: 40px;
+	width: 100px;
+	/*position: relative;
+	top: 20px;
+	left: 20px;*/
+	float: left;
+	border: 2px solid #30D5C8;
+	background: transparen;
+	color: #30D5C8;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.3);
+	text-align: center;
+	line-height: 40px;
+	cursor: pointer;
+}
+#button_terminal:hover{
+	background: #30D5C8;
+	color: #fff;
+	transition: .3s linear;
+}
+#terminal{
+	height: 300px;
+	width: 500px;
+	background-color: #30D5C8;
+	box-shadow: 0 0 30px rgba(0,0,0,0.8);
+	z-index: 2;
+	display: none;
+	z-index: 2;
+	clear: both;
+}
+.input
+	height 300px
+	width 350px
+	position absolute
+	top 82px
+	left 50px
+	outline none
+	background none
+	resize none
+	color #fff
+	line-height 1.6
+	font-size 15px
+	text-align left
+
+.output
+	height 300px
+	width 430px
+	position absolute
+	top 82px
+	left 50px
+	color red
+	line-height 1.6
+	font-size 15px
+	font-weight 600
+	text-align right
+	border 1px solid red
+
+.output.prefix:before
+    content attr(data-prefix)
+    color #E9E9E9
+
+.output.data
+    z-index 1
+    position relative
+
+.output.result
+    color silver
+
+.output.error
+    color red
+
+#input::-webkit-input-placeholder {color:white;}
+#input::-moz-placeholder          {color:white;}
+#input:-moz-placeholder           {color:white;}
+#input:-ms-input-placeholder      {color:white;}

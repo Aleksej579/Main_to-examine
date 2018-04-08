@@ -40,19 +40,7 @@ var btn_hide_html = document.querySelector('#btn_hide_html');
   };
   btn_hide_html.onclick = function(){
     ul_html.style.display='none';
-  };
-/*
-//показать скрыть CSS
-var ul_CSS = document.querySelector('#ul_CSS');
-var btn_show_CSS = document.querySelector('#btn_show_CSS');
-var btn_hide_CSS = document.querySelector('#btn_hide_CSS');
-  btn_show_CSS.onclick = function(){
-    ul_CSS.style.display='block';
-  };
-  btn_hide_CSS.onclick = function(){
-    ul_CSS.style.display='none';
-  };
-*/
+  }
 
 //показать скрыть CSS
 function showHide(element_id) {
@@ -62,4 +50,13 @@ function showHide(element_id) {
       obj.style.display = "block";
     }else obj.style.display = "none";
   }else alert("Элемент с id: " + element_id + " не найден!"); 
+}
+
+//ОТКРЫТЬ ЗАКРЫТЬ КОНСОЛЬ-------------------------------------------------------
+function Console_On_Off(terminal) {
+  var obj = document.getElementById("terminal");
+      if (obj.style.display != "block") {
+          obj.style.display = "block";
+      }
+      else obj.style.display = "none";  
 }
