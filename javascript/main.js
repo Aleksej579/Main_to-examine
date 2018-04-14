@@ -60,3 +60,37 @@ function Console_On_Off(terminal) {
       }
       else obj.style.display = "none";  
 }
+
+
+
+
+
+
+function rot_box_nature_1() {
+    but_nature_1.onclick = function() {
+        document.getElementById('nature').style.transform = 'rotateY(90deg)';
+        document.getElementById('but_nature_1').style.display="none";
+        document.getElementById('but_nature_2').style.display="block";
+    };
+}
+function rot_box_nature_2() {
+    but_nature_2.onclick = function() {
+        document.getElementById('nature').style.transform = 'rotateY(180deg)';
+        document.getElementById('but_nature_2').style.display="none";
+        document.getElementById('but_nature_3').style.display="block";
+    };
+}
+function rot_box_nature_3() {
+but_nature_3.onclick = function() {
+    document.getElementById('nature').style.transform = 'rotateY(270deg)';
+    document.getElementById('but_nature_3').style.display="none";
+    document.getElementById('but_nature_4').style.display="block";
+};
+}
+function rot_box_nature_4() {
+but_nature_4.onclick = function() {
+    document.getElementById('nature').style.transform = 'rotateY(360deg)';
+    document.getElementById('but_nature_4').style.display="none";
+    document.getElementById('but_nature_1').style.display="block";
+};
+}

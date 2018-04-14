@@ -7,15 +7,15 @@ html(lang="en")
         title Main_too_examine
         link(rel="icon" type="image/png" href="images/favicon.png")
         link(href="css/main.css" type="text/css" rel="stylesheet")
-        
+        script(src="javascript/math.min.js")
+        script(src="javascript/calque.js")
         script.
             window.onload = function (){
-                var input = document.getElementById('input');
-                var output = document.getElementById('output');
+                var input = document.querySelector('#input');
+                var output = document.querySelector('#output');
                 window.calque = new Calque(input, output);
                 input.focus()
             }
-
 
 body
 header Front-end developer
@@ -1868,20 +1868,33 @@ main#tabs
         hr
         h1 3d
         hr
+        div.category_wrp.elementanmTop
+            div#nature
+                div#nature_c
+                    span.s1 NATURE
+                div#nature_l
+                    span.s1 NATURE
+                div#nature_t
+                    span.s1 NATURE
+                div#nature_r
+                    span.s1 NATURE
+                div#but_nature_1(onclick="rot_box_nature_1();") Click 1
+                div#but_nature_2(onclick="rot_box_nature_2();") Click 2
+                div#but_nature_3(onclick="rot_box_nature_3();") Click 3
+                div#but_nature_4(onclick="rot_box_nature_4();") Click 4
+
         h1 terminal
         div#button_terminal(onclick="Console_On_Off('terminal')") CONSOLE
         div#terminal
-            div.output#output
-            textarea.input#input(placeholder="Enter the commands :")
-
+            div#output.output
+            textarea#input.input(placeholder="Enter the commands :")
 
 
     a(href="#" title="Вернуться к началу" class="topbutton") Наверх
 footer 
     p.p_footer pug -w index.pug & stylus -w main.styl
 
-    script(src="javascript/math.min.js")
-    script(src="javascript/calque.js")
+    
     script(src="javascript/main.js")
     
     

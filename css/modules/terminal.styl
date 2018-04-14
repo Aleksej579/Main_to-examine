@@ -1,39 +1,40 @@
-#button_terminal {
-	height: 40px;
-	width: 100px;
-	/*position: relative;
-	top: 20px;
-	left: 20px;*/
-	float: left;
-	border: 2px solid #30D5C8;
-	background: transparen;
-	color: #30D5C8;
-	text-shadow: 1px 1px 1px rgba(0,0,0,.3);
-	text-align: center;
-	line-height: 40px;
-	cursor: pointer;
-}
-#button_terminal:hover{
-	background: #30D5C8;
-	color: #fff;
-	transition: .3s linear;
-}
-#terminal{
-	height: 300px;
-	width: 500px;
-	background-color: #30D5C8;
-	box-shadow: 0 0 30px rgba(0,0,0,0.8);
-	z-index: 2;
-	display: none;
-	z-index: 2;
-	clear: both;
-}
-.input
+#button_terminal
+	height 40px
+	width 100px
+	/*position relative
+	top 20px
+	left 20px*/
+	float left
+	border 2px solid #30D5C8
+	background transparen
+	color #30D5C8
+	text-shadow 1px 1px 1px rgba(0,0,0,.3)
+	text-align center
+	line-height 40px
+	cursor pointer
+
+#button_terminal:hover
+	background #30D5C8
+	color #fff
+	transition .3s linear
+
+#terminal
 	height 300px
-	width 350px
+	width 500px
+	background-color #30D5C8
+	box-shadow 0 0 30px rgba(0,0,0,0.8)
+	z-index 2
+	display none
+	z-index 2
+	clear both
+	position relative
+
+#terminal > .input
+	height 300px
+	width 500px
 	position absolute
-	top 82px
-	left 50px
+	top 0px
+	left 0px
 	outline none
 	background none
 	resize none
@@ -41,13 +42,15 @@
 	line-height 1.6
 	font-size 15px
 	text-align left
+	margin 0 0 0 0
+	padding 0 0 0 0
 
-.output
+#terminal > .output
 	height 300px
-	width 430px
+	width 500px
 	position absolute
-	top 82px
-	left 50px
+	top 0px
+	left 0px
 	color red
 	line-height 1.6
 	font-size 15px
@@ -55,18 +58,18 @@
 	text-align right
 	border 1px solid red
 
-.output.prefix:before
+#terminal > .output.prefix:before
     content attr(data-prefix)
     color #E9E9E9
 
-.output.data
+#terminal > .output.data
     z-index 1
     position relative
 
-.output.result
+#terminal > .output > .result
     color silver
 
-.output.error
+#terminal > .output > .error
     color red
 
 #input::-webkit-input-placeholder {color:white;}
