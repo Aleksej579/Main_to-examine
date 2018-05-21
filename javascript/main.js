@@ -30,7 +30,8 @@ function showTabsContent(b){
         tabContent[b].classList.remove('hide');
         tabContent[b].classList.add('show');
     }
-}
+};
+
 //показать скрыть HTML
 var ul_html = document.querySelector('#ul_html');
 var btn_show_html = document.querySelector('#btn_show_html');
@@ -54,7 +55,7 @@ function showHide(element_id) {
 
 //ОТКРЫТЬ ЗАКРЫТЬ КОНСОЛЬ-------------------------------------------------------
 function Console_On_Off(terminal) {
-  var obj = document.getElementById("terminal");
+  var obj = document.querySelector("#terminal");
       if (obj.style.display != "block") {
           obj.style.display = "block";
       }
@@ -62,35 +63,34 @@ function Console_On_Off(terminal) {
 }
 
 
-
-
-
-
+/*3D КУБ*/
 function rot_box_nature_1() {
-    but_nature_1.onclick = function() {
-        document.getElementById('nature').style.transform = 'rotateY(90deg)';
-        document.getElementById('but_nature_1').style.display="none";
-        document.getElementById('but_nature_2').style.display="block";
+    but_box3d_1.onclick = function() {
+        document.querySelector('#box3d').style.transform = 'rotateY(90deg)';
+        document.querySelector('#but_box3d_1').style.display="none";
+        document.querySelector('#but_box3d_2').style.display="block";
     };
 }
+
 function rot_box_nature_2() {
-    but_nature_2.onclick = function() {
-        document.getElementById('nature').style.transform = 'rotateY(180deg)';
-        document.getElementById('but_nature_2').style.display="none";
-        document.getElementById('but_nature_3').style.display="block";
+    but_box3d_2.onclick = function() {
+        document.querySelector('#box3d').style.transform = 'rotateY(180deg)';
+        document.querySelector('#but_box3d_2').style.display="none";
+        document.querySelector('#but_box3d_3').style.display="block";
     };
 }
+
 function rot_box_nature_3() {
-but_nature_3.onclick = function() {
-    document.getElementById('nature').style.transform = 'rotateY(270deg)';
-    document.getElementById('but_nature_3').style.display="none";
-    document.getElementById('but_nature_4').style.display="block";
-};
+    but_box3d_3.onclick = function() {
+        document.querySelector('#box3d').style.transform = 'rotateY(270deg)';
+        document.querySelector('#but_box3d_3').style.display="none";
+        document.querySelector('#but_box3d_4').style.display="block";
+    };
 }
 function rot_box_nature_4() {
-but_nature_4.onclick = function() {
-    document.getElementById('nature').style.transform = 'rotateY(360deg)';
-    document.getElementById('but_nature_4').style.display="none";
-    document.getElementById('but_nature_1').style.display="block";
-};
+    but_box3d_4.onclick = function() {
+        document.querySelector('#box3d').style.transform = 'rotateY(360deg)';
+        document.querySelector('#but_box3d_4').style.display="none";
+        document.querySelector('#but_box3d_1').style.display="block";
+    };
 }

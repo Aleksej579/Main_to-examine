@@ -15,7 +15,7 @@ html(lang="en")
                 var output = document.querySelector('#output');
                 window.calque = new Calque(input, output);
                 input.focus()
-            }
+            };
 
 body
 header Front-end developer
@@ -28,7 +28,7 @@ main#tabs
         button.tab HTML
         button.tab CSS
         button.tab JavaScript
-        button.tab Glitch
+        button.tab Library
     section.tabContent
         |
         h1 План разработки (реальный)
@@ -1864,26 +1864,38 @@ main#tabs
                             li 
     section.tabContent 
         h1 GLITCH
-        div.glitch(data-text="GLITCH") GLITCH
         hr
+        div.glitch(data-text="GLITCH") GLITCH
         h1 3d
         hr
-        div.category_wrp.elementanmTop
-            div#nature
-                div#nature_c
+        div.box3d_wrp
+            div#box3d
+                div#box3d_c
                     span.s1 NATURE
-                div#nature_l
-                    span.s1 NATURE
-                div#nature_t
-                    span.s1 NATURE
-                div#nature_r
-                    span.s1 NATURE
-                div#but_nature_1(onclick="rot_box_nature_1();") Click 1
-                div#but_nature_2(onclick="rot_box_nature_2();") Click 2
-                div#but_nature_3(onclick="rot_box_nature_3();") Click 3
-                div#but_nature_4(onclick="rot_box_nature_4();") Click 4
+                div#box3d_l
+                    span.s1 SCULPTURE
+                div#box3d_t
+                    span.s1 ART
+                div#box3d_r
+                    span.s1 WEAPON
+
+            div#but_box3d_1(onclick="rot_box_nature_1();") Click 1
+            div#but_box3d_2(onclick="rot_box_nature_2();") Click 2
+            div#but_box3d_3(onclick="rot_box_nature_3();") Click 3
+            div#but_box3d_4(onclick="rot_box_nature_4();") Click 4
+        h1 BUTTON
+        hr
+        div.fon 
+            div.btn-white-submit Submit
+            div.btn-box_1 text
+            div.enter_the_data
+                p.name-box_gray Enter the data
+                input.txtar_2(type="number" onchange="c()" id="wi" placeholder="building width")
+                input.txtar_2(type="number" onchange="c()" id="len" placeholder="building length")
+
 
         h1 terminal
+        hr
         div#button_terminal(onclick="Console_On_Off('terminal')") CONSOLE
         div#terminal
             div#output.output
@@ -1896,6 +1908,3 @@ footer
 
     
     script(src="javascript/main.js")
-    
-    
-    
