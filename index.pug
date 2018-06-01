@@ -7,6 +7,11 @@ html(lang="en")
         title Main_too_examine
         link(rel="icon" type="image/png" href="images/favicon.png")
         link(href="css/main.css" type="text/css" rel="stylesheet")
+        
+        //<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.33/css/uikit.min.css" />
+        //<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.33/js/uikit.min.js"></script>
+        //<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.33/js/uikit-icons.min.js"></script>
+
         script(src="javascript/math.min.js")
         script(src="javascript/calque.js")
         script.
@@ -26,8 +31,16 @@ main#tabs
         button.tab Type site
         button.tab Info
         button.tab HTML
+        button.tab Markdown
         button.tab CSS
         button.tab JavaScript
+        button.tab Vue.js
+        button.tab jQuery
+        button.tab Python
+        button.tab Java
+        button.tab SQL
+        button.tab Shell
+        button.tab Keyword
         button.tab Library
     section.tabContent
         |
@@ -559,7 +572,7 @@ main#tabs
             |    +-- тестирование безопасности
             |    +-- тестирование производительности сайта  "определение быстродействия сайта"
     section.tabContent 
-        h1 HTML / PUG
+        h1 HTML
         div.tabContent_html
             p !DOCTYPE html
             p html lang="en"
@@ -859,6 +872,144 @@ main#tabs
                             src="http://place-hold.it/200x100"
                             alt=""
                         )
+
+        hr
+        h1 PUG
+        div.tabContent_html
+            table.tabContent_html_table
+                tr
+                    td.b 
+                        textarea   
+                            | <!DOCTYPE html>
+                            | html(lang="en")
+                            |     head
+                            |         meta(charset="UTF-8")
+                            |         meta(name="viewport", content="width=device-width, initial-scale=1.0")
+                            |         meta(http-equiv="X-UA-Compatible", content="ie=edge")
+                            |         title Document
+                            | 
+                            |         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.33/css/uikit.min.css" />
+                            |         <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.33/js/uikit.min.js"></script>
+                            |         <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.33/js/uikit-icons.min.js"></script>
+            
+                            |     body 
+                            |     h1 Name site
+                            |     hr
+                            |     h3 Next name site
+                            |     hr
+                            |     p This text it is simple text jn test this page.
+                            |     u text
+                            |     p text 
+                            |         i text 
+                            |         | text
+                            |     textarea 123 br
+
+                            |     button button
+
+                            |     -var q=10;
+                            |     -var w=20;
+
+                            |     p #{q+w}
+
+                            |     a(href="http://vk.com")
+
+                            |     hr
+                            |     img(src="https://img4.goodfon.ru/wallpaper/big/c/7f/iaguar-dikaia-koshka-khishchnik.jpg", alt="cat")
+                            |     - for(var i=0; i<5; i++)
+                            |         li menu #{i}
+                            |     hr
+                            |     - var list = ["Uno", "Dos", "Tres", "Cuatro", "Cinco", "Seis"]
+                            |     each item in list
+                            |         li= item
+                            |     hr
+                            | <div class="uk-panel">
+                            |     <img class="uk-align-left uk-margin-remove-adjacent" src="http://eurocrown.com.ua/wp-content/uploads/2016/06/160620_4_Eu.jpg" width="225" height"150" alt="Example image">
+                            |     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            |     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+                    td.i 
+                        h1 Name site
+                        hr
+                        h3 Next name site
+                        hr
+                        p This text it is simple text jn test this page.
+                        u text
+                        p text 
+                                i text 
+                                | text
+                        textarea 123 br
+
+                        button button
+
+                        -var q=10;
+                        -var w=20;
+
+                        p #{q+w}
+
+                        a(href="http://vk.com")
+
+                        hr
+                        img(src="https://img4.goodfon.ru/wallpaper/big/c/7f/iaguar-dikaia-koshka-khishchnik.jpg", alt="cat")
+                        - for(var i=0; i<5; i++)
+                            li menu #{i}
+                        hr
+                        - var list = ["Uno", "Dos", "Tres", "Cuatro", "Cinco", "Seis"]
+                        each item in list
+                            li= item
+                        hr
+
+                        <div class="uk-panel">
+                            <img class="uk-align-left uk-margin-remove-adjacent" src="http://eurocrown.com.ua/wp-content/uploads/2016/06/160620_4_Eu.jpg" width="225" height"150" alt="Example image">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+
+
+    section.tabContent 
+        h1 Markdown.md
+        br
+        textarea
+            | # h1
+            | #### h4
+        textarea
+            | ---
+        textarea
+            | - text 1
+            | - text 2
+            |   - text
+            |   - text
+        textarea
+            | 1.  Bird
+            | 2.  McHale
+        textarea
+            | Same links [name link](http://googl.com "hover_link").
+            | _italic_
+            | __bold__
+            | ~~text~~
+            | ``Text``
+        textarea
+            | <http://example.com/>
+            | > This is a blockquote.
+            | > 
+            | > This is the second paragraph in the blockquote.
+            | > 123
+        textarea
+            | ![name pic](https://ru.vuejs.org/images/logo.png/100/200)
+        textarea
+            | ```CSS
+            |  one code line 1
+            |  one code line 2
+            | ```
+        textarea
+            | ||||
+            | | ------ | ------ | ------ |
+            | | [__Pug__](https://pugjs.org/api/getting-started.html "Pug")  | _``(HTML + JavaScript)``_ | _верстка_ |
+            | | [__UiKit__](https://getuikit.com/ "UiKit") | _``(HTML + JavaScript + CSS)``_  | _верстка + стили_ |
+            | | [__Stylus__](http://stylus-lang.com/ "Stylus") & [__SMACSS__](https://smacss.com/ "SMACSS") + [__BEM__](http://getbem.com/ "BEM") | _``(CSS)``_ | _стили & методология_ |
+            | | [__Vue__](https://ru.vuejs.org/ "Vue") | _``(JavaScript)``_ | _интерактивность_ |
+            | |||
+
+
     section.tabContent 
         h1 CSS / stylus
         br
@@ -1863,6 +2014,823 @@ main#tabs
                             li сработает
                             li 
     section.tabContent 
+        h1 Vue.js 
+        br
+        table.tabContent_js_table
+                tr
+                    td.b 
+                        dl
+                            dt Директивы
+                                dd v-on
+                                dd v-bind
+                                dd v-for
+                                dd v-if
+                                dd v-html
+                            dt Модификаторы
+                                dd .prevent
+                    td.i 
+                        ul
+                            li
+                            li -
+                            li -
+                            li -
+                            li -
+                            li -
+                            li
+                            li -
+                tr
+                    td.b
+                        ul 
+                            li {{ msg }}
+                    td.i 
+                        ul
+                            li -
+        h4 пример 1
+        textarea(name="comment" cols="30")
+           | <div id="app">
+           |    {{ message }}
+           | </div>
+        textarea
+           |var app = new Vue({
+           |    el: '#app',
+           |    data: {
+           |        message: 'Привет, Vue!'
+           |    }
+           |})
+
+        h4 пример 2
+        textarea
+           | <div id="app-3">
+           |    <span v-if="seen">Сейчас меня видно</span>
+           | </div>
+        textarea
+           |var app3 = new Vue({
+           |    el: '#app-3',
+           |    data: {
+           |        seen: true
+           |    }
+           |})
+
+
+
+    section.tabContent 
+        h1 jQuery
+        br
+        textarea
+            | $(document).ready(function() {
+            |   // Stuff here
+            | });
+        textarea
+            | //ВЫБОР ЭЛЕМЕНТОВ
+            | $("*")      //все элементы
+            | $("#box")   //выбрать id="box"
+            | $(".box")   //выбрать class="box"
+            | $("div")    //выбрать по тегу div, p, h1, ...
+            | $("#content2 div.someBlock")  //вернет div-элементы с классом someBlock, которые находятся внутри элемента с идентификатором content2
+            | $("[value = 5]")              //вернет все элементы с атрибутом value, равным 5.
+        textarea
+            | //ПРИВЯЗКА К ЭЛЕМЕНТАМ ДОКУМЕНТА
+            | $("div a").сss("color", "red");       //Элемент1 Элемент2 — находим Элемент2, который располагается внутри контейнера Элемента1
+            | $("div > a").css("color","red");      //Элемент1 > Элемент2 — находим Элемент2, который является дочерним для Элемента A.
+            | $("div + a").css("color", "red");     //Элемент1 + Элемент2 — находим Элемент2, который является соседним для Элемент A и следует сразу после него.
+            | $("div ~ a").css("color", "red");     //Элемент 1 ~ Элемент2 — находим Элемент2, который следует после Элемента 1, причем необязательно сразу.
+            | $("div span a").css("color", "red");  //Цвет текста ссылки станет красным, если тег A расположен внутри тега span, а тот в свою очередь вложен в тег div
+        textarea
+            | //ВЫБОР СЕЛЕКТОРОВ ПО АТРИБУТАМ
+            | "[name]"               //содержащие атрибут name
+            | "[name = value]"       //name совпадает с value
+            | "[name != value]"      //name не совпадает с value
+            | "[name ^= value]"      //name начинается с value
+            | "[name $= value]"      //name заканчивается на value
+            | "[name *= value]"      //name содержит подстроку value
+            | "[name ~= value]"      //name содержит слово value
+            | "[name |= value]"      //name имеют префикс value (равен value или имеет вид: "value-*")
+            | "[first][second][..."  //элементы, соответствующие всем заданным условиям на атрибуты одновременно
+        textarea
+            | //ПРОСТЫЕ ФИЛЬТРЫ
+            | $(":focus")          //элемент в фокусе
+            | $(":first")          //первый найденный элемент
+            | $(":last")           //последний найденный элемент
+            | $(":eq( )")          //элемент идущий под заданным номером среди выбранных
+            | $(":not(selector)")  //все найденные элементы, кроме указанных в selector
+            | $(":even")           //элементы с четными номерами позиций, в наборе выбранных элементов
+            | $(":odd")            //элементы с нечетными номерами позиций, в наборе выбранных элементов
+            | $(":gt( )")          //элементы с индексом превышающим n
+            | $(":lt( )")          //элементы с индексом меньшим, чем n
+            | $(":header")         //элементы, являющиеся заголовками (с тегами h1, h2 и.т.д.)
+            | $(":animated")       //элементы, которые в данный момент задействованы в анимации
+            | $(":hidden")         //невидимые элементы страницы
+            | $(":visible")        //видимые элементы страницы
+            | $(":lang(language)") //элементы, в которых указаны языки содержимого
+            | $(":root")           //элемент, который является корневым в документе.
+        textarea
+            | $(":contains(text)")  //элементы, содержащие заданный текст
+            | $(":empty")           //элементы без содержимого
+            | $(":has(selector)")   //элементы, которые содержат хотя бы один элемент из selector
+            | $(":parent")          //непустые элементы
+        textarea
+            | $(":button")    //с тегом button
+            | $(":radio")     //переключатели
+            | $(":checkbox")  //флажки
+            | $(":text")      //текстовые поля
+            | $(":password")  //поля ввода пароля
+            | $(":file")      //поля загрузки файлов
+            | $(":submit")    //кнопка отправки формы
+            | $(":reset")     //кнопка очистки формы
+            | $(":image")     //изображения для отправки формы
+            | $(":input")     //формы
+            | $(":selected")  //выбранные элементы
+            | $(":focus")     //элементы в фокусе
+            | $(":checked")   //элементы (со статусом checked)
+            | $(":enabled")   //активные элементы формы
+            | $(":disabled")  //неактивные элементы формы
+        textarea
+            | $(":first-child")          //элементы, расположенные первыми в своих родительских элементах
+            | $(":last-child")           //элементы, расположенные последними в своих родительских элементах
+            | $(":nth-child( )")
+            | $(":nth-child-last( )")    //элементы, расположенные определенным образом в родительских элементах (четные, нечетные, идущие под заданным номером)
+            | $(":only-child")           //элементы, являющиеся единственными потомками в своих родительских элементах
+            | $(":only-of-type")         //элементы, являющиеся единственными, удовлетворяющими селектору, потомками в своих родительских элементах
+            | $(":first-of-type")        //те из выбранных элементов, которые первыми встречаются в своих родительских элементах
+            | $(":last-of-type")         //те из выбранных элементов, которые последними встречаются в своих родительских элементах
+            | $(":nth-first-of-type( )")
+            | $(":nth-last-of-type( )")  //те из выбранных элементов, которые в определенную очередь встречаются в своих родительских элементах
+        textarea
+            | //МЕТОДЫ ЭЛЕМЕНТОВ
+            | .hide()           //скрыть обьект
+            | .show()           //показать элемент
+            | .addClass("n_c")  //добавить класс
+            | .removeClass()    //удаляет класс
+            | .attr()           //значение атрибута у элементов на странице
+            | .val()            //значение value у элементов
+            | .css()            //CSS параметры элемента
+            | .height()         //высота элемента
+            | .width()          //ширина элемента
+            | .position()       //позиция элемента
+            | .html()           //Возвращает/изменяет (в зависимости от числа параметров) html-содержимое элементов на странице
+            | .text()           //текст в элементах на странице
+            | .remove()         //Удаляет элементы на странице
+            | .empty()          //Удаляет содержимое элементов на странице
+            | .unwrap()         //Удаляет родительские элементы, при этом их содержимое остается на месте
+            | .replaceWith() 
+            | .replaceAll()     //Заменяет одни элементы страницы на другие.
+            | .clone()          //Возвращает копию выбранных элементов страницы.
+        textarea
+            | .children()      //Находит все дочерние элементы у выбранных элементов. При необходимости, можно указать селектор для фильтрации.
+            | .closest()       //Находит ближайший, соответствующий заданному селектору элемент, из числа следующих: сам выбранный элемент, его родитель, его прародитель, и так далее, до начало дерева DOM.
+            | .find()          //Находит элементы по заданному селектору, внутри выбранных элементов.
+            | .next()          //Находит элементы, которые лежат непосредственно после каждого из выбранных элементов.
+            | .nextAll()       //Находит элементы, которые лежат после каждого из выбранных элементов.
+            | .nextUntil()     //Находит элементы, которые лежат после каждого из выбранных, но не дальше элемента, удовлетворяющего заданному селектору.
+            | .offsetParent()  //Возвращает ближайшего предка c позиционированием, отличным от static (позиционирование по умолчанию).
+            | .parent()        //Находит родительские элементы у всех выбранных элементов.
+            | .parents()       //Находит всех предков у выбранных элементов, т.е. не только прямых родителей, но и прародителей, прапрародителей и так далее, до начало дерева DOM.
+            | .parentsUntil()  //Находит предков, как и .parents(), но прекращает поиск перед элементом, удовлетворяющим заданному селектору.
+            | .prev()          //Находит элементы, которые лежат непосредственно перед каждым из выбранных элементов.
+            | .prevAll()       //Находит элементы, которые лежат перед каждым из выбранных элементов.
+            | .prevUntil()     //Находит элементы, которые лежат перед каждым из выбранных, но не дальше элемента, соответствующего заданному селектору.
+            | .siblings()      //Находит все соседние элементы (под соседними понимаются элементы с общим родителем).
+        textarea
+            | //ФИЛЬТРАЦИЯ НАБОРА
+            | .eq()      //Возвращает элемент, идущий под заданным номером в наборе выбранных элементов.
+            | .filter()  //Фильтрует набор выбранных элементов с помощью заданного селектора или функции.
+            | .first()   //Возвращает первый элемент в наборе.
+            | .has()     //Фильтрует набор выбранных элементов, оставляя те, которые имеют потомков, соответствующих селектору.
+            | .is()      //Проверяет, содержится ли в наборе, хотя бы один элемент удовлетворяющий заданному селектору.
+            | .last()    //Возращает последний элемент в наборе.
+            | .not()     //Возвращает элементы, не соответствующие заданным условиям.
+            | .slice()   //Возвращает элементы с индексами из определенной области (например от 0 до 5).
+        textarea
+            | //ОБХОД НАБОРА
+            | .each()    //Вызывает заданную функцию для каждого элемента набора.
+            | .map()     //Вызывает заданную функцию для каждого элемента набора, и в итоге создает новый набор, составленный из значений, возвращенных этой функцией.
+        textarea
+            | //ДРУГИЕ МЕТОДЫ
+            | .add()      //Добавляет заданные элементы в набор.
+            | .andSelf()  //Добавляет элементы из предыдущего набора, к текущему (речь идет об одной цепочке методов).
+            | .contents() // Находит все дочерние элементы у выбранных элементов. В результат, помимо элементов, включается и текст.
+            | .end()      //Возвращает предыдущий набор элементов в текущей цепочке методов.
+        textarea
+            | //РАБОТА С ЭЛЕМЕНТАМИ НАБОРА
+            | .get()      //Возвращяет DOM-элементы, хранящиеся в объекте jQuery.
+            | .toArray()  //Возвращяет все DOM-элементы, хранящиеся в объекте jQuery, в виде массива.
+            | .index()    //Возвращяет индекс заданного элемента в наборе.
+            | .size()     //Возвращяет количество выбранных элементов.
+        textarea
+            | //СПИСОК СВОИСТВ
+            | $.browser      //Информация об используемом браузере.
+            | $.support      //Особенности используемого браузера.
+            | $.fx.off       //Отменяет выполнение всех анимаций.
+            | $.fx.interval  //Размер задержки между соседними кадрами анимации.
+            | .context       //Контекст, заданный в методе $() (jQuery()).
+            | .length        //Число выбранных элементов.
+            | .selector      //Селектор, заданный в методе $() (jQuery()).
+        textarea
+            | //СОБЫТИЯ БАЗОВЫЕ
+            | .on()              //Универсальный метод для установки обработчиков событий на выбранные элементы страницы.
+            | .off()             //Удаляет обработчики, установленные с помощь .on().
+            | .bind()            //Устанавливает обработчик события на выбранные элементы страницы. Обработчик не сработает на элементах, появившихся после его установки.
+            | .live()            //Устанавливает обработчик события на выбранные элементы страницы. Обработчик сработает и на элементах, появившихся после его установки.
+            | .delegate()        //Устанавливает обработчик события на выбранные элементы страницы. Элементы выбираются с помощью уточняющего селектора. Обработчик будет действовать и на элементах, появившихся после его установки.
+            | .one()             //Устанавливает обработчик события на выбранные элементы страницы, который сработает только по одному разу, на каждом из элементов.
+            | .unbind()          //Удаляет обработчик событий у выбранных элементов.
+            | .die()             //Удаляет обработчик событий, который был установлен с помощью live().
+            | .undelegate()      //Удаляет обработчик событий, который был установлен с помощью delegate().
+            | .trigger()         //Выполняет указанное событие и запускает его обработчик.
+            | .triggerHandler()  //Запускает обработчик указанного события, без его выполнения.
+            | jQuery.proxy()     //По заданной функции, создает другую, внутри которой переменная this будет равна заданному значению.
+            | event              //Объект, содержащий данные о текущем событии. Передается всем обработчикам событий.
+        textarea
+            | //СОБЫТИЯ МЫШИ
+            | .click()       //"клика" мышью по элементу, либо, запускает это событие.
+            | .dblclick()    //двойного "клика" мышью по элементу, либо, запускает это событие.
+            | .hover()       //двух событий: появления/исчезновения курсора над элементом.
+            | .mousedown()   //нажатия кнопки мыши, либо, запускает это событие.
+            | .mouseup()     //поднятия кнопки мыши, либо, запускает это событие.
+            | .mouseenter()  //появления курсора в области элемента, либо, запускает это событие. Появление этого события, отработано лучше, чем стандартного mouseover.
+            | .mouseleave()  //выхода курсора из области элемента, либо, запускает это событие. Появление этого события, отработано лучше, чем стандартного mouseout.
+            | .mousemove()   //движения курсора в области элемента, либо, запускает это событие.
+            | .mouseout()    //выхода курсора из области элемента, либо, запускает это событие.
+            | .mouseover()   //появления курсора в области элемента, либо, запускает это событие.
+            | .toggle()      //Поочередно выполняет одну из двух или более заданных функций, в ответ на "клик" по элементу.
+        textarea
+            | //СОБЫТИЯ КЛАВИАТУРЫ
+            | .keydown()   //перехода клавиши клавиатуры в нажатое состояние.
+            | .keyup()     //возвращение клавиши клавиатуры в ненажатое состояние.
+            | .keypress()  //ввода символа с клавиатуры.
+        textarea
+            | //СОБЫТИЯ ФОРМЫ
+            | .focus()     //получения фокуса.
+            | .blur()      //потери фокуса.
+            | .focusin()   //получения фокуса самим элементом или одним из его дочерних.
+            | .focusout()  //потери фокуса самим элементом или одним из его дочерних.
+            | .select()    //выделения текста.
+            | .submit()    //отправки формы.
+            | .change()    //изменения элемента формы.
+        textarea
+            | //СОБЫТИЯ ЗАГРУЗКИ СТРАНИЦЫ
+            | .ready()     //готовность дерева DOM.
+            | .load()      //завершение загрузки элемента.
+            | .unload()    //уход со страницы (при переходе по ссылке, закрытии браузера и.т.д.).
+        textarea
+            | //СОБЫТИЯ БРАУЗЕРА
+            | .error()     //ошибки при загрузке элементов (например отсутствие необходимой картинки на сервере).
+            | .resize()    //изменения размеров окна браузера.
+            | .scroll()    //"прокрутки" элементов документа.
+        textarea
+            | //СОБЫТИЯ ФОРМЫ
+            | .focus()     //получения фокуса.
+            | .blur()      //потери фокуса.
+            | .focusin()   //получения фокуса самим элементом или одним из его дочерних.
+            | .focusout()  //получения фокуса самим элементом или одним из его дочерних.
+            | .select()    //выделения текста.
+            | .submit()    //отправки формы.
+        textarea
+            | //РАЗНОЕ
+            | jQuery.param()     //Преобразует массив объектов в строку, пригодную для использования в URL.
+            | .serialize()       //Преобразует данные формы в строку, пригодную для использования в URL.
+            | .serializeArray()  //Преобразует данные формы в массив объектов вида {name:"name", value:"val"}.
+            | .val( )            //Возвращает/изменяет (в зависимости от числа параметров) значение атрибута value у элементов на странице
+        textarea
+            | //УПРАВЛЕНИЕ АНИМАЦИЕЙ
+            | .animate()          //Выполняет анимацию, которая была создана пользователем.
+            | .queue()            //Предоставляет/изменяет (в зависимости от параметров) очередь функций.
+            | .clearQueue()       //Очищает очередь функций.
+            | .dequeue()          //Начинает выполнение следующей функции в очереди.
+            | .stop()             //Останавливает выполнение текущей анимации.
+            | .delay()            //Приостанавливает выполнение следующих анимаций на заданное время.
+            | .toggle()           //Поочередно выполняет вызов одной из нескольких заданных функций.
+            | jQuery.fx.interval  //Содержит временной промежуток между кадрами анимации.
+            | jQuery.fx.off       //Отменяет выполнение всех анимаций.
+        textarea
+            | //СТАНДАРТНЫЕ АНИМАЦИИ
+            | .hide()
+            | .show()         //Скрывает/показывает элементы на странице (за счет плавного изменения его размера и прозрачности).
+            | .slideUp()
+            | .slideDown()    //Разворачивает/сворачивает элементы на странице (за счет плавного изменения высоты элементов).
+            | .slideToggle()  //Поочередно разворачивает/сворачивает элементы на странице, как это делают .slideUp() и .slideDown().
+            | .fadeIn()
+            | .fadeOut()      //Скрывает/показывает элементы на странице за счет плавного изменения прозрачности.
+            | .fadeTo()       //Плавно изменяет прозрачность элементов.
+            | .fadeToggle()   //Поочередно скрывает/показывает элементы на странице, как это делают .fadeIn() и .fadeOut().
+        textarea
+            | //СПИСОК ФУНКЦИЙ
+            | $.contains()       //Проверяет, содержится ли один элемент страницы внутри другого.
+            | $.extend()         //Объеденяет два или более javascript-объекта.
+            | $.globalEval()     //Выполняет заданный скрипт в глобальной области видимости.
+            | $.grep()           //Ищет в заданном массиве элементы удовлетворяющие условиям.
+            | $.inArray()        //Ищет в заданном массиве конкретный элемент и возвращает его индекс (или -1 в случае отсутствия элемента).
+            | $.isArray()        //массив?
+            | $.isEmptyObject()  //Проверяет наличие (точнее отсутствие) содержимого в заданном объекте.
+            | $.isFunction()     //функция?
+            | $.isNumeric()      //число?
+            | $.isPlainObject()  //Проверяет, является ли заданный элемент пользовательским объектом (задан средствами "{}" или "new Object").
+            | $.isWindow()       //объект типа window?
+            | $.isXMLDoc()       //Проверяет, находится ли DOM-объект внутри XML-документа (или сам является XML-документом).
+            | $.makeArray()      //Конвертирует массивоподобные объекты, в массивы.
+            | $.map()            //Выполняет заданную функцию для каждого элемента массива или каждого поля объекта в отдельности.
+            | $.merge()          //Объединяет содержимое нескольких массивов, записывая его в первый из них.
+            | $.noop()
+        textarea
+            | //ПУСТАЯ ФУНКЦИЯ
+            | $.parseJSON()     //строка с json-данными в javascript-объект.
+            | $.parseXML()      //строка xml в xml-документ.
+            | $.proxy()         //По заданной функции, создает другую, внутри которой переменная this будет равна заданному значению.
+            | $.trim()          //Удаляет пробелы из начала и конца заданной строки.
+            | $.type()          //Определяет класс заданного объекта (речь идет о внутренних классах javascript: string, boolean и т.д.).
+            | $.unique()        //Сортирует заданный массив с DOM-элементами, выстраивая их в порядке расположения в DOM, а так же удаляя повторения.
+        textarea
+            | //пример
+            | $("p#hid").hide();  //скрыть обьект 
+        textarea                                 
+            | $(document).ready(function(){
+            |     $("#box")
+            |         .css("color","white")
+            |         .css("border","1px solid tomato")
+            |         .css("height", "50")
+            |         .css("width", "100")
+            |         .css("background", "blue");
+            |     $("#hide").click(function () {
+            |         $("#box")
+            |             .hide();
+            |     });
+            |     $("#show").click(function () {
+            |         $("#box")
+            |             .show();
+            |     })
+            | });
+        textarea
+            | $(".content").offset({top:30, left:100})
+        textarea
+            | $("button").click(function () {   
+            |   $("p").show("slow");   
+            | });
+
+    section.tabContent 
+        h1 Python
+        br
+        textarea
+            | "text" * 3           # 'texttexttext'
+            | "text".upper()       # 'TEXT'
+            | len("text")          # 3
+        textarea
+            | []                                  # ������
+            | var_name = [3, 42, 12, 19, 30, 59]  # ������
+            | var_name.sort()      # ����������
+            | var_name.reverse()   # ���������� ��������
+            | var_name.append(5)   # ����������
+            | var_name.pop(5)      # ��������
+            | len("text")          # 3
+            | len(str(123456))     # 6
+            | print(var_name[0])   # 59
+        textarea
+            | {}                   # �������
+            | var_name = {
+            |     'name': 'text',
+            |     'country': 'Poland',
+            |     'favorite_numbers': [7, 42, 92]
+            |     }
+        textarea
+            | print(var_name['name'])  # text
+            | var_name['favorite_language'] = 'Python'  # �������� ����/��������
+            | ==              # ��������� �� ���������
+            | !=              # ��������� �� ��������
+            | 5>2             # true
+            | 5>2 and 5>3     # true
+            | 5>2 and 5>10    # false
+            | 5>2 or 5>10     # true
+            | True
+            | ''' ���������� '''
+            | # ����������
+        textarea
+            | a = 12                          # ����� �����
+            | b = 13.78                       # ����� � ��������� ������
+            | c = "������ ���"                # ������
+            | d = [1, "���", 1.12]            # ������
+            | e = (2, 12, 56)                 # ������
+            | f = {1: "������", 2: "������"}  # �������
+            | g = True                        # ��� False (���������� ��������)
+            | + - * / **                      # ����.�����.�����.�����.������ � �������  (e = 34**2)
+            | print("text")                   # ������� �� ����� �����
+            | line = "��� ������"
+            | print(line)
+            | print(len(line))    # ����� ������
+            | print(line[0])      # ������ �������, ���� ���������� � ����
+            | print(line[1])      # ������ �������
+            | print(line[-1])     # ��������� �������
+            | print(line[1:4])    # ����
+            | print(line[:4])     # ���� ����
+            | print(line[4:])     # ��� �������
+            | print(line + line)  # ���������� ������ � ������
+            | print(line * 3)     # ��� ���� �����
+        textarea
+            | line1 = "��� ������"
+            | line2 = "��� ������ ������"
+            | print(line1.replace('��', '��'))  # ������ ����� ��������� ������
+            | print(line1.find('��'))           # ����� �������� ���������
+            | print(line1.split(' '))           # ��������� ������ �� �����������
+            | print(line1.upper())              # �������������� �������� � ������� �������
+            | print(line2.lower())              # �������������� �������� � ������ �������
+        textarea
+            | mylist = [1, '���', 3.1]
+            | print(len(mylist))                # ����� ��������� � ������
+            | print(mylist[0])                  # ������ � ������� ��������
+            | mylist.append("new")              # ��������� ����� ������� � ����� ������
+            | print("��������---->", mylist)
+            | mylist.pop(0)                     # ������� ������ �������
+            | print("�����---->", mylist)      # ��������� ������
+            | superlist = [[1, 2, 3], [4, 5, 6]]
+            | print(superlist)
+            | print(superlist[1][1])            # �������� 2 ������� �� ������ ������
+        textarea
+            | mydic = {1: "������", 2: "������"}
+            | print("������ ������� � ������ 1 ------>", mydic[1])
+            | superdic = {
+            | 	'name': {'first': '���������', 'second': '������'},
+            | 	'job': ['���', '���']
+            | 	} 
+            | print(superdic['name']['second'], "--->", superdic['job'][0])
+        textarea
+            | t = ("������", "������", "������")
+            | print(t[1])  # ��������� ������ �������
+            | t = ((1, 2, 3, 4), (5, 6, 7, 8, 9))
+            | print(t[0][0])
+        textarea
+            | f = open('myfile', 'r')  # ��������� � ������ ������
+            | text = f.read()  # ���������
+            | f.close()  # ��������� ����
+            | print(text)  # ������� ���������
+            | f = open('myfile', 'w')  # ��������� � ������ ������
+            | f.write("Yo!")  # ����������
+            | f.close()  # ��������� ����
+        textarea
+            | # ������������� ��������� ���������
+            | # �������� ��������� � ����� ������ ������� ����
+            | with open("myfile.py", 'w') as f:
+            |     f.write("Yo!")
+            | a = "������"
+            | for x in a:
+            |     print("�1->", x)
+        textarea
+            | b = [1, 2, 3, 4, 5]
+            | for x in b:
+            |     print("�2--->", x)
+        textarea
+            | for x in range(10):
+            |     print("�3----->", x)
+        textarea
+            | def myfun():
+            |     print("������� ��� ����������")
+            | myfun()  # ����� ������� myfun
+        textarea
+            | def sum(a, b=0):  # b ����� �������� �� ���������
+            |     c = a + b
+            |     return c
+        textarea
+            | print(sum(2, 3))
+            | print(sum(2))
+        textarea
+            | #oop
+            | class Car:
+            |     mod = 'ford'
+            |     age = 30
+            |     color = 'green'
+        textarea
+            | class Moto:
+            |     mod = 'Ymaha'
+            |     age = 10
+            |     color = 'red'
+        textarea
+            | print(Car.mod)
+            | print(Moto.mod)
+        textarea
+            | a = Car()
+            | a.name = 'drive_1'
+            | print(a.name)
+        textarea
+            | class Test_fun:
+            |     def fun():
+            |        return 'Hello World'
+        textarea
+            | print(Test_fun.fun())
+
+    section.tabContent 
+        h1 Keyword
+        br
+        textarea
+
+
+
+
+        
+
+    section.tabContent 
+        h1 SQL
+        br
+        textarea
+            | # указать какую базу данных использовать
+            | USE db_name;
+            | # создать базу данных
+            | CREATE DATABASE db_name;
+            | # создать таблицу
+            | CREATE TABLE name_tab (
+            | 	id int, 
+            | 	colum_1 varchar(10), 
+            | 	colum_2 varchar(10)
+            | );
+            | # заполнить таблицу данными
+            | INSERT INTO name_tab VALUES (
+            | 	1,
+            | 	'name_1',
+            | 	'name_2'
+            | );
+        textarea
+            | #.SQL
+            | "показать таблицы"
+            | SHOW TABLES;
+        textarea
+            | "структура таблицы"
+            | DESC name_tab;
+        textarea
+            | "удалить базу данных"
+            | DROP DATABASE name_db;
+        textarea
+            | "удалить таблицу"
+            | DROP TABLE name_tab;
+        textarea
+            | "новая таблица с id и name"
+            | CREATE TABLE name_tab
+            | (
+            | ID int(5) primary key NOT NULL AUTO_INCREMENT,
+            | 	NAME varchar (20),
+            | 	EMAIL varchar(50),
+            | 	PHONE  int(50)
+            | );
+        textarea
+            | "вставка в каждое поле данных"
+            | INSERT INTO name_tab VALUE (
+            | 1,
+            | 'name_one',
+            | '@gmail.com',
+            | 123
+            | );
+        textarea
+            | "вставка в определенное поле данных"
+            | INSERT INTO name_tab (NAME, EMAIL) VALUE (
+            | 'first',
+            | '@mail.ru'
+            | );
+        textarea
+            | "показать все в таблице"
+            | SELECT * FROM name_tab;
+        textarea
+            | "показать колонку name и email"
+            | SELECT name, email FROM name_tab;
+        textarea
+            | "обновление существующих полей"
+            | UPDATE name_tab SET PHONE=0973371430 WHERE id='3';
+        textarea
+            | "вывести все поля name, email с индексом phone = 123"
+            | SELECT name, email FROM name_tab
+            | WHERE phone = 123;
+        textarea
+            | "вывести все поля id с где phone = 0973371430"
+            | SELECT id FROM name_tab
+            | WHERE phone IN (0973371430);
+        textarea
+            | "вывести все id где rate между 50 и 100"
+            | SELECT id FROM name_tab
+            | WHERE rate BETWEEN 50 AND 100;
+        textarea
+            | "вывести все id где нет rate между 50 и 100"
+            | SELECT id FROM name_tab
+            | WHERE NOT rate BETWEEN 50 AND 100;
+        textarea
+            | "удалить всё из таблицы где в поле rate > 5"
+            | DELETE FROM name_tab
+            | WHERE rate > 5;
+        textarea
+            | "обновить поле rate присвоить 100 с именем name_one "
+            | UPDATE name_tab SET
+            | rate = 100
+            | WHERE name = 'name_one';
+
+
+    section.tabContent 
+        h1 Shell
+        br
+        textarea
+            | ---Pug-------------------------------------------------------------------------
+            | npm install -g jade   //установка
+            | pug -w index.pug      // команда компиляции index.pug > index.html
+        textarea
+            | ---Stylus----------------------------------------------------------------------
+            | npm install stylus -g       //установка
+            | stylus -w name_file.styl    //компиляция в css и слежение
+        textarea
+            | ---Vue/Nuxt--------------------------------------------------------------------
+            | npm install -g vue-cli          //установка cli
+            | vue init nuxt-community/starter-template project-name  //уст. шаблона vue-cli
+            | cd project-name                 //создать папку проекта
+            | npm install                     //установка завиимостей
+            | npm run dev                     //запуск проекта
+            | http://localhost:3000           //адресс проекта
+        textarea
+            | ---PIP (Python)----------------------------------------------------------------
+            | pip install package_name
+            | pip install grab
+            | pip install tqdm
+        textarea
+            | ---Server----------------------------------------------------------------------------
+            | npm i http-server -g  //установка сервера
+            | http-server  //запуск сервера на node
+        textarea
+            | ---Jango-------------------------------------------------------------------------------
+            | pip install Django  //установка джанго в пустой каталог
+            | django-admin.py startproject django_test //создание каталога проекта
+            | python manage.py runserver
+        textarea
+            | http://127.0.0.1:8000/
+        textarea
+            | python manage.py startapp landing   //создание страниц сайта
+            | python manage.py createsuperuser  // регистрация суперпользователя
+            | python manage.py makemigrations news  //создание записей в базе данных в приложении news
+            | python manage.py migrate //перенос базы данных
+        textarea
+            | ---UNIX-------------------------------------------------------------------------
+            | cd /d  //перейти на диск d
+            | cd name_folder  //перейти в папку
+            | cd ..   //подняться на 1 папку назад
+            | cd ~   //пернйти в домашнюю директорию
+            | pwd   //показать диск
+            | exit  //выйти из программы
+        textarea
+            | ls  //список файлов
+            | ls -a  //список всех файлов
+            | ls -la  //список всех файлов с датами
+            | ls -arial  //что то
+            | clear  //очистить экран
+        textarea
+            | mkdir folder         //создать папку
+            | rmdir folder         //удалить папку
+            | rm -r folder_file    //удалить папку с файлами
+            | touch file.txt       //создать файл
+            | rm file.txt          //удалить файл
+            | del test.txt         //удалить файл
+            | echo "text" > 1.txt  //создать файл текст с текстом внутри
+            | cat file.txt         //посмотреть содержимое файла
+            | type test.txt        //просмотр содержимого файла
+        textarea
+            | start file.txt       //запуск файла
+            | start folder         //открытие папки в новом окне
+            | start soft.exe       //открытие программы
+        textarea
+            | df показать список всех файловых систем
+            | ps активные процессы
+        textarea
+            | ---GIT-------------------------------------------------------------------------
+            | git clone www.   //скачать репозиторий 
+            | git pull origin  //Замерджить все ветки с удаленного репозитория:
+        textarea
+            | git init           //создание подпапки в рабочей папке проекта
+            | git remote add origin https://github.com/Aleksej579/Kanban.git
+            | git add .          // добавление файлов на отправку 
+            | (git rm --cached name_file.txt  //удалить файл перед комитом и предвар)
+            | git status         //просмотр добавленных файлов в локальный репозиторий"
+            | (git log           //просмотр комитов)
+            | (git remote -v     //список репозиториев с сылками)
+            | git commit -m "text_commit"  //закомичивание
+            | git push -u origin master    //отправка файлов в гит
+        textarea
+            | git branch some_branch       //Создать новый бранч
+            | git checkout some_branch     //Переключиться на другую ветку
+        textarea
+            | git config --global user.email "aleksej.eremenko579@gmail.com"
+            | git config --global user.name "Aleksej579"
+        textarea
+            | ---git flow---------------------------------------------------------------------
+            | git flow init  //инициализация проекта
+            | //Фичи
+            | git flow feature start MYFEATURE          //Начало новой фичи
+            | git flow feature finish MYFEATURE         //Завершение фичи
+            | git flow feature publish MYFEATURE        //Публикация фичи
+            | git flow feature pull origin MYFEATURE    //Получение опубликованной фичи
+            | git flow feature track MYFEATURE          //Вы можете отслеживать фичу в репозитории origin с помощью команды 
+            | //Создание релиза
+            | git flow release                          //Начало релиза
+            | git flow release start RELEASE [BASE]
+            | git flow release publish RELEASE          //Желательно сразу публиковать ветку релиза после создания
+            | git flow release track RELEASE            //отслеживать удалённый релиз
+            | git flow release finish RELEASE           //Завершение релиза
+            | git push --tags                           //отправить изменения в тегах
+            | //Исправления
+            | git flow hotfix start VERSION [BASENAME]  //работа над исправлением 
+            | git flow hotfix finish VERSION            //Завершение исправления
+        textarea
+            | git flow
+            | init / feature / release / hotfix
+            | start / finish / publish / pull
+            | NAME
+        textarea
+            | //ветки 
+            | feature/myfeature
+            | develop
+            | release
+            | master
+            | hotfix
+        textarea
+            | ---"Bat"------------------------------------------------------
+            | /?         //имя команды и /? что бы узнать все о ней
+            | tree       //древовидный список файлов.
+            | F7         //история введенных команд
+            | Alt + F7   //очищает историю команд
+            | cls        //очистить окно.
+            | exit       //выход.
+            | c:         //перейти на диск c: (c: d: f:)
+            | cd..       //на уровень выше
+            | d: имя п.  //Перейти на диск "d" (или "с") в папку "имя п."
+            | dir /b     //cписок файлов текущего каталога (c: или d: dir /b)
+            | dir C:\    //просмотр содержимого каталога;
+            | md D:\Папка              //создание папки в указанном каталоге
+            | md D:\Папка_1 Папка_2    //создать две папки
+            | md D:\Папка_1\Папка_2    //создать папку а вней еще одну
+            | rd                       //уничтожение каталога (rd d:games)
+            | copy con                 //Создание текстовых файлов (Copy con games.txt), F6 и ENTER
+            | copy con name_file.txt   //+ctrl+z<enter> создать файл
+            | copy                     //Копирование файлов (Copy games.txt games)
+            | del                      //Удаление файлов (Del games.txt)
+            | ren                      //Переименование файлов (Ren games.txt games.doc)
+            | XCOPY c:\папка_1 c:\папка_2 /m /e /y   //копирование из папки в папку
+            | start C:\Папка                         //открыть папку
+            | start ""                               //C:\Program Files (x86)\Opera\launcher.exe" "http:// запуск опера с указанным сайтом
+            | /min                                   //запуск в свернутом режиме; start ""/min"C:\Windows\notepad.exe"
+            | /max                                   //запуск в развернутом режиме;
+            | @echo off      //запрещает вывод всех команд на экран
+            | @echo Текст    //вывод текста на экран
+            | for            //цикл, выполняет команду указанное количество раз
+            | do             //указывает, что делать
+            | @pause         //для продолжения нажать любую клавишу
+            | /wait          //по завершению первой программы запускается вторая; 
+            | rem Текст      //коментарий
+            | :: Текст       //коментарий
+            | команда_1 & команда_2        //вып. ком. 1, затем ком. 2 (start calc & start notepad)
+            | команда_1 && команда_2       //если ком. 1 вып. то ком. 2 вып.
+            | команда_1 || команда_2       //если ком. 1 не вып. то ком. 2 вып.
+            | >                            //вывести.
+            | echo %переменная или текст%  //вывод времени.
+            | set /a r=5+5                 //математические операции.
+            | defrag c: -f                    //дефрагментация ( defrag c: или d: -f )
+            | chkdsk c: /f                    //исправление ошибок на диске (chkdsk c: или d: /f или r )
+            | tasklist                        //Список процесов
+            | taskkill /f /im имя.проц. /t    //Завершить процес по имени
+            | systeminfo                      //мониторинг системы
+            | shutdown -s -t "секунды"        // выключение
+            | shutdown -a                     //отмена выключения
+            | format c: d: e:                 //форматирование. (format e: /q) быстрое ф
+            | explorer   //мои документы
+            | regedit    //редактор реестра
+            | msconfig   //настройка системы    
+            | regedit    //редактор реестра  
+        textarea
+            | ---WGET--------------------------------------------------------------------------------------
+            | wget -i list.txt                        //загрузка всех файлов указыных www в файле list
+            | wget -r -k -l 7 -p -E -nc http://dogs-bomba-net.nethouse.ru    //скопировать сайт целиком
+
+    section.tabContent 
+        h1 Keyword
+        br
+        textarea
+            | ---START--------------------------------------------------------------------
+            | Win+1  ������ Far
+            | Alt+F9 ���� �� ���� �����
+        textarea
+            | ---"WIN"--------------------------------------------------------------------
+            | Win+Ctrl+D  ����� ������� ����
+            | Win+Ctrl+-> ����� �������� �����
+            | Win+Ctrl+F4 ������� ����������� ������� ����
+        textarea
+            | ---"FAR"---------------------------------------------------------------------
+            | TAB;        ����� �������� ������
+            | Ctrl-U;     �������� ������ �������
+            | Ctrl-F1;    ����� ����� ������
+            | Ctrl-F2;    ����� ������ ������
+            | Alt-F1;     ����� ����� ����� ������
+            | Alt-F2;     ����� ����� ������ ������
+            | Ctrl-L;     ����� �������������� ������
+            | Ctrl-Q;     ����� ������ �������� ��������� �����
+            | Shift-F4;   ������� ��������� ����
+            | Ctrl-Y;     ������� ������
+            | Shift-F2;   ��������� ���� ��� ������ ������
+            | Ctrl-F7;    ������ ���� ��������� ����� �� ������
+            | Alt-F8;     ������� ������ 
+            | Ctrl+. ;    ������ �������
+
+
+
+
+
+
+    section.tabContent 
         h1 GLITCH
         hr
         div.glitch(data-text="GLITCH") GLITCH
@@ -1893,13 +2861,18 @@ main#tabs
                 input.txtar_2(type="number" onchange="c()" id="wi" placeholder="building width")
                 input.txtar_2(type="number" onchange="c()" id="len" placeholder="building length")
 
-
         h1 terminal
         hr
         div#button_terminal(onclick="Console_On_Off('terminal')") CONSOLE
         div#terminal
             div#output.output
             textarea#input.input(placeholder="Enter the commands :") 
+
+        h1 Grid
+        div.wrapper_2.elementanm
+            div.grid-wrap
+                div.grid.anim
+  		
 
 
     a(href="#" title="Вернуться к началу" class="topbutton") Наверх
