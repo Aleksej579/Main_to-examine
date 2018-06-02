@@ -32,25 +32,14 @@ function showTabsContent(b){
     }
 };
 
-//показать скрыть HTML
-var ul_html = document.querySelector('#ul_html');
-var btn_show_html = document.querySelector('#btn_show_html');
-var btn_hide_html = document.querySelector('#btn_hide_html');
-  btn_show_html.onclick = function(){
-    ul_html.style.display='block';
-  };
-  btn_hide_html.onclick = function(){
-    ul_html.style.display='none';
-  }
-
-//показать скрыть CSS
+//ПОКАЗАТЬ СКРЫТЬ INFO ---------------------------------------------------------
 function showHide(element_id) {
-  if (document.getElementById(element_id)) { 
-  var obj = document.getElementById(element_id); 
-    if (obj.style.display != "block") { 
-      obj.style.display = "block";
-    }else obj.style.display = "none";
-  }else alert("Элемент с id: " + element_id + " не найден!"); 
+    if (document.getElementById(element_id)) { 
+        var obj = document.getElementById(element_id); 
+        if (obj.style.display != "block") { 
+            obj.style.display = "block";
+        }else obj.style.display = "none";
+    }else alert("Элемент с id: " + element_id + " не найден!"); 
 }
 
 //ОТКРЫТЬ ЗАКРЫТЬ КОНСОЛЬ-------------------------------------------------------
@@ -63,7 +52,7 @@ function Console_On_Off(terminal) {
 }
 
 
-/*3D КУБ*/
+//3D КУБ ------------------------------------------------------------------------
 function rot_box_nature_1() {
     but_box3d_1.onclick = function() {
         document.querySelector('#box3d').style.transform = 'rotateY(90deg)';
@@ -93,4 +82,14 @@ function rot_box_nature_4() {
         document.querySelector('#but_box3d_4').style.display="none";
         document.querySelector('#but_box3d_1').style.display="block";
     };
-}
+};
+
+/*--------------------------------------------------------------------------------
+var app = new Vue({
+    el: '#line',
+    data: {
+        message: 'border-bottom: 1px solid #1f1f28;'
+    }
+ })*/
+
+ 

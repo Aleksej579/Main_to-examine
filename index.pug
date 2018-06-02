@@ -7,21 +7,8 @@ html(lang="en")
         title Main_too_examine
         link(rel="icon" type="image/png" href="images/favicon.png")
         link(href="css/main.css" type="text/css" rel="stylesheet")
+        script(src="https://cdn.jsdelivr.net/npm/vue")
         
-        //<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.33/css/uikit.min.css" />
-        //<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.33/js/uikit.min.js"></script>
-        //<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.33/js/uikit-icons.min.js"></script>
-
-        script(src="javascript/math.min.js")
-        script(src="javascript/calque.js")
-        script.
-            window.onload = function (){
-                var input = document.querySelector('#input');
-                var output = document.querySelector('#output');
-                window.calque = new Calque(input, output);
-                input.focus()
-            };
-
 body
 header Front-end developer
 main#tabs
@@ -42,6 +29,7 @@ main#tabs
         button.tab Shell
         button.tab Keyword
         button.tab Library
+        button.tab Contact
     section.tabContent
         |
         h1 План разработки (реальный)
@@ -141,116 +129,221 @@ main#tabs
         p Раскрутка <span>SPA</span> с помощью SEO.
     section.tabContent 
         h1 Технологии
-        table
+        table(align="center")
             tr
-                td wireframes
-                td Axure & www.app.moqups.com
+                td(style="border-bottom: 1px solid #90a4ae; text-align: center;") 
+                    b 
+                        i прототипирование
+                td(style="border-bottom: 1px solid #90a4ae;") 
             tr
-                td UI графика
-                td GIMP, Inkscape, Blender
+                td(style="border-top: 1px dashed #1f1f28;") wireframes
+                td(style="border-top: 1px dashed #1f1f28;") Axure
             tr
-                td UML
-                td 	www.draw.io
+                td(style="border-bottom: 1px dashed #1f1f28;") wireframes
+                td(style="border-bottom: 1px dashed #1f1f28;") www.app.moqups.com
             tr
-                td Разметка
-                td 
+                td(style="border-bottom: 1px solid #90a4ae; text-align: center;") 
+                    b 
+                        i дизайн
+                td(style="border-bottom: 1px solid #90a4ae;") 
+            tr
+                td UI графика (растровая)
+                td Adobe Photoshop
+            tr
+                td(style="border-bottom: 1px dashed #1f1f28;") UI графика (3D)
+                td(style="border-bottom: 1px dashed #1f1f28;") MAXON Cinema 4D
+            tr
+                td(style="border-bottom: 1px solid #90a4ae; text-align: center;") 
+                    b 
+                        i схема приложения
+                td(style="border-bottom: 1px solid #90a4ae;") 
+            tr
+                td(style="border-bottom: 1px dashed #1f1f28;") UML
+                td(style="border-bottom: 1px dashed #1f1f28;") 	www.draw.io
+            tr
+                td(style="border-bottom: 1px solid #90a4ae; text-align: center;") 
+                    b 
+                        i разметка
+                td(style="border-bottom: 1px solid #90a4ae;") 
+            tr
+                td Язык гипертекстовой разметки
+                td
                     a(href="" tooltip='HyperText Markup Language — язык гипертекстовой разметки') HTML
             tr
-                td Разметка
-                td Markdown
+                td Шаблонизатор HTML
+                td Pug  
             tr
-                td Стили
+                td(style="border-bottom: 1px dashed #1f1f28;") Разметка
+                td(style="border-bottom: 1px dashed #1f1f28;") Markdown
+            tr
+                td(style="border-bottom: 1px solid #90a4ae; text-align: center;") 
+                    b 
+                        i стили
+                td(style="border-bottom: 1px solid #90a4ae;") 
+            tr
+                td Каскадная таблица стилей
                 td 
                     a(href="" tooltip='Cascading Style Sheets — каскадные таблицы стилей') CSS
-            tr
-                td Шаблонизатор HTML
-                td Pug
-            tr
-                td Фреймверк CSS
-                td UiKit
             tr
                 td Препроессор CSS
                 td Stylus
             tr
+                td(style="border-bottom: 1px dashed #1f1f28;") Фреймверк CSS
+                td(style="border-bottom: 1px dashed #1f1f28;") UiKit
+            tr
+                td(style="border-bottom: 1px solid #90a4ae; text-align: center;") 
+                    b 
+                        i библиотека
+                td(style="border-bottom: 1px solid #90a4ae;") 
+            tr
                 td Библиотека JS
                 td Vue.js
             tr
-                td Фреймверк Python
-                td 	Django
+                td(style="border-bottom: 1px dashed #1f1f28;") Библиотека JS
+                td(style="border-bottom: 1px dashed #1f1f28;") Jquery
+            tr
+                td(style="border-bottom: 1px solid #90a4ae; text-align: center;") 
+                    b 
+                        i фреймверк
+                td(style="border-bottom: 1px solid #90a4ae;") 
+            tr
+                td(style="border-bottom: 1px dashed #1f1f28;") Фреймверк Python
+                td(style="border-bottom: 1px dashed #1f1f28;") 	Django
+            tr
+                td(style="border-bottom: 1px solid #90a4ae; text-align: center;") 
+                    b 
+                        i методология
+                td(style="border-bottom: 1px solid #90a4ae;") 
             tr
                 td Методология CSS
-                td SMACSS + BEM
+                td 
+                    a(href="" tooltip='Scalable and Modular Architecture for CSS') SMACSS
+            tr
+                td(style="border-bottom: 1px dashed #1f1f28;") Методология CSS
+                td(style="border-bottom: 1px dashed #1f1f28;") 
+                    a(href="" tooltip='Блок, элемент, модификатор') BEM
             tr
                 td Методология Vue
                 td Vuex
             tr
-                td Методология Git
-                td Git flow
+                td(style="border-bottom: 1px dashed #1f1f28;") Методология Git
+                td(style="border-bottom: 1px dashed #1f1f28;") Git flow
             tr
                 td Методология JS/Py
-                td OOP
+                td 
+                    a(href="" tooltip='Object-oriented programming') OOP
             tr
                 td Методология JS/Py
-                td SOLID
+                td 
+                    a(href="" tooltip='The Single Responsibility Principle / The Open Closed Principle / The Liskov Substitution Principle / The Interface Segregation Principle / The Dependency Inversion Principle') SOLID
             tr
                 td Методология JS/Py
-                td DRY
+                td 
+                    a(href="" tooltip='Don*t repeat yourself') DRY
             tr
                 td Методология JS/Py
-                td KISS
+                td 
+                    a(href="" tooltip='Keep It Simple, Stupid') KISS
             tr
-                td Методология JS/Py
-                td YAGNI
+                td(style="border-bottom: 1px dashed #1f1f28;") Методология JS/Py
+                td(style="border-bottom: 1px dashed #1f1f28;") 
+                    a(href="" tooltip='You aren*t gonna need it') YAGNI
+            tr
+                td(style="border-bottom: 1px solid #90a4ae; text-align: center;") 
+                    b 
+                        i язык разработки
+                td(style="border-bottom: 1px solid #90a4ae;") 
             tr
                 td Язык
                 td Englis
             tr
-                td Язык програмирования JS
+                td Язык програмирования (клиент)
                 td JavaScript
             tr
-                td Язык програмирования Py
-                td Python
+                td(style="border-bottom: 1px dashed #1f1f28;") Язык програмирования (сервер)
+                td(style="border-bottom: 1px dashed #1f1f28;") Python
+            tr
+                td(style="border-bottom: 1px solid #90a4ae; text-align: center;") 
+                    b 
+                        i пакетный менеджер
+                td(style="border-bottom: 1px solid #90a4ae;") 
             tr
                 td Пакетный менеджер JS
-                td Npm
+                td 
+                    a(href="" tooltip='Node.js Package Manager') Npm
             tr
-                td Пакетный менеджер Py
-                td Pip
+                td(style="border-bottom: 1px dashed #1f1f28;") Пакетный менеджер Py
+                td(style="border-bottom: 1px dashed #1f1f28;") 
+                    a(href="" tooltip=' installing Python packages') Pip
             tr
-                td База данных
+                td(style="border-bottom: 1px solid #90a4ae; text-align: center;") 
+                    b 
+                        i база данных
+                td(style="border-bottom: 1px solid #90a4ae;") 
+            tr
+                td База данных (легкая/сервер)
                 td SQLite
             tr
-                td База данных
+                td База данных (клиент)
                 td MySQL
             tr
-                td База данных
-                td PostgreSQL
+                td(style="border-bottom: 1px dashed #1f1f28;") База данных (сервер)
+                td(style="border-bottom: 1px dashed #1f1f28;") PostgreSQL
             tr
-                td Сборщик проекта
-                td Webpack
+                td(style="border-bottom: 1px solid #90a4ae; text-align: center;") 
+                    b 
+                        i сборщик проекта
+                td(style="border-bottom: 1px solid #90a4ae;") 
             tr
-                td Система контроля версий
-                td Git
+                td(style="border-bottom: 1px dashed #1f1f28;") Сборщик проекта
+                td(style="border-bottom: 1px dashed #1f1f28;") Webpack
             tr
-                td Среда разработки
-                td Visual Studio xmp
+                td(style="border-bottom: 1px solid #90a4ae; text-align: center;") 
+                    b 
+                        i ситема контроля версий
+                td(style="border-bottom: 1px solid #90a4ae;") 
             tr
-                td Среда разработки
+                td(style="border-bottom: 1px dashed #1f1f28;") Система контроля версий
+                td(style="border-bottom: 1px dashed #1f1f28;") Git
+            tr
+                td(style="border-bottom: 1px solid #90a4ae; text-align: center;") 
+                    b 
+                        i soft
+                td(style="border-bottom: 1px solid #90a4ae;") 
+            tr
+                td Среда разработки (текстовый редактор)
+                td Visual Studio Code
+            tr
+                td Среда разработки (базы данных)
                 td DBeaver
             tr
-                td Среда разработки
+                td Среда разработки (браузер)
                 td Firefox developer edition
             tr
-                td Среда разработки
-                td FAR
+                td Инструмент разработчика (в браузер)
+                td DevTools
             tr
-                td менеджер среды
-                td Docker
+                td(style="border-bottom: 1px dashed #1f1f28;") Среда разработки (работа с файлами)
+                td(style="border-bottom: 1px dashed #1f1f28;") FAR
+            tr
+                td(style="border-bottom: 1px solid #90a4ae; text-align: center;") 
+                    b 
+                        i портативность настроек
+                td(style="border-bottom: 1px solid #90a4ae;") 
+            tr
+                td(style="border-bottom: 1px dashed #1f1f28;") менеджер среды разработки
+                td(style="border-bottom: 1px dashed #1f1f28;") Docker
+                tr
+                td(style="border-bottom: 1px solid #90a4ae; text-align: center;") 
+                    b 
+                        i интерпритатор
+                td(style="border-bottom: 1px solid #90a4ae;") 
             tr
                 td интерпритатор JS
                 td Babel
+
     section.tabContent
-        h1 Типы сайтов
+        h1 Сайт
         ul
             li.li_name_cont Сайт визитка
                ul.ul_italic
@@ -267,11 +360,9 @@ main#tabs
                     li Социальная сеть
                     li Хостинг
             li.li_name_cont SPA
+
     section.tabContent
         h1 Дополнительно
-
-
-
         h4 Предоставление информации в HTML
             ul#block_id_1(style="display: none;")
                 li Текст
@@ -2872,7 +2963,58 @@ main#tabs
         div.wrapper_2.elementanm
             div.grid-wrap
                 div.grid.anim
-  		
+
+    section.tabContent 
+        h1 Alexey Eremenko
+        h1 HTML/CSS Developer
+        table
+            tr
+                td.b Kharkov,
+                td.i Ukraine.
+            tr
+                td.b Phone:
+                td.i +38 097 337 14 28
+            tr
+                td.b E-mail:
+                td.i aleksej.eremenko579@gmail.com
+            tr
+                td.b Skype:
+                td.i aleksej5792
+            tr
+                td.b github:
+                td.i github.com/Aleksej579
+            tr
+                td.b linkedin:
+                td.i linkedin.com/in/aleksejeremenko097337142
+
+        h1 Goal:
+        p Position of HTML/CSS Developer, with the possibility of professional Growth
+        h1 Summary:
+        ul
+            li Understanding of software development life cycle, web application process;
+            li Experience in creating web application;
+            li Understanding of client-server architecture;
+            li Understanding of 
+                ul
+                    li HTML5 & (Pug)
+                    li CSS3 & ( Stylus / SMACSS).
+                    li Java Script & Vue . (базовый уровень)
+                    li jQuery (plugins integration);
+                    li Git . (базовый уровень)
+                    li Visual studio code, DevTools, Photoshop.
+            li Good verbal and written English skills (intermediate);
+            li Team player, self motivated, quick learner, hardworker, attentive to details;
+            li My project
+                ul
+                    li http://dogs-bomba.com.ua,
+                    li http://naturetour.me.pn,
+                    li http://sho-studio.eu.pn
+
+        h1 Education:
+        p Kharkov State Technical University of Construction and Architecture. (Architecture of buildings and structures in 2007). 
+        h1 Additional education: 
+        p Source IT "Java programming & Web technologies"
+        hr
 
 
     a(href="#" title="Вернуться к началу" class="topbutton") Наверх
