@@ -17,9 +17,8 @@ main#tabs
         button.tab Tools
         button.tab Type site
         button.tab Info
-        button.tab HTML
-        button.tab Markdown
-        button.tab CSS
+        button.tab HTML / PUG / Mrkdovn
+        button.tab CSS / Stylus
         button.tab JavaScript
         button.tab Vue.js
         button.tab jQuery
@@ -663,1092 +662,1113 @@ main#tabs
             |    +-- тестирование безопасности
             |    +-- тестирование производительности сайта  "определение быстродействия сайта"
     section.tabContent 
-        h1 HTML
-        div.tabContent_html
-            p !DOCTYPE html
-            p html lang="en"
-            p --- head
-            p --- meta charset="utf-8"
-            p --- title Name_Site
-            p --- meta(name="viewport" content="width=device-width, initial-scale=1"
-            p --- meta(name="keywords" content="ключевое слово 1, ключевое слово 2"
-            p --- meta(name="description" content="Описание контента.")
-            p --- link(rel="icon" type="image/png" href="images/favicon-16x16.png")
-            p --- link(rel="stylesheet" href="fonts/font-awesome/css/font-awesome.css")
-            p --- link(href="css/main.css" type="text/css" rel="stylesheet")
-            p --- script(type="text/javascript" src="js/main.js")
-            p --- body
-            hr
-            table.tabContent_html_table
-                tr
-                    td.b header
-                    td.i заглавие шапка
-                tr
-                    td.b nav
-                    td.i навигация
-                tr
-                    td.b section
-                    td.i секция
-                tr
-                    td.b article
-                    td.i новости статьи
-                tr
-                    td.b main
-                    td.i главный блок
-                tr
-                    td.b aside
-                    td.i сайдбар боковая панель
-                tr
-                    td.b footer
-                    td.i подвал
-                tr
-                    td.b figure
-                    td.i групировка изображения и подписи к ним
-                tr
-                    td.b hgroup
-                    td.i группирования заголовков веб-страницы
-                tr
-                    td.b span.name text
-                    td.i с отдельным текстом "span"
-                tr
-                    td.b abbr(title="пояснение") АБР
-                    td.i 
-                        abbr(
-                            title="пояснение"
-                        ) АБР
-                tr
-                    td.b address text
-                    td.i 
-                        address text
-                tr
-                    td.b cite text
-                    td.i 
-                        cite text
-                tr
-                    td.b blockquote text
-                    td.i 
-                        blockquote text
-                tr
-                    td.b ins text
-                    td.i
-                        ins text
-                tr
-                    td.b p text
-                    td.i 
-                        p text
-                tr
-                    td.b b text
-                    td.i 
-                        b text
-                tr
-                    td.b strong text
-                    td.i 
-                        strong text
-                tr
-                    td.b i text
-                    td.i 
-                        i text
-                tr
-                    td.b u text
-                    td.i 
-                        u text
-                tr
-                    td.b s text
-                    td.i
-                        s text
-                tr
-                    td.b em text
-                    td.i 
-                        em text
-                tr
-                    td.b small text
-                    td.i 
-                        small text
-                tr
-                    td.b big text
-                    td.i 
-                        big text
-                tr
-                    td.b mark text
-                    td.i 
-                        mark text
-                tr
-                    td.b dialog open
-                    td.i диалоговое окно
-                tr
-                    td.b p.anchorName1
-                    td.i якорь
-                tr
-                    td.b section.page1
-                    td.i секция
-                tr
-                    td.b div#name
-                    td.i блок для одиночных классов
-                tr
-                    td.b div.name
-                    td.i блок для нескольких классов
-                tr
-                    td.b a (href="www.site.com) link
-                    td.i 
-                        a(
-                            href="www.site.com"
-                        ) link
-                tr
-                    td.b a (href="image/xxx.jpg" download)>Скачать файл
-                    td.i 
-                        a(
-                            href="image/xxx.jpg"
-                            download
-                        ) Скачать файл
-                tr
-                    td.b a (href="image/xxx.jpg") Открыть файл в браузере
-                    td.i 
-                        a(
-                            href="image/xxx.jpg"
-                        ) Открыть файл в браузере
-                tr
-                    td.b br
-                    td.i перевод строки
-                tr
-                    td.b hr
-                    td.i 
-                        hr
-                tr
-                    td.b h1 text
-                    td.i 
-                        h1 text
-                tr
-                    td.b h2 text
-                    td.i 
-                        h2 text
-                tr
-                    td.b h3 text
-                    td.i 
-                        h3 text
-                tr
-                    td.b h4 text
-                    td.i 
-                        h4 text
-                tr
-                    td.b h5 text
-                    td.i 
-                        h5 text
-                tr
-                    td.b h6 text
-                    td.i 
-                        h6 text
-                tr
-                    td.b textarea (name="comment" cols="40" rows="3")
-                    td.i 
-                        textarea(
-                            name="comment"
-                            cols="40"
-                            rows="3"
-                        )
-                tr
-                    td.b input (type="text" size="40")
-                    td.i 
-                        input(
-                            type="text"
-                            size="40"
-                        )
-                tr
-                    td.b input (type="radio" name="text" value="ie")
-                    td.i 
-                        input(
-                            type="radio"
-                            name="text"
-                            value="ie"
-                        )
-                tr
-                    td.b input (type="submit" value="Отправить")
-                    td.i 
-                        input(
-                            type="submit"
-                            value="Отправить"
-                        )
-                tr
-                    td.b input (type="reset" value="Очистить")
-                    td.i 
-                        input(
-                            type="reset"
-                            value="Очистить"
-                        )
-                tr
-                    td.b input (type="range" id="rtl" min="0" max="100" value="0" oninput="ch_rad()")
-                    td.i 
-                        input(
-                            type="range"
-                            id="rtl"
-                            min="0"
-                            max="100"
-                            value="0"
-                            oninput="ch_rad()"
-                        )
-                tr
-                    td.b input (type="text" id="ttl" value="0")
-                    td.i 
-                        input(
-                            type="text"
-                            id="ttl"
-                            value="0"
-                        )
-                tr
-                    td.b 
-                        textarea(name="comment" cols="60" rows="3")
-                            |
-                            |table(border="1" width="300" bgcolor="#a9a9a9") 
-                            |   tr
-                            |       td 1
-                            |       td 2
-                            |       td 3
-                    td.i 
-                        table(
-                            border="1"
-                            width="300"
-                            bgcolor="#a9a9a9"
-                        )
-                            tr
-                                td 1
-                                td 2
-                                td 3
-                tr
-                    td.b 
-                        textarea(name="comment" cols="60" rows="3")
-                            |
-                            |form(action="/php/_page_test.php" method="get")
-                            |   select(id="region"  name="region")
-                            |       optionSelect Region
-                            |       option(value="Africa") Africa
-                            |       option(value="Americas") Americas
-                            |       option(value="Antarctica") Antarctica
-                            |       option(value="Asia") Asia
-                    td.i 
-                        form(action="/php/_page_test.php" method="get")
-                            select(id="region"  name="region")
-                                optionSelect Region
-                                option(value="Africa") Africa
-                                option(value="Americas") Americas
-                                option(value="Antarctica") Antarctica
-                                option(value="Asia") Asia
-                tr
-                    td.b 
-                        textarea(name="comment" cols="60" rows="3")
-                            |dl
-                            |   dt Термин 1
-                            |       dd Описание термина 1
-                            |   dt Термин 2
-                            |       dd Описание термина 2
+        div.tabs
+            input(type="radio" name="tabs" checked)#tab-first 
+            label(for="tab-first")
+                p HTML
+            input(type="radio" name="tabs")#tab-second
+            label(for="tab-second")
+                p PUG
+            input(type="radio" name="tabs")#tab-last
+            label(for="tab-last")
+                p Markdown
+            div#tab-content-1.tab-content
+                h1 HTML
+                div.tabContent_html
+                    p !DOCTYPE html
+                    p html lang="en"
+                    p --- head
+                    p --- meta charset="utf-8"
+                    p --- title Name_Site
+                    p --- meta(name="viewport" content="width=device-width, initial-scale=1"
+                    p --- meta(name="keywords" content="ключевое слово 1, ключевое слово 2"
+                    p --- meta(name="description" content="Описание контента.")
+                    p --- link(rel="icon" type="image/png" href="images/favicon-16x16.png")
+                    p --- link(rel="stylesheet" href="fonts/font-awesome/css/font-awesome.css")
+                    p --- link(href="css/main.css" type="text/css" rel="stylesheet")
+                    p --- script(type="text/javascript" src="js/main.js")
+                    p --- body
+                    hr
+                    table.tabContent_html_table
+                        tr
+                            td.b header
+                            td.i заглавие шапка
+                        tr
+                            td.b nav
+                            td.i навигация
+                        tr
+                            td.b section
+                            td.i секция
+                        tr
+                            td.b article
+                            td.i новости статьи
+                        tr
+                            td.b main
+                            td.i главный блок
+                        tr
+                            td.b aside
+                            td.i сайдбар боковая панель
+                        tr
+                            td.b footer
+                            td.i подвал
+                        tr
+                            td.b figure
+                            td.i групировка изображения и подписи к ним
+                        tr
+                            td.b hgroup
+                            td.i группирования заголовков веб-страницы
+                        tr
+                            td.b span.name text
+                            td.i с отдельным текстом "span"
+                        tr
+                            td.b abbr(title="пояснение") АБР
+                            td.i 
+                                abbr(
+                                    title="пояснение"
+                                ) АБР
+                        tr
+                            td.b address text
+                            td.i 
+                                address text
+                        tr
+                            td.b cite text
+                            td.i 
+                                cite text
+                        tr
+                            td.b blockquote text
+                            td.i 
+                                blockquote text
+                        tr
+                            td.b ins text
+                            td.i
+                                ins text
+                        tr
+                            td.b p text
+                            td.i 
+                                p text
+                        tr
+                            td.b b text
+                            td.i 
+                                b text
+                        tr
+                            td.b strong text
+                            td.i 
+                                strong text
+                        tr
+                            td.b i text
+                            td.i 
+                                i text
+                        tr
+                            td.b u text
+                            td.i 
+                                u text
+                        tr
+                            td.b s text
+                            td.i
+                                s text
+                        tr
+                            td.b em text
+                            td.i 
+                                em text
+                        tr
+                            td.b small text
+                            td.i 
+                                small text
+                        tr
+                            td.b big text
+                            td.i 
+                                big text
+                        tr
+                            td.b mark text
+                            td.i 
+                                mark text
+                        tr
+                            td.b dialog open
+                            td.i диалоговое окно
+                        tr
+                            td.b p.anchorName1
+                            td.i якорь
+                        tr
+                            td.b section.page1
+                            td.i секция
+                        tr
+                            td.b div#name
+                            td.i блок для одиночных классов
+                        tr
+                            td.b div.name
+                            td.i блок для нескольких классов
+                        tr
+                            td.b a (href="www.site.com) link
+                            td.i 
+                                a(
+                                    href="www.site.com"
+                                ) link
+                        tr
+                            td.b a (href="image/xxx.jpg" download)>Скачать файл
+                            td.i 
+                                a(
+                                    href="image/xxx.jpg"
+                                    download
+                                ) Скачать файл
+                        tr
+                            td.b a (href="image/xxx.jpg") Открыть файл в браузере
+                            td.i 
+                                a(
+                                    href="image/xxx.jpg"
+                                ) Открыть файл в браузере
+                        tr
+                            td.b br
+                            td.i перевод строки
+                        tr
+                            td.b hr
+                            td.i 
+                                hr
+                        tr
+                            td.b h1 text
+                            td.i 
+                                h1 text
+                        tr
+                            td.b h2 text
+                            td.i 
+                                h2 text
+                        tr
+                            td.b h3 text
+                            td.i 
+                                h3 text
+                        tr
+                            td.b h4 text
+                            td.i 
+                                h4 text
+                        tr
+                            td.b h5 text
+                            td.i 
+                                h5 text
+                        tr
+                            td.b h6 text
+                            td.i 
+                                h6 text
+                        tr
+                            td.b textarea (name="comment" cols="40" rows="3")
+                            td.i 
+                                textarea(
+                                   name="comment"
+                                   cols="40"
+                                   rows="3"
+                               )
+                        tr
+                            td.b input (type="text" size="40")
+                            td.i 
+                                input(
+                                    type="text"
+                                    size="40"
+                                )
+                        tr
+                            td.b input (type="radio" name="text" value="ie")
+                            td.i 
+                                input(
+                                    type="radio"
+                                    name="text"
+                                    value="ie"
+                                )
+                        tr
+                            td.b input (type="submit" value="Отправить")
+                            td.i 
+                                input(
+                                    type="submit"
+                                    value="Отправить"
+                                )
+                        tr
+                            td.b input (type="reset" value="Очистить")
+                            td.i 
+                                input(
+                                type="reset"
+                                value="Очистить"
+                                )
+                        tr
+                            td.b input (type="range" id="rtl" min="0" max="100" value="0" oninput="ch_rad()")
+                            td.i 
+                                input(
+                                    type="range"
+                                    id="rtl"
+                                    min="0"
+                                    max="100"
+                                    value="0"
+                                    oninput="ch_rad()"
+                                )
+                        tr
+                            td.b input (type="text" id="ttl" value="0")
+                            td.i 
+                                input(
+                                    type="text"
+                                    id="ttl"
+                                    value="0"
+                                )
+                        tr
+                            td.b 
+                                textarea(name="comment" cols="60" rows="3")
+                                    |
+                                    |table(border="1" width="300" bgcolor="#a9a9a9") 
+                                    |   tr
+                                    |       td 1
+                                    |       td 2
+                                    |       td 3
+                            td.i 
+                                table(
+                                    border="1"
+                                    width="300"
+                                    bgcolor="#a9a9a9"
+                                )
+                                    tr
+                                        td 1
+                                        td 2
+                                        td 3
+                        tr
+                            td.b 
+                                textarea(name="comment" cols="60" rows="3")
+                                    |
+                                    |form(action="/php/_page_test.php" method="get")
+                                    |   select(id="region"  name="region")
+                                    |       optionSelect Region
+                                    |       option(value="Africa") Africa
+                                    |       option(value="Americas") Americas
+                                    |       option(value="Antarctica") Antarctica
+                                    |       option(value="Asia") Asia
+                            td.i 
+                                form(action="/php/_page_test.php" method="get")
+                                    select(id="region"  name="region")
+                                        optionSelect Region
+                                        option(value="Africa") Africa
+                                        option(value="Americas") Americas
+                                        option(value="Antarctica") Antarctica
+                                        option(value="Asia") Asia
+                        tr
+                            td.b 
+                                textarea(name="comment" cols="60" rows="3")
+                                    |dl
+                                    |   dt Термин 1
+                                    |       dd Описание термина 1
+                                    |   dt Термин 2
+                                    |       dd Описание термина 2
 
-                    td.i  
-                        dl
-                            dt Термин 1
-                                dd Описание термина 1
-                            dt Термин 2
-                                dd Описание термина 2
-                tr
-                    td.b details openТекст
-                    td.i 
-                        details openТекст
-                tr
-                    td.b
-                        textarea(name="comment" cols="60" rows="3")
-                            |
-                            |img(
-                            |    src="http://place-hold.it/200x100"
-                            |    alt=""
-                            |)
-                    td.i 
-                        img(
-                            src="http://place-hold.it/200x100"
-                            alt=""
-                        )
+                            td.i  
+                                dl
+                                    dt Термин 1
+                                        dd Описание термина 1
+                                    dt Термин 2
+                                        dd Описание термина 2
+                        tr
+                            td.b details openТекст
+                            td.i 
+                                details openТекст
+                        tr
+                            td.b
+                                textarea(name="comment" cols="60" rows="3")
+                                    |
+                                    |img(
+                                    |    src="http://place-hold.it/200x100"
+                                    |    alt=""
+                                    |)
+                            td.i 
+                                img(
+                                    src="http://place-hold.it/200x100"
+                                    alt=""
+                                )
 
-        hr
-        h1 PUG
-        div.tabContent_html
-            table.tabContent_html_table
-                tr
-                    td.b 
-                        textarea   
-                            | <!DOCTYPE html>
-                            | html(lang="en")
-                            |     head
-                            |         meta(charset="UTF-8")
-                            |         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-                            |         meta(http-equiv="X-UA-Compatible", content="ie=edge")
-                            |         title Document
-                            | 
-                            |         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.33/css/uikit.min.css" />
-                            |         <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.33/js/uikit.min.js"></script>
-                            |         <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.33/js/uikit-icons.min.js"></script>
-            
-                            |     body 
-                            |     h1 Name site
-                            |     hr
-                            |     h3 Next name site
-                            |     hr
-                            |     p This text it is simple text jn test this page.
-                            |     u text
-                            |     p text 
-                            |         i text 
-                            |         | text
-                            |     textarea 123 br
 
-                            |     button button
+            div#tab-content-2.tab-content
+                h1 PUG
+                div.tabContent_html
+                    table.tabContent_html_table
+                        tr
+                            td.b 
+                                textarea   
+                                    | <!DOCTYPE html>
+                                    | html(lang="en")
+                                    |     head
+                                    |         meta(charset="UTF-8")
+                                    |         meta(name="viewport", content="width=device-width, initial-scale=1.0")
+                                    |         meta(http-equiv="X-UA-Compatible", content="ie=edge")
+                                    |         title Document
+                                    | 
+                                    |         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.33/css/uikit.min.css" />
+                                    |         <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.33/js/uikit.min.js"></script>
+                                    |         <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.33/js/uikit-icons.min.js"></script>
+                                    |
+                                    |     body 
+                                    |     h1 Name site
+                                    |     hr
+                                    |     h3 Next name site
+                                    |     hr
+                                    |     p This text it is simple text jn test this page.
+                                    |     u text
+                                    |     p text 
+                                    |         i text 
+                                    |         | text
+                                    |     textarea 123 br
+                                    |
+                                    |     button button
+                                    |
+                                    |     -var q=10;
+                                    |     -var w=20;
+                                    |
+                                    |     p #{q+w}
+                                    |
+                                    |     a(href="http://vk.com")
+                                    |
+                                    |     hr
+                                    |     img(src="https://img4.goodfon.ru/wallpaper/big/c/7f/iaguar-dikaia-koshka-khishchnik.jpg", alt="cat")
+                                    |     - for(var i=0; i<5; i++)
+                                    |         li menu #{i}
+                                    |     hr
+                                    |     - var list = ["Uno", "Dos", "Tres", "Cuatro", "Cinco", "Seis"]
+                                    |     each item in list
+                                    |         li= item
+                                    |     hr
+                                    | <div class="uk-panel">
+                                    |     <img class="uk-align-left uk-margin-remove-adjacent" src="http://eurocrown.com.ua/wp-content/uploads/2016/06/160620_4_Eu.jpg" width="225" height"150" alt="Example image">
+                                    |     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    |     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
-                            |     -var q=10;
-                            |     -var w=20;
-
-                            |     p #{q+w}
-
-                            |     a(href="http://vk.com")
-
-                            |     hr
-                            |     img(src="https://img4.goodfon.ru/wallpaper/big/c/7f/iaguar-dikaia-koshka-khishchnik.jpg", alt="cat")
-                            |     - for(var i=0; i<5; i++)
-                            |         li menu #{i}
-                            |     hr
-                            |     - var list = ["Uno", "Dos", "Tres", "Cuatro", "Cinco", "Seis"]
-                            |     each item in list
-                            |         li= item
-                            |     hr
-                            | <div class="uk-panel">
-                            |     <img class="uk-align-left uk-margin-remove-adjacent" src="http://eurocrown.com.ua/wp-content/uploads/2016/06/160620_4_Eu.jpg" width="225" height"150" alt="Example image">
-                            |     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            |     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-                    td.i 
-                        h1 Name site
-                        hr
-                        h3 Next name site
-                        hr
-                        p This text it is simple text jn test this page.
-                        u text
-                        p text 
+                            td.i 
+                                h1 Name site
+                                hr
+                                h3 Next name site
+                                hr
+                                p This text it is simple text jn test this page.
+                                u text
+                                p text 
                                 i text 
-                                | text
-                        textarea 123 br
+                                    | text
+                                textarea 123
+                                br
+                                button button
+                                -var q=10;
+                                -var w=20;
+                                p #{q+w}
+                                a(href="http://vk.com")
+                                hr
+                                img(src="https://img4.goodfon.ru/wallpaper/big/c/7f/iaguar-dikaia-koshka-khishchnik.jpg", alt="cat")
+                                - for(var i=0; i<5; i++)
+                                li menu #{i}
+                                hr
+                                - var list = ["Uno", "Dos", "Tres", "Cuatro", "Cinco", "Seis"]
+                                each item in list
+                                    li= item
+                                hr
 
-                        button button
-
-                        -var q=10;
-                        -var w=20;
-
-                        p #{q+w}
-
-                        a(href="http://vk.com")
-
-                        hr
-                        img(src="https://img4.goodfon.ru/wallpaper/big/c/7f/iaguar-dikaia-koshka-khishchnik.jpg", alt="cat")
-                        - for(var i=0; i<5; i++)
-                            li menu #{i}
-                        hr
-                        - var list = ["Uno", "Dos", "Tres", "Cuatro", "Cinco", "Seis"]
-                        each item in list
-                            li= item
-                        hr
-
-                        <div class="uk-panel">
-                            <img class="uk-align-left uk-margin-remove-adjacent" src="http://eurocrown.com.ua/wp-content/uploads/2016/06/160620_4_Eu.jpg" width="225" height"150" alt="Example image">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-
-
-    section.tabContent 
-        h1 Markdown.md
-        br
-        textarea
-            | # h1
-            | #### h4
-        textarea
-            | ---
-        textarea
-            | - text 1
-            | - text 2
-            |   - text
-            |   - text
-        textarea
-            | 1.  Bird
-            | 2.  McHale
-        textarea
-            | Same links [name link](http://googl.com "hover_link").
-            | _italic_
-            | __bold__
-            | ~~text~~
-            | ``Text``
-        textarea
-            | <http://example.com/>
-            | > This is a blockquote.
-            | > 
-            | > This is the second paragraph in the blockquote.
-            | > 123
-        textarea
-            | ![name pic](https://ru.vuejs.org/images/logo.png/100/200)
-        textarea
-            | ```CSS
-            |  one code line 1
-            |  one code line 2
-            | ```
-        textarea
-            | ||||
-            | | ------ | ------ | ------ |
-            | | [__Pug__](https://pugjs.org/api/getting-started.html "Pug")  | _``(HTML + JavaScript)``_ | _верстка_ |
-            | | [__UiKit__](https://getuikit.com/ "UiKit") | _``(HTML + JavaScript + CSS)``_  | _верстка + стили_ |
-            | | [__Stylus__](http://stylus-lang.com/ "Stylus") & [__SMACSS__](https://smacss.com/ "SMACSS") + [__BEM__](http://getbem.com/ "BEM") | _``(CSS)``_ | _стили & методология_ |
-            | | [__Vue__](https://ru.vuejs.org/ "Vue") | _``(JavaScript)``_ | _интерактивность_ |
-            | |||
+                                <div class="uk-panel">
+                                    <img class="uk-align-left uk-margin-remove-adjacent" src="http://eurocrown.com.ua/wp-content/uploads/2016/06/160620_4_Eu.jpg" width="225" height"150" alt="Example image">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            div#tab-content-3.tab-content
+                h1 Markdown.md
+                br
+                textarea
+                    | # h1
+                    | #### h4
+                textarea
+                    | ---
+                textarea
+                    | - text 1
+                    | - text 2
+                    |   - text
+                    |   - text
+                textarea
+                    | 1.  Bird
+                    | 2.  McHale
+                textarea
+                    | Same links [name link](http://googl.com "hover_link").
+                    | _italic_
+                    | __bold__
+                    | ~~text~~
+                    | ``Text``
+                textarea
+                    | <http://example.com/>
+                    | > This is a blockquote.
+                    | > 
+                    | > This is the second paragraph in the blockquote.
+                    | > 123
+                textarea
+                    | ![name pic](https://ru.vuejs.org/images/logo.png/100/200)
+                textarea
+                    | ```CSS
+                    |  one code line 1
+                    |  one code line 2
+                    | ```
+                textarea
+                    | ||||
+                    | | ------ | ------ | ------ |
+                    | | [__Pug__](https://pugjs.org/api/getting-started.html "Pug")  | _``(HTML + JavaScript)``_ | _верстка_ |
+                    | | [__UiKit__](https://getuikit.com/ "UiKit") | _``(HTML + JavaScript + CSS)``_  | _верстка + стили_ |
+                    | | [__Stylus__](http://stylus-lang.com/ "Stylus") & [__SMACSS__](https://smacss.com/ "SMACSS") + [__BEM__](http://getbem.com/ "BEM") | _``(CSS)``_ | _стили & методология_ |
+                    | | [__Vue__](https://ru.vuejs.org/ "Vue") | _``(JavaScript)``_ | _интерактивность_ |
+                    | |||
 
 
     section.tabContent 
-        h1 CSS / stylus
-        br
-        table.tabContent_css_table
-                tr
-                    td.b #name1, #name2, #name3 { code }
-                    td.i id
-                tr
-                    td.b .name1, .name2, .name3 { code }
-                    td.i class
-                tr
-                    td.b #button1:hover, #button2:hover {  }
-                    td.i при наведении курсора
-                tr
-                    td.b #button1:active, #button2:active {  }
-                    td.i при нажатии курсора
-                tr
-                    td.b 
-                        hr
-                    td.i 
-                        hr
-                tr
-                    td.b @color-red #f44336
-                    td.i 
-                        div.color.color-red
-                tr
-                    td.b @color-pink #ff007e
-                    td.i 
-                        div.color.color-pink
-                tr
-                    td.b @color-purple #812991
-                    td.i 
-                        div.color.color-purple
-                tr
-                    td.b @color-turquoise #00AFFF
-                    td.i 
-                        div.color.color-turquoise
-                tr
-                    td.b @color-turquoise_1 #30D5C8
-                    td.i 
-                        div.color.color-turquoise_1
-                tr
-                    td.b @color-grey-light #edeef0
-                    td.i 
-                        div.color.color-grey-light
-                tr
-                    td.b @color-green #48A65B
-                    td.i 
-                        div.color.color-green
-                tr
-                    td.b @bg-light #3a3a3a
-                    td.i 
-                        div.color.color-bg-light
-                tr
-                    td.b @bg-dark #2b2b2b
-                    td.i 
-                        div.color.color-bg-dark
-                tr
-                    td.b @border-color #222222
-                    td.i 
-                        div.color.color-border-color
+        div.tabs
+            input(type="radio" name="tabs" checked)#tab-last_1
+            label(for="tab-last_1")
+                p CSS
+            input(type="radio" name="tabs")#tab-last_2
+            label(for="tab-last_2")
+                p Stylus
+            div#tab-content-4.tab-content
+                h1 CSS
+                table.tabContent_css_table
                     tr
-                    td.b 
+                       td.b #name1, #name2, #name3 { code }
+                        td.i id
+                    tr
+                        td.b .name1, .name2, .name3 { code }
+                        td.i class
+                    tr
+                        td.b #button1:hover, #button2:hover {  }
+                        td.i при наведении курсора
+                    tr
+                        td.b #button1:active, #button2:active {  }
+                        td.i при нажатии курсора
+                    tr
+                        td.b 
+                            hr
+                        td.i 
+                            hr
+                    tr
+                        td.b @color-red #f44336
+                        td.i 
+                            div.color.color-red
+                    tr
+                        td.b @color-pink #ff007e
+                        td.i 
+                            div.color.color-pink
+                    tr
+                        td.b @color-purple #812991
+                        td.i 
+                            div.color.color-purple
+                    tr
+                        td.b @color-turquoise #00AFFF
+                        td.i 
+                            div.color.color-turquoise
+                    tr
+                        td.b @color-turquoise_1 #30D5C8
+                        td.i 
+                            div.color.color-turquoise_1
+                    tr
+                        td.b @color-grey-light #edeef0
+                        td.i 
+                            div.color.color-grey-light
+                    tr
+                        td.b @color-green #48A65B
+                        td.i 
+                            div.color.color-green
+                    tr
+                        td.b @bg-light #3a3a3a
+                        td.i 
+                            div.color.color-bg-light
+                    tr
+                        td.b @bg-dark #2b2b2b
+                        td.i 
+                            div.color.color-bg-dark
+                    tr
+                        td.b @border-color #222222
+                        td.i 
+                            div.color.color-border-color
+                        tr
+                        td.b 
+                            hr
+                        td.i 
+                            hr
+                    tr
+                        td.b 
+                            dl
+                                dt @font-face
+                                    dd font-family 'OpenSans-Regular'
+                                    dd src url('../fonts/Open_Sans/OpenSans-Regular.ttf')
+                        td.i @font-face
+                    tr
+                        td.b 
+                            hr
+                        td.i 
+                            hr
+                    tr
+                        td.b height 0px
+                        td.i высота в пикселях
+                    tr
+                        td.b height 0vh
+                        td.i высота по области просмотра
+                    tr
+                        td.b height 0%
+                        td.i высота в процентах
+                    tr
+                        td.b width 0px
+                        td.i ширина в пикселях
+                    tr
+                        td.b width 0vw
+                        td.i ширина по облости просмотра
+                    tr
+                        td.b width 0%
+                        td.i ширина в процентах
+                    tr
+                        td.b 
+                            hr
+                        td.i 
+                            hr
+                    tr
+                        td.b resize none
+                        td.i отмена изменения размера textarea
+                    tr
+                        td.b 
+                            hr
+                        td.i 
+                            hr
+                    tr
+                        td.b position absolute
+                        td.i абсолютное позиционирование
+                    tr
+                        td.b position relative
+                        td.i относительное позиционирование
+                    tr
+                        td.b position fixed
+                        td.i фиксированное положение элемента при прокрутке стр
+                    tr
+                        td.b position static
+                        td.i наследует своиства род
+                    tr
+                        td.b position inherit
+                        td.i 
+                    tr
+                        td.b 
+                            hr
+                        td.i 
+                            hr
+                    tr
+                        td.b top calc(0% - 0px)
+                        td.i выравнивание по высоте (200-половина блока)
+                    tr
+                        td.b top 0px
+                        td.i расположение элемента от верха в пикселях
+                    tr
+                        td.b top 0%
+                        td.i расположение элемента от верха в процентах
+                    tr
+                        td.b left calc(50% - 0px)
+                        td.i выравнивание по ширине (200-половина блока)
+                    tr
+                        td.b left 0px
+                        td.i расположение элемента слева в пикселях
+                    tr
+                        td.b left 0%
+                        td.i расположение элемента слева в процентах
+                    tr
+                        td.b bottom 0px
+                        td.i растояние снизу в пикселях
+                    tr
+                        td.b bottom 0%
+                        td.i растояние снизу в процентах
+                    tr
+                        td.b 
+                            hr
+                        td.i 
+                            hr
+                    tr
+                        td.b z-index 0
+                        td.i отметка элемента по высоте плана
+                    tr
+                        td.b 
+                            hr
+                        td.i 
+                            hr
+                    tr
+                        td.b float right
+                        td.i обтекание по правому краю
+                    tr
+                        td.b float left
+                        td.i обтекание по левому краю
+                    tr
+                        td.b 
+                            hr
+                        td.i 
+                            hr
+                    tr
+                        td.b clear both
+                        td.i отмена обтекание блока по указаному краю
+                    tr
+                        td.b 
+                            hr
+                        td.i 
+                            hr
+                    tr
+                        td.b margin 0 auto
+                        td.i выровнять по центру горизонтально
+                    tr
+                        td.b margin 0px
+                        td.i отступ вокруг элемента в пикселях
+                    tr
+                        td.b margin 20%
+                        td.i отступы вокруг элемента в процентах
+                    tr
+                        td.b margin-left 0px
+                        td.i отступ слева
+                    tr
+                        td.b margin-right 0px
+                        td.i отступ справа
+                    tr
+                        td.b margin-top 0px
+                        td.i отступ сверху
+                    tr
+                        td.b margin-bottom 0px
+                        td.i отступ снизу
+                    tr
+                        td.b 
+                            hr
+                        td.i 
+                            hr
+                    tr
+                        td.b padding 0px
+                        td.i поля вокруг текста
+                    tr
+                        td.b padding-left 0px
+                        td.i поле слева
+                    tr
+                        td.b padding-right 0px
+                        td.i поле справа
+                    tr
+                        td.b padding  30px 15px
+                        td.i верх-низ и право-лево
+                    tr
+                        td.b 
+                            hr
+                        td.i 
+                            hr
+                    tr
+                        td.b display table
+                        td.i для выравнивания по центру
+                    tr
+                        td.b display none
+                        td.i прячем от показа
+                    tr
+                        td.b display block
+                        td.i показать блок
+                    tr
+                        td.b display inline
+                        td.i выровнять вдоль гориз. линии
+                    tr
+                        td.b 
                         hr
-                    td.i 
-                        hr
-                tr
-                    td.b 
-                        dl
-                            dt @font-face
-                                dd font-family 'OpenSans-Regular'
-                                dd src url('../fonts/Open_Sans/OpenSans-Regular.ttf')
-                    td.i @font-face
-                tr
-                    td.b 
-                        hr
-                    td.i 
-                        hr
-                tr
-                    td.b height 0px
-                    td.i высота в пикселях
-                tr
-                    td.b height 0vh
-                    td.i высота по области просмотра
-                tr
-                    td.b height 0%
-                    td.i высота в процентах
-                tr
-                    td.b width 0px
-                    td.i ширина в пикселях
-                tr
-                    td.b width 0vw
-                    td.i ширина по облости просмотра
-                tr
-                    td.b width 0%
-                    td.i ширина в процентах
-                tr
-                    td.b 
-                        hr
-                    td.i 
-                        hr
-                tr
-                    td.b resize none
-                    td.i отмена изменения размера textarea
-                tr
-                    td.b 
-                        hr
-                    td.i 
-                        hr
-                tr
-                    td.b position absolute
-                    td.i абсолютное позиционирование
-                tr
-                    td.b position relative
-                    td.i относительное позиционирование
-                tr
-                    td.b position fixed
-                    td.i фиксированное положение элемента при прокрутке стр
-                tr
-                    td.b position static
-                    td.i наследует своиства род
-                tr
-                    td.b position inherit
-                    td.i 
-                tr
-                    td.b 
-                        hr
-                    td.i 
-                        hr
-                tr
-                    td.b top calc(0% - 0px)
-                    td.i выравнивание по высоте (200-половина блока)
-                tr
-                    td.b top 0px
-                    td.i расположение элемента от верха в пикселях
-                tr
-                    td.b top 0%
-                    td.i расположение элемента от верха в процентах
-                tr
-                    td.b left calc(50% - 0px)
-                    td.i выравнивание по ширине (200-половина блока)
-                tr
-                    td.b left 0px
-                    td.i расположение элемента слева в пикселях
-                tr
-                    td.b left 0%
-                    td.i расположение элемента слева в процентах
-                tr
-                    td.b bottom 0px
-                    td.i растояние снизу в пикселях
-                tr
-                    td.b bottom 0%
-                    td.i растояние снизу в процентах
-                tr
-                    td.b 
-                        hr
-                    td.i 
-                        hr
-                tr
-                    td.b z-index 0
-                    td.i отметка элемента по высоте плана
-                tr
-                    td.b 
-                        hr
-                    td.i 
-                        hr
-                tr
-                    td.b float right
-                    td.i обтекание по правому краю
-                tr
-                    td.b float left
-                    td.i обтекание по левому краю
-                tr
-                    td.b 
-                        hr
-                    td.i 
-                        hr
-                tr
-                    td.b clear both
-                    td.i отмена обтекание блока по указаному краю
-                tr
-                    td.b 
-                        hr
-                    td.i 
-                        hr
-                tr
-                    td.b margin 0 auto
-                    td.i выровнять по центру горизонтально
-                tr
-                    td.b margin 0px
-                    td.i отступ вокруг элемента в пикселях
-                tr
-                    td.b margin 20%
-                    td.i отступы вокруг элемента в процентах
-                tr
-                    td.b margin-left 0px
-                    td.i отступ слева
-                tr
-                    td.b margin-right 0px
-                    td.i отступ справа
-                tr
-                    td.b margin-top 0px
-                    td.i отступ сверху
-                tr
-                    td.b margin-bottom 0px
-                    td.i отступ снизу
-                tr
-                    td.b 
-                        hr
-                    td.i 
-                        hr
-                tr
-                    td.b padding 0px
-                    td.i поля вокруг текста
-                tr
-                    td.b padding-left 0px
-                    td.i поле слева
-                tr
-                    td.b padding-right 0px
-                    td.i поле справа
-                tr
-                    td.b padding  30px 15px
-                    td.i верх-низ и право-лево
-                tr
-                    td.b 
-                        hr
-                    td.i 
-                        hr
-                tr
-                    td.b display table
-                    td.i для выравнивания по центру
-                tr
-                    td.b display none
-                    td.i прячем от показа
-                tr
-                    td.b display block
-                    td.i показать блок
-                tr
-                    td.b display inline
-                    td.i выровнять вдоль гориз. линии
-                tr
-                    td.b 
-                        hr
-                    td.i 
-                        hr
-                tr
-                    td.b background-color #282828
-                    td.i цвет фона
-                tr
-                    td.b background rgba(0, 0, 0, 0.5)
-                    td.i фон полупрозрачный
-                tr
-                    td.b background none
-                    td.i без фона
-                tr
-                    td.b background url(../images/2.jpg) no-repeat fixed
-                    td.i repeat-x фиксир
-                tr
-                    td.b background-size cover
-                    td.i фон занимает всю доступную площадь
-                tr
-                    td.b background -webkit-linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0))
-                    td.i 
-                tr
-                    td.b background -o-linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0))
-                    td.i 
-                tr
-                    td.b background linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0))
-                    td.i 
-                tr
-                    td.b background-position 50% 50%
-                    td.i 
-                tr
-                    td.b 
-                        hr
-                    td.i 
-                        hr
-                tr
-                    td.b border 1px solid #C0C0C0
-                    td.i рамка, толщина, линия, цвет
-                tr
-                    td.b border 1px solid red
-                    td.i рамка, толщина, линия, цвет
-                tr
-                    td.b border 1px solid transparent
-                    td.i с прозрачной рамкой
-                tr
-                    td.b border-top 0px solid white
-                    td.i рамка сверху белая
-                tr
-                    td.b border-bottom 0px solid white
-                    td.i рамка снизу белая
-                tr
-                    td.b border-left 0px solid white
-                    td.i рамка слева белая
-                tr
-                    td.b border-right 0px solid white
-                    td.i рамка справа белая
-                tr
-                    td.b border none
-                    td.i без рамки
-                tr
-                    td.b border-radius 0px
-                    td.i скругления углов рамки, радиус рамки
-                tr
-                    td.b border none
-                    td.i Линия не отображается и значение ее толщины обнуляется
-                tr
-                    td.b border dotted
-                    td.i линия состоящая из набора точек
-                tr
-                    td.b border dashed
-                    td.i пунктирная линия, состоящая из серии коротких отрезков
-                tr
-                    td.b border solid
-                    td.i сплошная линия
-                tr
-                    td.b border double
-                    td.i двойная линия
-                tr
-                    td.b border groove
-                    td.i создает эффект вдавленной линии
-                tr
-                    td.b border ridge
-                    td.i создает эффект рельефной линии
-                tr
-                    td.b border inset
-                    td.i псевдотрехмерная линия
-                tr
-                    td.b border outset
-                    td.i псевдотрехмерная линия
-                tr
-                    td.b border inherit
-                    td.i наследует значение родителя
-                tr
-                    td.b 
-                        hr
-                    td.i 
-                        hr
-                tr
-                    td.b outline: none;
-                    td.i для textarea
-                tr
-                    td.b 
-                        dl
-                            dt -webkit-clip-path: polygon(0 20px,
-                                dd  20px 0, 
-                                dd 100px 0,
-                                dd 120px 20px,
-                                dd 600px 20px,
-                                dd 600px 300px,
-                                dd 0 300px);
+                        td.i 
+                            hr
+                    tr
+                        td.b background-color #282828
+                        td.i цвет фона
+                    tr
+                        td.b background rgba(0, 0, 0, 0.5)
+                        td.i фон полупрозрачный
+                    tr
+                        td.b background none
+                        td.i без фона
+                    tr
+                        td.b background url(../images/2.jpg) no-repeat fixed
+                        td.i repeat-x фиксир
+                    tr
+                        td.b background-size cover
+                        td.i фон занимает всю доступную площадь
+                    tr
+                        td.b background -webkit-linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0))
+                        td.i 
+                    tr
+                        td.b background -o-linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0))
+                        td.i 
+                    tr
+                        td.b background linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0))
+                        td.i 
+                    tr
+                        td.b background-position 50% 50%
+                        td.i 
+                    tr
+                        td.b 
+                            hr
+                        td.i 
+                            hr
+                    tr
+                        td.b border 1px solid #C0C0C0
+                        td.i рамка, толщина, линия, цвет
+                    tr
+                        td.b border 1px solid red
+                        td.i рамка, толщина, линия, цвет
+                    tr
+                        td.b border 1px solid transparent
+                        td.i с прозрачной рамкой
+                    tr
+                        td.b border-top 0px solid white
+                        td.i рамка сверху белая
+                    tr
+                        td.b border-bottom 0px solid white
+                        td.i рамка снизу белая
+                    tr
+                        td.b border-left 0px solid white
+                        td.i рамка слева белая
+                    tr
+                        td.b border-right 0px solid white
+                        td.i рамка справа белая
+                    tr
+                        td.b border none
+                        td.i без рамки
+                    tr
+                        td.b border-radius 0px
+                        td.i скругления углов рамки, радиус рамки
+                    tr
+                        td.b border none
+                        td.i Линия не отображается и значение ее толщины обнуляется
+                    tr
+                        td.b border dotted
+                        td.i линия состоящая из набора точек
+                    tr
+                        td.b border dashed
+                        td.i пунктирная линия, состоящая из серии коротких отрезков
+                    tr
+                        td.b border solid
+                        td.i сплошная линия
+                    tr
+                        td.b border double
+                        td.i двойная линия
+                    tr
+                        td.b border groove
+                        td.i создает эффект вдавленной линии
+                    tr
+                        td.b border ridge
+                        td.i создает эффект рельефной линии
+                    tr
+                        td.b border inset
+                        td.i псевдотрехмерная линия
+                    tr
+                        td.b border outset
+                        td.i псевдотрехмерная линия
+                    tr
+                        td.b border inherit
+                        td.i наследует значение родителя
+                    tr
+                        td.b 
+                            hr
+                        td.i 
+                            hr
+                    tr
+                        td.b outline: none;
+                        td.i для textarea
+                    tr
+                        td.b 
+                            dl
+                                dt -webkit-clip-path: polygon(0 20px,
+                                    dd  20px 0, 
+                                    dd 100px 0,
+                                    dd 120px 20px,
+                                    dd 600px 20px,
+                                    dd 600px 300px,
+                                    dd 0 300px);
 
-                    td.i 
-                tr
-                    td.b 
-                        hr
-                    td.i 
-                        hr
-                tr
-                    td.b box-shadow: none;
-                    td.i убрать тень
-                tr
-                    td.b box-shadow: 0 0 30px rgba(0,0,0,0.8);
-                    td.i тень блока
-                tr
-                    td.b box-shadow: 0 0 60px rgba(0, 0, 0, .8) inset;
-                    td.i внутренняя тень блока
-                tr
-                    td.b 
-                        hr
-                    td.i 
-                        hr
-                tr
-                    td.b text-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
-                    td.i тень текста
-                tr
-                    td.b text-shadow: -1px -1px #000,   0 1px 0 #444;
-                    td.i 
-                tr
-                    td.b 
-                        hr
-                    td.i 
-                        hr
-                tr
-                    td.b opacity: 0.5;
-                    td.i Полупрозрачность элемента от 0 до 1
-                tr
-                    td.b color: #00BFFF;
-                    td.i цвет текста
-                tr
-                    td.b 
-                        hr
-                    td.i 
-                        hr
-                tr
-                    td.b font-family: 'OpenSans-Light', sans-serif;
-                    td.i шрифт
-                tr
+                        td.i 
+                    tr
+                        td.b 
+                            hr
+                        td.i 
+                            hr
+                    tr
+                        td.b box-shadow: none;
+                        td.i убрать тень
+                    tr
+                        td.b box-shadow: 0 0 30px rgba(0,0,0,0.8);
+                        td.i тень блока
+                    tr
+                        td.b box-shadow: 0 0 60px rgba(0, 0, 0, .8) inset;
+                        td.i внутренняя тень блока
+                    tr
+                        td.b 
+                            hr
+                        td.i 
+                            hr
+                    tr
+                        td.b text-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+                        td.i тень текста
+                    tr
+                        td.b text-shadow: -1px -1px #000,   0 1px 0 #444;
+                        td.i 
+                    tr
+                        td.b 
+                            hr
+                        td.i 
+                            hr
+                    tr
+                        td.b opacity: 0.5;
+                        td.i Полупрозрачность элемента от 0 до 1
+                    tr
+                        td.b color: #00BFFF;
+                        td.i цвет текста
+                    tr
+                        td.b 
+                            hr
+                        td.i 
+                            hr
+                    tr
+                        td.b font-family: 'OpenSans-Light', sans-serif;
+                        td.i шрифт
+                    tr
                     td.b font-family:  'SourcexmpPro-Regular';
-                    td.i шрифт
-                tr
-                    td.b font-size: 0%;
-                    td.i размер шрифта в процентах
-                tr
-                    td.b font-size: 11pt;
-                    td.i размер шрифта в пунктах
-                tr
-                    td.b font-size: 16px;
-                    td.i размер шрифта в пикселях
-                tr
-                    td.b font-style: italic;
-                    td.i стиль текста (курсив)
-                tr
-                    td.b font-style: bold;
-                    td.i стиль текста (жирный)
-                tr
-                    td.b font-weight: 600;
-                    td.i 
-                tr
-                    td.b font-weight: bold;
-                    td.i 
-                tr
-                    td.b 
-                        hr
-                    td.i 
-                        hr
-                tr
-                    td.b text-align: center;
-                    td.i выравнивание текста по центру
-                tr
-                    td.b text-align: left;
-                    td.i выравнивание текста слева
-                tr
-                    td.b text-align: right;
-                    td.i выравнивание текста справа
-                tr
-                    td.b text-decoration: none;
-                    td.i убирать подчёркивание у ссылок
-                tr
-                    td.b text-decoration: underline;
-                    td.i подчеркивание текста
-                tr
-                    td.b text-decoration-color: blue;
-                    td.i цвет подчеркивания синим цветом
-                tr
-                    td.b text-decoration-style: dashed;
-                    td.i тип линии подчеркивания
-                tr
-                    td.b text-transform: uppercase;
-                    td.i текст большими буквами
-                tr
-                    td.b text-indent: 20px;
-                    td.i Отступ первой строки в пикселах
-                tr
-                    td.b 
-                        hr
-                    td.i 
-                        hr
-                tr
-                    td.b column-count: 3;
-                    td.i текст в три колонки
-                tr
-                    td.b column-rule: 1px dashed grey;
-                    td.i вертикальные линии между колонками
-                tr
-                    td.b 
-                        hr
-                    td.i 
-                        hr
-                tr
-                    td.b line-height: 0px;
-                    td.i межстрочный интервал по центру = выс блока
-                tr
-                    td.b letter-spacing: 9px;
-                    td.i межбуквенный интервал
-                tr
-                    td.b user-select: none;
-                    td.i убирать выделение текста
-                tr
-                    td.b 
-                        hr
-                    td.i 
-                        hr
-                tr
-                    td.b list-style-type: circle;
-                    td.i круг
-                tr
-                    td.b list-style-type: disc;
-                    td.i точка
-                tr
-                    td.b list-style-type: square;
-                    td.i квадрат
-                tr
-                    td.b list-style-type: decimal;
-                    td.i арабскими числами
-                tr
-                    td.b list-style-type: upper-alpha;
-                    td.i заглавные латинские
-                tr
-                    td.b list-style-type: upper-roman;
-                    td.i римскими числами
-                tr
-                    td.b list-style-type: none;
-                    td.i отмена маркера
-                tr
-                    td.b 
-                        hr
-                    td.i 
-                        hr
-                tr
-                    td.b cursor: pointer;
-                    td.i курсор указатель
-                tr
-                    td.b cursor: move;
-                    td.i курсор перемещение
-                tr
-                    td.b cursor: col-resize;
-                    td.i курсор горизонтальное смещение размера границы
-                tr
-                    td.b cursor: row-resize;
-                    td.i курсор вертикальное смещение размера границы
-                tr
-                    td.b 
-                        hr
-                    td.i 
-                        hr
-                tr
-                    td.b overflow: hidden;
-                    td.i сокрытие полосы прокрутки
-                tr
-                    td.b overflow-x: hidden;
-                    td.i cокрытие горизонтальной полосы
-                tr
-                    td.b overflow-y: hidden;
-                    td.i cокрытие вертикальной полосы
-                tr
-                    td.b overflow: scroll;
-                    td.i добавляем полосы прокрутки
-                tr
-                    td.b 
-                        hr
-                    td.i 
-                        hr
-                tr
-                    td.b perspective: 800px;
-                    td.i установка перспективы
-                tr
-                    td.b 
-                        hr
-                    td.i 
-                        hr
-                tr
-                    td.b transform-style: preserve-3d;
-                    td.i 
-                tr
-                    td.b transform: rotate3D(1, 1, 1, 0deg);
-                    td.i 
-                tr
-                    td.b transform: rotateX(0deg);
-                    td.i вращение относительно коор. Х
-                tr
-                    td.b transform: rotateY(0deg);
-                    td.i вращение относительно коор. Y
-                tr
-                    td.b transform: rotateZ(0deg);
-                    td.i вращение относительно коор. Z
-                tr
-                    td.b transform: translateX(0px);
-                    td.i перемещение по оси Х
-                tr
-                    td.b transform: translateY(0px);
-                    td.i перемещение по оси Y
-                tr
-                    td.b transform: translateZ(0px);
-                    td.i перемещение по оси Z
-                tr
-                    td.b transform: scale3d(4, 4, 1);
-                    td.i масштабирование
-                tr
-                    td.b transform: scale(1.2, 1.2);
-                    td.i 
-                tr
-                    td.b transform: rotateX(70deg) scale3d(4, 4, 1) translateZ(-750px) translateY(-500px) translateX(-50px);
-                    td.i 
-                tr
-                    td.b transform-origin: x y z;
-                    td.i 
-                tr
-                    td.b transform-origin: 100px 100px 100px;
-                    td.i 
-                tr
-                    td.b transform-origin: 100% 100% 100%;
-                    td.i 
-                tr
-                    td.b transform-origin: 100% 0 -50px;
-                    td.i 
-                tr
-                    td.b transition: 1.5s linear;
-                    td.i нормально нормально нормально
-                tr
-                    td.b transition: 1.5s ease-in-out;
-                    td.i медленно нормально медленно
-                tr
-                    td.b transition: 1.5s ease;
-                    td.i медленно быстро медленно
-                tr
-                    td.b transition: all 1s;
-                    td.i 
-                tr
-                    td.b 
-                        hr
-                    td.i 
-                        hr
-                tr
-                    td.b 
-                        dl
-                            dt .anim {
-                                dd animation-timing-function: linear;
-                                dd animation-iteration-count: infinite; 
-                                dd animation-duration: 5s; 
-                                dd animation-name: anim; 
-                                dd }
-                    td.i 
-                        ul 
-                            li ровная анимация
-                            li количество повторов анимации
-                            li время цикла анимации
-                            li наименование анимации
-                tr
-                    td.b 
-                        dl
-                            dt @-webkit-keyframes anim {
-                                dd 0% {-webkit-transform: rotateZ(0deg);}
-                                dd 100% {-webkit-transform: rotateZ(-360deg);}
-                                dd }
-                    td.i 
-                        ul 
-                            li анимировать с ...
-                            li анимировать по ...
-                tr
-                    td.b 
-                        hr
-                    td.i 
-                        hr
-                tr
-                    td.b flex: 0 0 auto;
-                    td.i выравнивание по центру
+                        td.i шрифт
+                    tr
+                        td.b font-size: 0%;
+                        td.i размер шрифта в процентах
+                    tr
+                        td.b font-size: 11pt;
+                        td.i размер шрифта в пунктах
+                    tr
+                        td.b font-size: 16px;
+                        td.i размер шрифта в пикселях
+                    tr
+                        td.b font-style: italic;
+                        td.i стиль текста (курсив)
+                    tr
+                        td.b font-style: bold;
+                        td.i стиль текста (жирный)
+                    tr
+                        td.b font-weight: 600;
+                        td.i 
+                    tr
+                        td.b font-weight: bold;
+                        td.i 
+                    tr
+                        td.b 
+                            hr
+                        td.i 
+                            hr
+                    tr
+                        td.b text-align: center;
+                        td.i выравнивание текста по центру
+                    tr
+                        td.b text-align: left;
+                        td.i выравнивание текста слева
+                    tr
+                        td.b text-align: right;
+                        td.i выравнивание текста справа
+                    tr
+                        td.b text-decoration: none;
+                        td.i убирать подчёркивание у ссылок
+                    tr
+                        td.b text-decoration: underline;
+                        td.i подчеркивание текста
+                    tr
+                        td.b text-decoration-color: blue;
+                        td.i цвет подчеркивания синим цветом
+                    tr
+                        td.b text-decoration-style: dashed;
+                        td.i тип линии подчеркивания
+                    tr
+                        td.b text-transform: uppercase;
+                        td.i текст большими буквами
+                    tr
+                        td.b text-indent: 20px;
+                        td.i Отступ первой строки в пикселах
+                    tr
+                        td.b 
+                            hr
+                        td.i 
+                            hr
+                    tr
+                        td.b column-count: 3;
+                        td.i текст в три колонки
+                    tr
+                        td.b column-rule: 1px dashed grey;
+                        td.i вертикальные линии между колонками
+                    tr
+                        td.b 
+                            hr
+                        td.i 
+                            hr
+                    tr
+                        td.b line-height: 0px;
+                        td.i межстрочный интервал по центру = выс блока
+                    tr
+                        td.b letter-spacing: 9px;
+                        td.i межбуквенный интервал
+                    tr
+                        td.b user-select: none;
+                        td.i убирать выделение текста
+                    tr
+                        td.b 
+                            hr
+                        td.i 
+                            hr
+                    tr
+                        td.b list-style-type: circle;
+                        td.i круг
+                    tr
+                        td.b list-style-type: disc;
+                        td.i точка
+                    tr
+                        td.b list-style-type: square;
+                        td.i квадрат
+                    tr
+                        td.b list-style-type: decimal;
+                        td.i арабскими числами
+                    tr
+                        td.b list-style-type: upper-alpha;
+                        td.i заглавные латинские
+                    tr
+                        td.b list-style-type: upper-roman;
+                        td.i римскими числами
+                    tr
+                        td.b list-style-type: none;
+                        td.i отмена маркера
+                    tr
+                        td.b 
+                            hr
+                        td.i 
+                            hr
+                    tr
+                        td.b cursor: pointer;
+                        td.i курсор указатель
+                    tr
+                        td.b cursor: move;
+                        td.i курсор перемещение
+                    tr
+                        td.b cursor: col-resize;
+                        td.i курсор горизонтальное смещение размера границы
+                    tr
+                        td.b cursor: row-resize;
+                        td.i курсор вертикальное смещение размера границы
+                    tr
+                        td.b 
+                            hr
+                        td.i 
+                            hr
+                    tr
+                        td.b overflow: hidden;
+                        td.i сокрытие полосы прокрутки
+                    tr
+                        td.b overflow-x: hidden;
+                        td.i cокрытие горизонтальной полосы
+                    tr
+                        td.b overflow-y: hidden;
+                        td.i cокрытие вертикальной полосы
+                    tr
+                        td.b overflow: scroll;
+                        td.i добавляем полосы прокрутки
+                    tr
+                        td.b 
+                            hr
+                        td.i 
+                            hr
+                    tr
+                        td.b perspective: 800px;
+                        td.i установка перспективы
+                    tr
+                        td.b 
+                            hr
+                        td.i 
+                            hr
+                    tr
+                        td.b transform-style: preserve-3d;
+                        td.i 
+                    tr
+                        td.b transform: rotate3D(1, 1, 1, 0deg);
+                        td.i 
+                    tr
+                        td.b transform: rotateX(0deg);
+                        td.i вращение относительно коор. Х
+                    tr
+                        td.b transform: rotateY(0deg);
+                        td.i вращение относительно коор. Y
+                    tr
+                        td.b transform: rotateZ(0deg);
+                        td.i вращение относительно коор. Z
+                    tr
+                        td.b transform: translateX(0px);
+                        td.i перемещение по оси Х
+                    tr
+                        td.b transform: translateY(0px);
+                        td.i перемещение по оси Y
+                    tr
+                        td.b transform: translateZ(0px);
+                        td.i перемещение по оси Z
+                    tr
+                        td.b transform: scale3d(4, 4, 1);
+                        td.i масштабирование
+                    tr
+                        td.b transform: scale(1.2, 1.2);
+                        td.i 
+                    tr
+                        td.b transform: rotateX(70deg) scale3d(4, 4, 1) translateZ(-750px) translateY(-500px) translateX(-50px);
+                        td.i 
+                    tr
+                        td.b transform-origin: x y z;
+                        td.i 
+                    tr
+                        td.b transform-origin: 100px 100px 100px;
+                        td.i 
+                    tr
+                        td.b transform-origin: 100% 100% 100%;
+                        td.i 
+                    tr
+                        td.b transform-origin: 100% 0 -50px;
+                        td.i 
+                    tr
+                        td.b transition: 1.5s linear;
+                        td.i нормально нормально нормально
+                    tr
+                        td.b transition: 1.5s ease-in-out;
+                        td.i медленно нормально медленно
+                    tr
+                        td.b transition: 1.5s ease;
+                        td.i медленно быстро медленно
+                    tr
+                        td.b transition: all 1s;
+                        td.i 
+                    tr
+                        td.b 
+                            hr
+                        td.i 
+                            hr
+                    tr
+                        td.b 
+                            dl
+                                dt .anim {
+                                    dd animation-timing-function: linear;
+                                    dd animation-iteration-count: infinite; 
+                                    dd animation-duration: 5s; 
+                                    dd animation-name: anim; 
+                                    dd }
+                        td.i 
+                            ul 
+                                li ровная анимация
+                                li количество повторов анимации
+                                li время цикла анимации
+                                li наименование анимации
+                    tr
+                        td.b 
+                            dl
+                                dt @-webkit-keyframes anim {
+                                    dd 0% {-webkit-transform: rotateZ(0deg);}
+                                    dd 100% {-webkit-transform: rotateZ(-360deg);}
+                                    dd }
+                        td.i 
+                            ul 
+                                li анимировать с ...
+                                li анимировать по ...
+                    tr
+                        td.b 
+                            hr
+                        td.i 
+                            hr
+                    tr
+                        td.b flex: 0 0 auto;
+                        td.i выравнивание по центру
+
+            div#tab-content-5.tab-content
+                h1 Stylus
+                table.tabContent_css_table
+                    tr
+                       td.b 
+                        td.i 
+
+        
     section.tabContent 
         h1 JavaScript 
             small //всё в джаваскрипт являеться объектами
@@ -2990,30 +3010,39 @@ main#tabs
         h1 Goal:
         p Position of HTML/CSS Developer, with the possibility of professional Growth
         h1 Summary:
-        ul
-            li Understanding of software development life cycle, web application process;
-            li Experience in creating web application;
-            li Understanding of client-server architecture;
-            li Understanding of 
-                ul
-                    li HTML5 & (Pug)
-                    li CSS3 & ( Stylus / SMACSS).
-                    li Java Script & Vue . (базовый уровень)
-                    li jQuery (plugins integration);
-                    li Git . (базовый уровень)
-                    li Visual studio code, DevTools, Photoshop.
-            li Good verbal and written English skills (intermediate);
-            li Team player, self motivated, quick learner, hardworker, attentive to details;
-            li My project
-                ul
+        ul.ulContact
+            li # Understanding of software development life cycle, web application process;
+            br
+            li # Experience in creating web application;
+            br
+            li # Understanding of client-server architecture;
+            br
+            li # Understanding of 
+                ul.ulContact
+                    li - HTML5 & (Pug)
+                    li - CSS3 & ( Stylus / SMACSS)
+                    li - Java Script & Vue  (базовый уровень)
+                    li - jQuery (plugins integration)
+                    li - Git (базовый уровень)
+                    li - Visual studio code, DevTools, Photoshop
+                    br
+            li # Good verbal and written English skills (intermediate);
+            br
+            li # Team player, self motivated, quick learner, hardworker, attentive to details;
+            br
+            li # My project
+                ul.ulContact
                     li http://dogs-bomba.com.ua,
+                    br
                     li http://naturetour.me.pn,
+                    br
                     li http://sho-studio.eu.pn
 
         h1 Education:
-        p Kharkov State Technical University of Construction and Architecture. (Architecture of buildings and structures in 2007). 
+        p  Kharkov State Technical University of Construction and Architecture. (Architecture of buildings and structures in 2007). 
+        br
         h1 Additional education: 
-        p Source IT "Java programming & Web technologies"
+        p  Source IT "Java programming & Web technologies"
         hr
 
 

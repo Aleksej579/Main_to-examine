@@ -982,6 +982,7 @@ header {
   text-transform: uppercase;
   text-shadow: 0.045em 0.045em 0.04em rgba(0,0,0,0.21);
   box-shadow: 0px 20px 20px -10px rgba(0,0,0,0.3) inset;
+  position: relative;
 }
 nav {
   background-color: #1f1f28;
@@ -1128,4 +1129,83 @@ span {
 }
 .color-border-color {
   background-color: #222;
+}
+/*gggggggg*/
+.tabs {
+  max-width: 90%;
+  float: none;
+  list-style: none;
+  padding: 0;
+  margin: 75px auto;
+/*border-bottom: 4px solid #90a4ae;*/
+}
+.tabs:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.tabs input[type=radio] {
+  display: none;
+}
+.tabs label p {
+  padding: 5px;
+  margin-right: 0;
+}
+.tabs label {
+  display: block;
+  float: left;
+  width: 25%;
+  margin: 0 auto;
+  font-size: 30px;
+  font-weight: normal;
+  text-decoration: none;
+  text-align: center;
+  line-height: 2;
+  cursor: pointer;
+  box-shadow: inset 0 4px #90a4ae;
+  border-bottom: 4px solid #90a4ae;
+  -webkit-transition: all 0.5s; /* Safari 3.1 to 6.0 */
+  transition: all 0.5s;
+}
+.tabs label span {
+  display: none;
+}
+.tabs label:hover {
+  color: #48a65b;
+  box-shadow: inset 0 4px #48a65b;
+/*border-bottom: 4px solid #48a65b;*/
+}
+.tab-content {
+  display: none;
+  width: 100%;
+  float: left;
+  padding: 15px;
+  box-sizing: border-box;
+}
+.tabs [id^="tab"]:checked + label {
+  background: #1f1f28;
+  box-shadow: inset 0 4px #48a65b;
+  border-bottom: 4px solid #48a65b;
+  color: #48a65b;
+}
+#tab-first:checked ~ #tab-content-1,
+#tab-second:checked ~ #tab-content-2,
+#tab-last:checked ~ #tab-content-3,
+#tab-last_1:checked ~ #tab-content-4,
+#tab-last_2:checked ~ #tab-content-5 {
+  display: block;
+}
+@media (min-width: 768px) {
+  .tabs p {
+    padding: 5px;
+    margin-right: 10px;
+  }
+  .tabs {
+    max-width: 750px;
+    margin: 50px auto;
+  }
+}
+/*убрать маркировку списка*/
+.ulContact > li {
+  list-style-type: none;
 }
