@@ -859,6 +859,10 @@ tr:hover td {
   font-family: 'HelveticaNeueCyr-Black';
   src: url("../fonts/HelveticaNeueCyr-Black.ttf");
 }
+@font-face {
+  font-family: 'OpenSans-Italic';
+  src: url("../fonts/OpenSans-Italic.ttf");
+}
 .btn_show_hide {
   border: 1px solid #48a65b;
   border-radius: 3px;
@@ -1208,4 +1212,27 @@ span {
 /*убрать маркировку списка*/
 .ulContact > li {
   list-style-type: none;
+}
+/*резюме*/
+.styleSourceCode {
+  font-family: 'SourceCodePro-Regular';
+  color: #90a4ae;
+}
+.styleArialBlack {
+  font-family: 'HelveticaNeueCyr-Black';
+  color: #90a4ae;
+}
+.colorTr {
+  color: transparent;
+}
+.styleOpenSansItalic {
+  font-family: 'OpenSans-Italic';
+  color: #90a4ae;
+}
+.u {
+  text-decoration: underline;
+}
+.u:hover {
+  text-decoration: none;
+  color: #00afff;
 }
