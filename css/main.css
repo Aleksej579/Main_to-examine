@@ -1047,6 +1047,10 @@ textarea {
 #tabs .show {
   display: block;
 }
+.center-img {
+  display: block;
+  margin: 0 auto;
+}
 footer {
   background-color: #1f1f28;
   height: 100px;
@@ -1158,7 +1162,6 @@ span {
 .tabs label {
   display: block;
   float: left;
-  width: 25%;
   margin: 0 auto;
   font-size: 30px;
   font-weight: normal;
@@ -1170,6 +1173,7 @@ span {
   border-bottom: 4px solid #90a4ae;
   -webkit-transition: all 0.5s; /* Safari 3.1 to 6.0 */
   transition: all 0.5s;
+  padding: 0 30px;
 }
 .tabs label span {
   display: none;
@@ -1196,7 +1200,9 @@ span {
 #tab-second:checked ~ #tab-content-2,
 #tab-last:checked ~ #tab-content-3,
 #tab-last_1:checked ~ #tab-content-4,
-#tab-last_2:checked ~ #tab-content-5 {
+#tab-last_2:checked ~ #tab-content-5,
+#tab-last_3:checked ~ #tab-content-6,
+#tab-last_4:checked ~ #tab-content-7 {
   display: block;
 }
 @media (min-width: 768px) {
@@ -1235,4 +1241,13 @@ span {
 .u:hover {
   text-decoration: none;
   color: #00afff;
+}
+hr {
+  width: 100%;
+  color: #f00;
+}
+h3 {
+  color: #ff6347;
+  width: 100%;
+  text-align: center;
 }
